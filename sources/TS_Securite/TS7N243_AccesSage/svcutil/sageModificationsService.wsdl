@@ -1,0 +1,1630 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://services.eurekify.com" xmlns:ns1="http://dto.eurekify.com" xmlns:soapenc12="http://www.w3.org/2003/05/soap-encoding" xmlns:tns="http://services.eurekify.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap11="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc11="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">
+  <wsdl:types>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://dto.eurekify.com">
+<xsd:complexType name="RoleVO">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="counters" nillable="true" type="ns1:ArrayOfProperty"/>
+<xsd:element minOccurs="0" name="displayName" nillable="true" type="xsd:string"/>
+<xsd:element minOccurs="0" name="fields" nillable="true" type="ns1:ArrayOfProperty"/>
+<xsd:element minOccurs="0" name="name" nillable="true" type="ns1:RoleEntityName"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="RoleEntityName">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="dataType" nillable="true" type="ns1:DataType"/>
+<xsd:element minOccurs="0" name="name" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:simpleType name="DataType">
+<xsd:restriction base="xsd:string">
+<xsd:enumeration value="USER"/>
+<xsd:enumeration value="RESOURCE"/>
+<xsd:enumeration value="ROLE"/>
+<xsd:enumeration value="UNDEFINED"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:complexType name="ArrayOfProperty">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="Property" nillable="true" type="ns1:Property"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="Property">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="name" nillable="true" type="xsd:string"/>
+<xsd:element minOccurs="0" name="value" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="ResourceVO">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="counters" nillable="true" type="ns1:ArrayOfProperty"/>
+<xsd:element minOccurs="0" name="displayName" nillable="true" type="xsd:string"/>
+<xsd:element minOccurs="0" name="fields" nillable="true" type="ns1:ArrayOfProperty"/>
+<xsd:element minOccurs="0" name="name" nillable="true" type="ns1:ResourceEntityName"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="ResourceEntityName">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="dataType" nillable="true" type="ns1:DataType"/>
+<xsd:element minOccurs="0" name="name1" nillable="true" type="xsd:string"/>
+<xsd:element minOccurs="0" name="name2" nillable="true" type="xsd:string"/>
+<xsd:element minOccurs="0" name="name3" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="ArrayOfRequestVO">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="RequestVO" nillable="true" type="ns1:RequestVO"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="RequestVO">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="configurationName" nillable="true" type="xsd:string"/>
+<xsd:element minOccurs="0" name="description" nillable="true" type="xsd:string"/>
+<xsd:element minOccurs="0" name="first" nillable="true" type="ns1:EntityNameVO"/>
+<xsd:element minOccurs="0" name="properties" nillable="true" type="ns1:ArrayOfProperty"/>
+<xsd:element minOccurs="0" name="second" nillable="true" type="ns1:EntityNameVO"/>
+<xsd:element minOccurs="0" name="type" nillable="true" type="ns1:RequestType"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="EntityNameVO">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="dataType" nillable="true" type="ns1:DataType"/>
+<xsd:element minOccurs="0" name="names" nillable="true" type="tns:ArrayOfString"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:simpleType name="RequestType">
+<xsd:restriction base="xsd:string">
+<xsd:enumeration value="REQUEST_ADD_USER_RESOURCE_LINK"/>
+<xsd:enumeration value="REQUEST_ADD_USER_ROLE_LINK"/>
+<xsd:enumeration value="REQUEST_ADD_ROLE_ROLE_LINK"/>
+<xsd:enumeration value="REQUEST_ADD_ROLE_RESOURCE_LINK"/>
+<xsd:enumeration value="REQUEST_REMOVE_USER_RESOURCE_LINK"/>
+<xsd:enumeration value="REQUEST_REMOVE_USER_ROLE_LINK"/>
+<xsd:enumeration value="REQUEST_REMOVE_ROLE_ROLE_LINK"/>
+<xsd:enumeration value="REQUEST_REMOVE_ROLE_RESOURCE_LINK"/>
+<xsd:enumeration value="REQUEST_APPROVE_ROLE"/>
+<xsd:enumeration value="REQUEST_CREATE_ROLE"/>
+<xsd:enumeration value="REQUEST_UPDATE_ROLE"/>
+<xsd:enumeration value="REQUEST_DELETE_ROLE"/>
+<xsd:enumeration value="REQUEST_ADD_USER_TO_CONFIGURATION"/>
+<xsd:enumeration value="REQUEST_REMOVE_USER_FROM_CONFIGURATION"/>
+<xsd:enumeration value="REQUEST_ADD_RESOURCE_TO_CONFIGURATION"/>
+<xsd:enumeration value="REQUEST_REMOVE_RESOURCE_FROM_CONFIGURATION"/>
+<xsd:enumeration value="REQUEST_CREATE_USER"/>
+<xsd:enumeration value="REQUEST_CREATE_RESOURCE"/>
+<xsd:enumeration value="REQUEST_UPDATE_USER_ATTRIBUTES"/>
+<xsd:enumeration value="REQUEST_UPDATE_RESOURCE_ATTRIBUTES"/>
+<xsd:enumeration value="REQUEST_APPROVE_USER"/>
+<xsd:enumeration value="REQUEST_APPROVE_RESOURCE"/>
+<xsd:enumeration value="REQUEST_APPROVE_USER_RESOURCE_LINK"/>
+<xsd:enumeration value="REQUEST_APPROVE_USER_ROLE_LINK"/>
+<xsd:enumeration value="REQUEST_APPROVE_ROLE_ROLE_LINK"/>
+<xsd:enumeration value="REQUEST_APPROVE_ROLE_RESOURCE_LINK"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:complexType name="UserEntityName">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="dataType" nillable="true" type="ns1:DataType"/>
+<xsd:element minOccurs="0" name="name" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="UserVO">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="counters" nillable="true" type="ns1:ArrayOfProperty"/>
+<xsd:element minOccurs="0" name="displayName" nillable="true" type="xsd:string"/>
+<xsd:element minOccurs="0" name="fields" nillable="true" type="ns1:ArrayOfProperty"/>
+<xsd:element minOccurs="0" name="name" nillable="true" type="ns1:UserEntityName"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:schema>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://services.eurekify.com">
+<xsd:element name="addRoleToConfiguration">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="ns1:RoleVO"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="addRoleToConfigurationResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="updateResource">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="ns1:ResourceVO"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="updateResourceResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="ArrayOfString">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="string" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="executeRequests1">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="ns1:ArrayOfRequestVO"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in3" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in4" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="executeRequests1Response">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="deleteUserFromConfiguration">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="ns1:UserEntityName"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="deleteUserFromConfigurationResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="deleteRoleFromConfiguration1">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="ns1:RoleEntityName"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in3" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in4" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="deleteRoleFromConfiguration1Response">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="addRoleToConfiguration1">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="ns1:RoleVO"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in3" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in4" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="addRoleToConfiguration1Response">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="deleteLinkRoleResource">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="ns1:RoleEntityName"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="ns1:ResourceEntityName"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="deleteLinkRoleResourceResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="addResourceToConfiguration">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="ns1:ResourceEntityName"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="addResourceToConfigurationResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="deleteConfiguration">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="deleteConfigurationResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="executeRequests">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="ns1:ArrayOfRequestVO"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in3" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="executeRequestsResponse">
+<xsd:complexType/>
+</xsd:element>
+<xsd:element name="deleteLinkUserResource">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="ns1:UserEntityName"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="ns1:ResourceEntityName"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="deleteLinkUserResourceResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="deleteAuditCard">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="deleteAuditCardResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="deleteLinkUserResource1">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="ns1:UserEntityName"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="ns1:ResourceEntityName"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in3" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in4" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in5" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="deleteLinkUserResource1Response">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="addUserToConfiguration">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="ns1:UserEntityName"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="addUserToConfigurationResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="addLinkUserResource">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="ns1:UserEntityName"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="ns1:ResourceEntityName"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="addLinkUserResourceResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="addLinkRoleResource">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="ns1:RoleEntityName"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="ns1:ResourceEntityName"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="addLinkRoleResourceResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="updateRole1">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="ns1:RoleVO"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in3" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in4" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="updateRole1Response">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="deleteUserFromDatabase">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="ns1:UserEntityName"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="deleteUserFromDatabaseResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="addResourceToDatabase">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="ns1:ResourceVO"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="addResourceToDatabaseResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="deleteResourceFromDatabase">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="ns1:ResourceEntityName"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="deleteResourceFromDatabaseResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="deleteRoleFromConfiguration">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="ns1:RoleEntityName"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="deleteRoleFromConfigurationResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="addLinkRoleRole1">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="ns1:RoleEntityName"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="ns1:RoleEntityName"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in3" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in4" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in5" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="addLinkRoleRole1Response">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="addLinkRoleRole">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="ns1:RoleEntityName"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="ns1:RoleEntityName"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="addLinkRoleRoleResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="addLinkRoleResource1">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="ns1:RoleEntityName"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="ns1:ResourceEntityName"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in3" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in4" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in5" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="addLinkRoleResource1Response">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="addLinkUserRole">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="ns1:UserEntityName"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="ns1:RoleEntityName"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="addLinkUserRoleResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="executeRequest">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="ns1:RequestVO"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in3" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="executeRequestResponse">
+<xsd:complexType/>
+</xsd:element>
+<xsd:element name="addLinkUserResource1">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="ns1:UserEntityName"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="ns1:ResourceEntityName"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in3" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in4" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in5" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="addLinkUserResource1Response">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="deleteLinkUserRole">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="ns1:UserEntityName"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="ns1:RoleEntityName"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="deleteLinkUserRoleResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="updateRole">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="ns1:RoleVO"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="updateRoleResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="deleteLinkRoleResource1">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="ns1:RoleEntityName"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="ns1:ResourceEntityName"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in3" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in4" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in5" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="deleteLinkRoleResource1Response">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="addUserToDatabase">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="ns1:UserVO"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="addUserToDatabaseResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="copyConfiguration">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="copyConfigurationResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="deleteLinkRoleRole1">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="ns1:RoleEntityName"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="ns1:RoleEntityName"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in3" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in4" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in5" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="deleteLinkRoleRole1Response">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="addLinkUserRole1">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="ns1:UserEntityName"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="ns1:RoleEntityName"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in3" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in4" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in5" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="addLinkUserRole1Response">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="deleteLinkRoleRole">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="ns1:RoleEntityName"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="ns1:RoleEntityName"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="deleteLinkRoleRoleResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="deleteResourceFromConfiguration">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="ns1:ResourceEntityName"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="deleteResourceFromConfigurationResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="deleteLinkUserRole1">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="ns1:UserEntityName"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="ns1:RoleEntityName"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in3" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in4" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in5" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="deleteLinkUserRole1Response">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="updateUser">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="ns1:UserVO"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="updateUserResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="addRoleToConfigurationResponse">
+    <wsdl:part name="parameters" element="tns:addRoleToConfigurationResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteLinkUserResource1Response">
+    <wsdl:part name="parameters" element="tns:deleteLinkUserResource1Response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateRole1Response">
+    <wsdl:part name="parameters" element="tns:updateRole1Response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteLinkUserRole1Request">
+    <wsdl:part name="parameters" element="tns:deleteLinkUserRole1">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteLinkRoleRole1Response">
+    <wsdl:part name="parameters" element="tns:deleteLinkRoleRole1Response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addLinkUserRoleResponse">
+    <wsdl:part name="parameters" element="tns:addLinkUserRoleResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addLinkUserResourceRequest">
+    <wsdl:part name="parameters" element="tns:addLinkUserResource">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addLinkRoleRoleResponse">
+    <wsdl:part name="parameters" element="tns:addLinkRoleRoleResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addRoleToConfigurationRequest">
+    <wsdl:part name="parameters" element="tns:addRoleToConfiguration">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addLinkUserResourceResponse">
+    <wsdl:part name="parameters" element="tns:addLinkUserResourceResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteLinkUserRole1Response">
+    <wsdl:part name="parameters" element="tns:deleteLinkUserRole1Response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="executeRequestResponse">
+    <wsdl:part name="parameters" element="tns:executeRequestResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateResourceResponse">
+    <wsdl:part name="parameters" element="tns:updateResourceResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addLinkRoleRole1Response">
+    <wsdl:part name="parameters" element="tns:addLinkRoleRole1Response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addUserToConfigurationResponse">
+    <wsdl:part name="parameters" element="tns:addUserToConfigurationResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteLinkUserResourceRequest">
+    <wsdl:part name="parameters" element="tns:deleteLinkUserResource">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addLinkRoleResource1Request">
+    <wsdl:part name="parameters" element="tns:addLinkRoleResource1">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteAuditCardResponse">
+    <wsdl:part name="parameters" element="tns:deleteAuditCardResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteUserFromDatabaseRequest">
+    <wsdl:part name="parameters" element="tns:deleteUserFromDatabase">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addLinkUserRole1Response">
+    <wsdl:part name="parameters" element="tns:addLinkUserRole1Response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteUserFromDatabaseResponse">
+    <wsdl:part name="parameters" element="tns:deleteUserFromDatabaseResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteLinkRoleRole1Request">
+    <wsdl:part name="parameters" element="tns:deleteLinkRoleRole1">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="copyConfigurationRequest">
+    <wsdl:part name="parameters" element="tns:copyConfiguration">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addResourceToConfigurationResponse">
+    <wsdl:part name="parameters" element="tns:addResourceToConfigurationResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteResourceFromConfigurationResponse">
+    <wsdl:part name="parameters" element="tns:deleteResourceFromConfigurationResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addLinkUserResource1Response">
+    <wsdl:part name="parameters" element="tns:addLinkUserResource1Response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateRole1Request">
+    <wsdl:part name="parameters" element="tns:updateRole1">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="executeRequestsRequest">
+    <wsdl:part name="parameters" element="tns:executeRequests">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="executeRequests1Response">
+    <wsdl:part name="parameters" element="tns:executeRequests1Response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addLinkRoleRoleRequest">
+    <wsdl:part name="parameters" element="tns:addLinkRoleRole">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateRoleResponse">
+    <wsdl:part name="parameters" element="tns:updateRoleResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteAuditCardRequest">
+    <wsdl:part name="parameters" element="tns:deleteAuditCard">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addLinkRoleResource1Response">
+    <wsdl:part name="parameters" element="tns:addLinkRoleResource1Response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteRoleFromConfiguration1Response">
+    <wsdl:part name="parameters" element="tns:deleteRoleFromConfiguration1Response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addRoleToConfiguration1Response">
+    <wsdl:part name="parameters" element="tns:addRoleToConfiguration1Response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="executeRequestsResponse">
+    <wsdl:part name="parameters" element="tns:executeRequestsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addLinkRoleResourceResponse">
+    <wsdl:part name="parameters" element="tns:addLinkRoleResourceResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteRoleFromConfigurationRequest">
+    <wsdl:part name="parameters" element="tns:deleteRoleFromConfiguration">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addLinkUserResource1Request">
+    <wsdl:part name="parameters" element="tns:addLinkUserResource1">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="executeRequests1Request">
+    <wsdl:part name="parameters" element="tns:executeRequests1">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addLinkRoleResourceRequest">
+    <wsdl:part name="parameters" element="tns:addLinkRoleResource">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteLinkUserRoleRequest">
+    <wsdl:part name="parameters" element="tns:deleteLinkUserRole">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteResourceFromConfigurationRequest">
+    <wsdl:part name="parameters" element="tns:deleteResourceFromConfiguration">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateResourceRequest">
+    <wsdl:part name="parameters" element="tns:updateResource">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addUserToDatabaseRequest">
+    <wsdl:part name="parameters" element="tns:addUserToDatabase">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteResourceFromDatabaseRequest">
+    <wsdl:part name="parameters" element="tns:deleteResourceFromDatabase">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateUserRequest">
+    <wsdl:part name="parameters" element="tns:updateUser">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addLinkUserRoleRequest">
+    <wsdl:part name="parameters" element="tns:addLinkUserRole">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteUserFromConfigurationRequest">
+    <wsdl:part name="parameters" element="tns:deleteUserFromConfiguration">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteLinkUserResource1Request">
+    <wsdl:part name="parameters" element="tns:deleteLinkUserResource1">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteConfigurationResponse">
+    <wsdl:part name="parameters" element="tns:deleteConfigurationResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addLinkUserRole1Request">
+    <wsdl:part name="parameters" element="tns:addLinkUserRole1">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteResourceFromDatabaseResponse">
+    <wsdl:part name="parameters" element="tns:deleteResourceFromDatabaseResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteLinkRoleRoleRequest">
+    <wsdl:part name="parameters" element="tns:deleteLinkRoleRole">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="executeRequestRequest">
+    <wsdl:part name="parameters" element="tns:executeRequest">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteLinkRoleResourceRequest">
+    <wsdl:part name="parameters" element="tns:deleteLinkRoleResource">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addResourceToDatabaseRequest">
+    <wsdl:part name="parameters" element="tns:addResourceToDatabase">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteLinkRoleResource1Request">
+    <wsdl:part name="parameters" element="tns:deleteLinkRoleResource1">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteLinkRoleResourceResponse">
+    <wsdl:part name="parameters" element="tns:deleteLinkRoleResourceResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteLinkUserRoleResponse">
+    <wsdl:part name="parameters" element="tns:deleteLinkUserRoleResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addLinkRoleRole1Request">
+    <wsdl:part name="parameters" element="tns:addLinkRoleRole1">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteUserFromConfigurationResponse">
+    <wsdl:part name="parameters" element="tns:deleteUserFromConfigurationResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteRoleFromConfigurationResponse">
+    <wsdl:part name="parameters" element="tns:deleteRoleFromConfigurationResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addUserToDatabaseResponse">
+    <wsdl:part name="parameters" element="tns:addUserToDatabaseResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteLinkRoleRoleResponse">
+    <wsdl:part name="parameters" element="tns:deleteLinkRoleRoleResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addRoleToConfiguration1Request">
+    <wsdl:part name="parameters" element="tns:addRoleToConfiguration1">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteLinkRoleResource1Response">
+    <wsdl:part name="parameters" element="tns:deleteLinkRoleResource1Response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateRoleRequest">
+    <wsdl:part name="parameters" element="tns:updateRole">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteConfigurationRequest">
+    <wsdl:part name="parameters" element="tns:deleteConfiguration">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateUserResponse">
+    <wsdl:part name="parameters" element="tns:updateUserResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteLinkUserResourceResponse">
+    <wsdl:part name="parameters" element="tns:deleteLinkUserResourceResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addUserToConfigurationRequest">
+    <wsdl:part name="parameters" element="tns:addUserToConfiguration">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteRoleFromConfiguration1Request">
+    <wsdl:part name="parameters" element="tns:deleteRoleFromConfiguration1">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addResourceToDatabaseResponse">
+    <wsdl:part name="parameters" element="tns:addResourceToDatabaseResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="copyConfigurationResponse">
+    <wsdl:part name="parameters" element="tns:copyConfigurationResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addResourceToConfigurationRequest">
+    <wsdl:part name="parameters" element="tns:addResourceToConfiguration">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="SageModificationsServicePortType">
+    <wsdl:operation name="addRoleToConfiguration">
+      <wsdl:input name="addRoleToConfigurationRequest" message="tns:addRoleToConfigurationRequest">
+    </wsdl:input>
+      <wsdl:output name="addRoleToConfigurationResponse" message="tns:addRoleToConfigurationResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateResource">
+      <wsdl:input name="updateResourceRequest" message="tns:updateResourceRequest">
+    </wsdl:input>
+      <wsdl:output name="updateResourceResponse" message="tns:updateResourceResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="executeRequests1">
+      <wsdl:input name="executeRequests1Request" message="tns:executeRequests1Request">
+    </wsdl:input>
+      <wsdl:output name="executeRequests1Response" message="tns:executeRequests1Response">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteUserFromConfiguration">
+      <wsdl:input name="deleteUserFromConfigurationRequest" message="tns:deleteUserFromConfigurationRequest">
+    </wsdl:input>
+      <wsdl:output name="deleteUserFromConfigurationResponse" message="tns:deleteUserFromConfigurationResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteRoleFromConfiguration1">
+      <wsdl:input name="deleteRoleFromConfiguration1Request" message="tns:deleteRoleFromConfiguration1Request">
+    </wsdl:input>
+      <wsdl:output name="deleteRoleFromConfiguration1Response" message="tns:deleteRoleFromConfiguration1Response">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addRoleToConfiguration1">
+      <wsdl:input name="addRoleToConfiguration1Request" message="tns:addRoleToConfiguration1Request">
+    </wsdl:input>
+      <wsdl:output name="addRoleToConfiguration1Response" message="tns:addRoleToConfiguration1Response">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteLinkRoleResource">
+      <wsdl:input name="deleteLinkRoleResourceRequest" message="tns:deleteLinkRoleResourceRequest">
+    </wsdl:input>
+      <wsdl:output name="deleteLinkRoleResourceResponse" message="tns:deleteLinkRoleResourceResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addResourceToConfiguration">
+      <wsdl:input name="addResourceToConfigurationRequest" message="tns:addResourceToConfigurationRequest">
+    </wsdl:input>
+      <wsdl:output name="addResourceToConfigurationResponse" message="tns:addResourceToConfigurationResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteConfiguration">
+      <wsdl:input name="deleteConfigurationRequest" message="tns:deleteConfigurationRequest">
+    </wsdl:input>
+      <wsdl:output name="deleteConfigurationResponse" message="tns:deleteConfigurationResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="executeRequests">
+      <wsdl:input name="executeRequestsRequest" message="tns:executeRequestsRequest">
+    </wsdl:input>
+      <wsdl:output name="executeRequestsResponse" message="tns:executeRequestsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteLinkUserResource">
+      <wsdl:input name="deleteLinkUserResourceRequest" message="tns:deleteLinkUserResourceRequest">
+    </wsdl:input>
+      <wsdl:output name="deleteLinkUserResourceResponse" message="tns:deleteLinkUserResourceResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteAuditCard">
+      <wsdl:input name="deleteAuditCardRequest" message="tns:deleteAuditCardRequest">
+    </wsdl:input>
+      <wsdl:output name="deleteAuditCardResponse" message="tns:deleteAuditCardResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteLinkUserResource1">
+      <wsdl:input name="deleteLinkUserResource1Request" message="tns:deleteLinkUserResource1Request">
+    </wsdl:input>
+      <wsdl:output name="deleteLinkUserResource1Response" message="tns:deleteLinkUserResource1Response">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addUserToConfiguration">
+      <wsdl:input name="addUserToConfigurationRequest" message="tns:addUserToConfigurationRequest">
+    </wsdl:input>
+      <wsdl:output name="addUserToConfigurationResponse" message="tns:addUserToConfigurationResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addLinkUserResource">
+      <wsdl:input name="addLinkUserResourceRequest" message="tns:addLinkUserResourceRequest">
+    </wsdl:input>
+      <wsdl:output name="addLinkUserResourceResponse" message="tns:addLinkUserResourceResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addLinkRoleResource">
+      <wsdl:input name="addLinkRoleResourceRequest" message="tns:addLinkRoleResourceRequest">
+    </wsdl:input>
+      <wsdl:output name="addLinkRoleResourceResponse" message="tns:addLinkRoleResourceResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateRole1">
+      <wsdl:input name="updateRole1Request" message="tns:updateRole1Request">
+    </wsdl:input>
+      <wsdl:output name="updateRole1Response" message="tns:updateRole1Response">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteUserFromDatabase">
+      <wsdl:input name="deleteUserFromDatabaseRequest" message="tns:deleteUserFromDatabaseRequest">
+    </wsdl:input>
+      <wsdl:output name="deleteUserFromDatabaseResponse" message="tns:deleteUserFromDatabaseResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addResourceToDatabase">
+      <wsdl:input name="addResourceToDatabaseRequest" message="tns:addResourceToDatabaseRequest">
+    </wsdl:input>
+      <wsdl:output name="addResourceToDatabaseResponse" message="tns:addResourceToDatabaseResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteResourceFromDatabase">
+      <wsdl:input name="deleteResourceFromDatabaseRequest" message="tns:deleteResourceFromDatabaseRequest">
+    </wsdl:input>
+      <wsdl:output name="deleteResourceFromDatabaseResponse" message="tns:deleteResourceFromDatabaseResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteRoleFromConfiguration">
+      <wsdl:input name="deleteRoleFromConfigurationRequest" message="tns:deleteRoleFromConfigurationRequest">
+    </wsdl:input>
+      <wsdl:output name="deleteRoleFromConfigurationResponse" message="tns:deleteRoleFromConfigurationResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addLinkRoleRole1">
+      <wsdl:input name="addLinkRoleRole1Request" message="tns:addLinkRoleRole1Request">
+    </wsdl:input>
+      <wsdl:output name="addLinkRoleRole1Response" message="tns:addLinkRoleRole1Response">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addLinkRoleRole">
+      <wsdl:input name="addLinkRoleRoleRequest" message="tns:addLinkRoleRoleRequest">
+    </wsdl:input>
+      <wsdl:output name="addLinkRoleRoleResponse" message="tns:addLinkRoleRoleResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addLinkRoleResource1">
+      <wsdl:input name="addLinkRoleResource1Request" message="tns:addLinkRoleResource1Request">
+    </wsdl:input>
+      <wsdl:output name="addLinkRoleResource1Response" message="tns:addLinkRoleResource1Response">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addLinkUserRole">
+      <wsdl:input name="addLinkUserRoleRequest" message="tns:addLinkUserRoleRequest">
+    </wsdl:input>
+      <wsdl:output name="addLinkUserRoleResponse" message="tns:addLinkUserRoleResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="executeRequest">
+      <wsdl:input name="executeRequestRequest" message="tns:executeRequestRequest">
+    </wsdl:input>
+      <wsdl:output name="executeRequestResponse" message="tns:executeRequestResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addLinkUserResource1">
+      <wsdl:input name="addLinkUserResource1Request" message="tns:addLinkUserResource1Request">
+    </wsdl:input>
+      <wsdl:output name="addLinkUserResource1Response" message="tns:addLinkUserResource1Response">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteLinkUserRole">
+      <wsdl:input name="deleteLinkUserRoleRequest" message="tns:deleteLinkUserRoleRequest">
+    </wsdl:input>
+      <wsdl:output name="deleteLinkUserRoleResponse" message="tns:deleteLinkUserRoleResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateRole">
+      <wsdl:input name="updateRoleRequest" message="tns:updateRoleRequest">
+    </wsdl:input>
+      <wsdl:output name="updateRoleResponse" message="tns:updateRoleResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteLinkRoleResource1">
+      <wsdl:input name="deleteLinkRoleResource1Request" message="tns:deleteLinkRoleResource1Request">
+    </wsdl:input>
+      <wsdl:output name="deleteLinkRoleResource1Response" message="tns:deleteLinkRoleResource1Response">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addUserToDatabase">
+      <wsdl:input name="addUserToDatabaseRequest" message="tns:addUserToDatabaseRequest">
+    </wsdl:input>
+      <wsdl:output name="addUserToDatabaseResponse" message="tns:addUserToDatabaseResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="copyConfiguration">
+      <wsdl:input name="copyConfigurationRequest" message="tns:copyConfigurationRequest">
+    </wsdl:input>
+      <wsdl:output name="copyConfigurationResponse" message="tns:copyConfigurationResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteLinkRoleRole1">
+      <wsdl:input name="deleteLinkRoleRole1Request" message="tns:deleteLinkRoleRole1Request">
+    </wsdl:input>
+      <wsdl:output name="deleteLinkRoleRole1Response" message="tns:deleteLinkRoleRole1Response">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addLinkUserRole1">
+      <wsdl:input name="addLinkUserRole1Request" message="tns:addLinkUserRole1Request">
+    </wsdl:input>
+      <wsdl:output name="addLinkUserRole1Response" message="tns:addLinkUserRole1Response">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteLinkRoleRole">
+      <wsdl:input name="deleteLinkRoleRoleRequest" message="tns:deleteLinkRoleRoleRequest">
+    </wsdl:input>
+      <wsdl:output name="deleteLinkRoleRoleResponse" message="tns:deleteLinkRoleRoleResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteResourceFromConfiguration">
+      <wsdl:input name="deleteResourceFromConfigurationRequest" message="tns:deleteResourceFromConfigurationRequest">
+    </wsdl:input>
+      <wsdl:output name="deleteResourceFromConfigurationResponse" message="tns:deleteResourceFromConfigurationResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteLinkUserRole1">
+      <wsdl:input name="deleteLinkUserRole1Request" message="tns:deleteLinkUserRole1Request">
+    </wsdl:input>
+      <wsdl:output name="deleteLinkUserRole1Response" message="tns:deleteLinkUserRole1Response">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateUser">
+      <wsdl:input name="updateUserRequest" message="tns:updateUserRequest">
+    </wsdl:input>
+      <wsdl:output name="updateUserResponse" message="tns:updateUserResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SageModificationsServiceHttpBinding" type="tns:SageModificationsServicePortType">
+    <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="addRoleToConfiguration">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="addRoleToConfigurationRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addRoleToConfigurationResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateResource">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="updateResourceRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="updateResourceResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="executeRequests1">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="executeRequests1Request">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="executeRequests1Response">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteUserFromConfiguration">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="deleteUserFromConfigurationRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteUserFromConfigurationResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteRoleFromConfiguration1">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="deleteRoleFromConfiguration1Request">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteRoleFromConfiguration1Response">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addRoleToConfiguration1">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="addRoleToConfiguration1Request">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addRoleToConfiguration1Response">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteLinkRoleResource">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="deleteLinkRoleResourceRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteLinkRoleResourceResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addResourceToConfiguration">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="addResourceToConfigurationRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addResourceToConfigurationResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteConfiguration">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="deleteConfigurationRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteConfigurationResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="executeRequests">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="executeRequestsRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="executeRequestsResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteLinkUserResource">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="deleteLinkUserResourceRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteLinkUserResourceResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteAuditCard">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="deleteAuditCardRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteAuditCardResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteLinkUserResource1">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="deleteLinkUserResource1Request">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteLinkUserResource1Response">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addUserToConfiguration">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="addUserToConfigurationRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addUserToConfigurationResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addLinkUserResource">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="addLinkUserResourceRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addLinkUserResourceResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addLinkRoleResource">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="addLinkRoleResourceRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addLinkRoleResourceResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateRole1">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="updateRole1Request">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="updateRole1Response">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteUserFromDatabase">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="deleteUserFromDatabaseRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteUserFromDatabaseResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addResourceToDatabase">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="addResourceToDatabaseRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addResourceToDatabaseResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteResourceFromDatabase">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="deleteResourceFromDatabaseRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteResourceFromDatabaseResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteRoleFromConfiguration">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="deleteRoleFromConfigurationRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteRoleFromConfigurationResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addLinkRoleRole1">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="addLinkRoleRole1Request">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addLinkRoleRole1Response">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addLinkRoleRole">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="addLinkRoleRoleRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addLinkRoleRoleResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addLinkRoleResource1">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="addLinkRoleResource1Request">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addLinkRoleResource1Response">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addLinkUserRole">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="addLinkUserRoleRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addLinkUserRoleResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="executeRequest">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="executeRequestRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="executeRequestResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addLinkUserResource1">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="addLinkUserResource1Request">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addLinkUserResource1Response">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteLinkUserRole">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="deleteLinkUserRoleRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteLinkUserRoleResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateRole">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="updateRoleRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="updateRoleResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteLinkRoleResource1">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="deleteLinkRoleResource1Request">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteLinkRoleResource1Response">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addUserToDatabase">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="addUserToDatabaseRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addUserToDatabaseResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="copyConfiguration">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="copyConfigurationRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="copyConfigurationResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteLinkRoleRole1">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="deleteLinkRoleRole1Request">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteLinkRoleRole1Response">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addLinkUserRole1">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="addLinkUserRole1Request">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addLinkUserRole1Response">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteLinkRoleRole">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="deleteLinkRoleRoleRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteLinkRoleRoleResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteResourceFromConfiguration">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="deleteResourceFromConfigurationRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteResourceFromConfigurationResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteLinkUserRole1">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="deleteLinkUserRole1Request">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteLinkUserRole1Response">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateUser">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="updateUserRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="updateUserResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SageModificationsService">
+    <wsdl:port name="SageModificationsServiceHttpPort" binding="tns:SageModificationsServiceHttpBinding">
+      <wsdlsoap:address location="http://localhost:8080/eurekify/services/sageModificationsService"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

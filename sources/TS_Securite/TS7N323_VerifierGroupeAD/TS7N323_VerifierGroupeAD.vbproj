@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2A9F5F5E-1AD7-4624-8037-D0040722C768}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>On</OptionStrict>
+    <StartupObject>TS7N323_VerifierGroupeAD.TsFdVerifierGroupeAD</StartupObject>
+    <RootNamespace>TS7N323_VerifierGroupeAD</RootNamespace>
+    <AssemblyName>TS7N323_VerifierGroupeAD</AssemblyName>
+    <FileUpgradeFlags></FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionInfer>On</OptionInfer>
+    <UpgradeBackupLocation></UpgradeBackupLocation>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/TS7N323_VerifierGroupeAD/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TS7N323_VerifierGroupeAD.xml</DocumentationFile>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <DebugType>full</DebugType>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <BaseAddress>1826422784</BaseAddress>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>TS7N323_VerifierGroupeAD.xml</DocumentationFile>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <BaseAddress>1826422784</BaseAddress>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.DirectoryServices">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU4N011_Configuration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ2N724_LierDataCtrl">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N041_GestionMsg">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N045_GestionErreur">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N081_AfficherAide">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N091_IBesoinValid">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N501_ClasseRRQ">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N904_CtlRRQ">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N906_CtlFormAutonome, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N907_IControles">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N011_ContexteApp">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N112_Navigateur">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N113_INavigateur">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ3N118_Securite">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N075_TransArmNavig">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ4N815_Spitab">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU5N012_ISynchroContexte">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Chercheur.vb" />
+    <Compile Include="Extensions.vb" />
+    <Compile Include="Internal\Curseur.vb" />
+    <Compile Include="Internal\DistinctList.vb" />
+    <Compile Include="Internal\Groupe.vb" />
+    <Compile Include="Internal\Groupes.vb" />
+    <Compile Include="TsCdUtilisateur.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="TsCdUniteAdministrative.vb" />
+    <Compile Include="TsFdDifferences.Designer.vb">
+      <DependentUpon>TsFdDifferences.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TsFdDifferences.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TsFdVerifierGroupeAD.Designer.vb">
+      <DependentUpon>TsFdVerifierGroupeAD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TsFdVerifierGroupeAD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TsFdDifferences.resx">
+      <DependentUpon>TsFdDifferences.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TsFdVerifierGroupeAD.resx">
+      <DependentUpon>TsFdVerifierGroupeAD.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Rrq\Exec\XU7N090_ReglesRoslyn.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties EffectuerCopieExec="1" DateCreationMD="2010-10-11" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <ItemGroup>
+    <ProjectReference Include="..\TS4N212_ObtnrInfoAD\TS4N212_ObtnrInfoAD.vbproj">
+      <Project>{A523508C-EAEE-452F-B744-E9E383306FEA}</Project>
+      <Name>TS4N212_ObtnrInfoAD</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TS4N213_AccesAD\TS4N213_AccesAD.vbproj">
+      <Project>{5F87A258-9B23-40DB-BF26-63171A523D0D}</Project>
+      <Name>TS4N213_AccesAD</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

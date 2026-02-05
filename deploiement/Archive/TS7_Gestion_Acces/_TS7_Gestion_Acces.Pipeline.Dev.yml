@@ -1,0 +1,68 @@
+# Pipeline de déploiement du système FC
+
+trigger:
+  none
+
+resources:
+  repositories:
+    - repository: Outils
+      type: git
+      name: ST3.Outils.DevOps
+      ref: master
+
+variables:
+- group: GrST3.Build.PathPhase
+- group: GrST3.Deploiement.PathDestination
+- name: buildConfiguration
+  value: 'Release'
+- name: buildPlatform
+  value: 'Any CPU'
+- name: solution
+  value: '**/solutions/TS7_Gestion_Acces/TS7_Gestion_Acces.sln'
+- name: logFileVerbosity
+  value: normal
+- name: createLogFile
+  value: false
+- name: manifest
+  value: "TS7_Gestion_Acces.Manifest.json" 
+
+stages:
+- stage: Build
+  displayName: 'Build & Test Stage'
+  jobs:
+  - job: Build
+    displayName: Compilation
+    pool : 
+      name: Compilation RRQ-AF
+    workspace:
+      clean: all
+    variables:
+    - group: GrST3.Build.PathPhase
+    steps: 
+    - template: Build/ST3.Build.Template.DeterminerPhase.yml@Outils       
+    - template: Build/ST3.Build.Template.PreCompilation.yml@Outils
+
+    - task: NuGetCommand@2
+      inputs:
+        restoreSolution: '${{variables.solution}}'                    
+
+    - task: MSBuild@1
+      displayName: 'Compilation de(s) la (les) solution(s)'    
+      inputs:
+        platform: '${{variables.buildPlatform}}'    
+        configuration: '${{variables.buildConfiguration}}'
+        solution: '${{variables.solution}}'
+        msbuildArguments: /p:referencepath="$(DeterminerPhase.ReferencePath) /p:DeployOnBuild=true"            
+        logFileVerbosity: '${{variables.logFileVerbosity}}'
+        createLogFile: '${{variables.createLogFile}}'   
+      
+    - template: Build/ST3.Build.Template.PublierArtefacts.yml@Outils
+      parameters:      
+        manifest: '${{variables.manifest}}'                                   
+    
+- template: Deploiement/ST3.Deploiement.Template.EffectuerDeploiementVersEnvironnementsDev.yml@Outils      
+  parameters:          
+    manifest: '${{variables.manifest}}'      
+
+- template: Deploiement/ST3.Deploiement.Template.RetourEnPhase.yml@Outils             
+

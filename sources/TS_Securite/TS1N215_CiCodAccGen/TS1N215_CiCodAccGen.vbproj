@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <CodeAnalysisAdditionalOptions>/assemblycomparemode:StrongNameIgnoringVersion</CodeAnalysisAdditionalOptions>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9F4C6A08-44DB-4471-9F33-F457F4AE0F84}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>On</OptionStrict>
+    <StartupObject></StartupObject>
+    <RootNamespace>TS1N215_CiCodAccGen</RootNamespace>
+    <AssemblyName>TS1N215_CiCodAccGen</AssemblyName>
+    <FileUpgradeFlags></FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionInfer>Off</OptionInfer>
+    <UpgradeBackupLocation></UpgradeBackupLocation>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/TS1N215_CiCodAccGen/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TS1N215_CiCodAccGen.xml</DocumentationFile>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <DebugType>full</DebugType>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <BaseAddress>620101632</BaseAddress>
+    <CodeAnalysisRules></CodeAnalysisRules>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>TS1N215_CiCodAccGen.xml</DocumentationFile>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <BaseAddress>620101632</BaseAddress>
+    <CodeAnalysisRules></CodeAnalysisRules>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU4N011_Configuration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Exec\XU4N011_Configuration.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU4N211_DeclarerRessource, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU5N031_BaseIntegration">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU5N032_BaseService">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU5N036_IDiagnostique, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU5N057_BaseDonnees, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ4N042_Configuration">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU5N011_Contexte">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU5N013_StrucMsg">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU5N041_Exceptions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N019_StrucMsg, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\RRQ\Exec\XZ5N019_StrucMsg.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N045_GestionErreur">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N062_ContexteCS">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DeclarerRessource.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="TsCaNiveauSecrt1.vb" />
+    <Compile Include="TsCaNiveauSecrt2.vb" />
+    <Compile Include="TsCaNiveauSecrt9.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Rrq\Exec\XU7N090_ReglesRoslyn.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties DateCreationMD="2012-08-19" EffectuerCopieExec="1" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <ItemGroup>
+    <ProjectReference Include="..\TS1N201_DtCdAccGenV1\TS1N201_DtCdAccGenV1.vbproj">
+      <Project>{10B59821-E040-4F03-9331-04207E992C1D}</Project>
+      <Name>TS1N201_DtCdAccGenV1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TS1N215_INiveauSecrt1\TS1N215_INiveauSecrt1.vbproj">
+      <Project>{6CB3899E-EDB2-4A77-8D6A-95CB2E302F83}</Project>
+      <Name>TS1N215_INiveauSecrt1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TS1N215_INiveauSecrt2\TS1N215_INiveauSecrt2.vbproj">
+      <Project>{B54E98FF-40AB-4DF1-BA0E-3EB5F9C722F1}</Project>
+      <Name>TS1N215_INiveauSecrt2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TS1N215_INiveauSecrt9\TS1N215_INiveauSecrt9.vbproj">
+      <Project>{08CFA882-8925-4787-82B7-05D13DC58D42}</Project>
+      <Name>TS1N215_INiveauSecrt9</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TS1N224_CbCodAccGen\TS1N224_CbCodAccGen.vbproj">
+      <Project>{09226800-A814-435F-AF49-D663E2F8BC33}</Project>
+      <Name>TS1N224_CbCodAccGen</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

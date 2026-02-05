@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{98313ADC-6B42-4F37-825F-315853D63785}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>On</OptionStrict>
+    <StartupObject>TS1N214_PrGerAccGen.TsFdGerAccGen</StartupObject>
+    <RootNamespace>TS1N214_PrGerAccGen</RootNamespace>
+    <AssemblyName>TS1N214_PrGerAccGen</AssemblyName>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <FileUpgradeFlags></FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionInfer>Off</OptionInfer>
+    <UpgradeBackupLocation></UpgradeBackupLocation>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationIcon>1ADDcPol.Ico</ApplicationIcon>
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/TS1N214_PrGerAccGen/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TS1N214_PrGerAccGen.xml</DocumentationFile>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <DebugType>full</DebugType>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <BaseAddress>1916010496</BaseAddress>
+    <CodeAnalysisRules></CodeAnalysisRules>
+    <PlatformTarget>x86</PlatformTarget>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>TS1N214_PrGerAccGen.xml</DocumentationFile>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <BaseAddress>1916010496</BaseAddress>
+    <CodeAnalysisRules></CodeAnalysisRules>
+    <PlatformTarget>x86</PlatformTarget>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.DirectoryServices">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Xceed.Editors.v2.6, Version=2.6.17275.15070, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Xceed\Xceed Grid for WinForms v4.2\Bin\Xceed.Editors.v2.6.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Xceed.Grid.v4.2, Version=4.2.17275.15070, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Xceed\Xceed Grid for WinForms v4.2\Bin\Xceed.Grid.v4.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Xceed.UI.v1.4, Version=1.4.17275.15070, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Xceed\Xceed Grid for WinForms v4.2\Bin\Xceed.UI.v1.4.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU4N011_Configuration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU5N011_Contexte, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU5N014_CreerContexte, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU5N024_AppelerCompIAppSrv, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU5N057_BaseDonnees, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ2N724_LierDataCtrl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N019_StrucMsg, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N041_GestionMsg, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N045_GestionErreur, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N047_MsgProgression, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N081_AfficherAide, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N091_IBesoinValid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N501_ClasseRRQ, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N904_CtlRRQ, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N906_CtlFormAutonome, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N907_IControles, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N909_CtlGrille, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config.vb" />
+    <Compile Include="Curseur.vb" />
+    <Compile Include="Extensions\XzCrComboBoxExtensions.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TsCuArbre.vb" />
+    <Compile Include="TsCuCle.vb" />
+    <Compile Include="TsCuConversionsTypes.vb" />
+    <Compile Include="TsCuGroupe.vb" />
+    <Compile Include="TsCuPrGerAccGen.vb" />
+    <Compile Include="TsCuRecherche.vb" />
+    <Compile Include="TsCuRetValidation.vb" />
+    <Compile Include="TsCuSecuriteApplicative.vb" />
+    <Compile Include="TsFdGerAccGen.Designer.vb">
+      <DependentUpon>TsFdGerAccGen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TsFdGerAccGen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TsFfGenMotPasse.Designer.vb">
+      <DependentUpon>TsFfGenMotPasse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TsFfGenMotPasse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TsFfImportation.Designer.vb">
+      <DependentUpon>TsFfImportation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TsFfImportation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TsFfRech.Designer.vb">
+      <DependentUpon>TsFfRech.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TsFfRech.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TsFfSelectAD.Designer.vb">
+      <DependentUpon>TsFfSelectAD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TsFfSelectAD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TsFgMultiEnv.Designer.vb">
+      <DependentUpon>TsFgMultiEnv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TsFgMultiEnv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TsFdGerAccGen.resx">
+      <DependentUpon>TsFdGerAccGen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TsFfGenMotPasse.resx">
+      <DependentUpon>TsFfGenMotPasse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TsFfImportation.resx">
+      <DependentUpon>TsFfImportation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TsFfRech.resx">
+      <DependentUpon>TsFfRech.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TsFfSelectAD.resx">
+      <DependentUpon>TsFfSelectAD.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TsFgMultiEnv.resx">
+      <DependentUpon>TsFgMultiEnv.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1ADDcPol.Ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Rrq\Exec\XU7N090_ReglesRoslyn.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties DateCreationMD="2012-07-23" EffectuerCopieExec="1" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <ItemGroup>
+    <ProjectReference Include="..\TS1N201_DtCdAccGenV1\TS1N201_DtCdAccGenV1.vbproj">
+      <Project>{10B59821-E040-4F03-9331-04207E992C1D}</Project>
+      <Name>TS1N201_DtCdAccGenV1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TS1N215_INiveauSecrt1\TS1N215_INiveauSecrt1.vbproj">
+      <Project>{6CB3899E-EDB2-4A77-8D6A-95CB2E302F83}</Project>
+      <Name>TS1N215_INiveauSecrt1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TS1N215_INiveauSecrt2\TS1N215_INiveauSecrt2.vbproj">
+      <Project>{B54E98FF-40AB-4DF1-BA0E-3EB5F9C722F1}</Project>
+      <Name>TS1N215_INiveauSecrt2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TS1N215_INiveauSecrt9\TS1N215_INiveauSecrt9.vbproj">
+      <Project>{08CFA882-8925-4787-82B7-05D13DC58D42}</Project>
+      <Name>TS1N215_INiveauSecrt9</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TS4N311_VerfrSecrtApplicative\TS4N311_VerfrSecrtApplicative.vbproj">
+      <Project>{DA3C94B7-2BD6-420B-9252-3A4B7FC4A434}</Project>
+      <Name>TS4N311_VerfrSecrtApplicative</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TS6N011_ZgLibOutils\TS6N011_ZgLibOutils.vbproj">
+      <Project>{1ED1F58D-235C-48BB-A8BA-4BB185A9F7A6}</Project>
+      <Name>TS6N011_ZgLibOutils</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

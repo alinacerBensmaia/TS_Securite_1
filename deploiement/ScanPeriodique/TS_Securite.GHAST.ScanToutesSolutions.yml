@@ -1,0 +1,88 @@
+# =====================================================================
+# TS_Securite.GHAST.ScanToutesSolutions.V2.yml
+# Pipeline V2 modulaire : Build + Scan GHAS complet
+# Architecture : Securite2/ST3.Build.Extends.CompileSolutionV2.yml
+# =====================================================================
+
+name: $(BuildDefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
+
+trigger:
+  branches:
+    include:
+      - phase*/**
+  paths:
+    include:
+       - deploiement/TS_Securite/ClientServeur/**
+       - sources/Driver_Net/**
+       - sources/StructuresZonesComm/**
+       - sources/TS_Securite/**
+       - solutions/TS_Securite/TS_Securite.sln
+       - solutions/**
+
+# Désactiver les builds PR automatiques (optionnel)
+pr: none
+
+# schedules:
+# - cron: "0,15,30,45 13-23 * 11,12,1,2 *"
+#   displayName: "Scan GHAS toutes les 30 min (8h–16h30)"
+#   branches:
+#     include:
+#     - phase1/BIM.2030.01.01
+#   always: true
+
+resources:
+  repositories:
+    - repository: ST3.Outils.DevOps
+      type: git
+      name: ST3.Outils.DevOps
+      ref: users/Naca151/DEV-426376-Creation-nouvel-extended-Template_1 # Branche temporaire pour developpement
+      # ref: main # Branche principale à utiliser en production
+
+extends:
+  template: Securite/ST3.Securite.Extends.ValidationPeriodique.yml@ST3.Outils.DevOps
+
+  parameters:
+    # =========================================================
+    # PARAMÈTRES DE BUILD
+    # =========================================================
+    solutionPath: '**/solutions/**/*.sln'
+    msbuildArguments: /p:TargetFrameworkVersion="v4.8"
+    buildConfiguration: 'Release'
+    RQAF_pool: 'Compilation RRQ-AF'
+
+    # =========================================================
+    # ACTIVATION GHAS (GitHub Advanced Security)
+    # =========================================================
+    enableGHAS: true
+
+    # Langages à analyser (séparés par virgule)
+    codeQLLanguages: 'csharp'
+
+    # Suite de requêtes CodeQL
+    # Options: 'security-extended', 'security-and-quality', 'code-scanning'
+    codeQLQuerySuite: 'code-scanning'
+
+    # Scan des dépendances (NuGet, npm, etc.)
+    runSCA: true
+
+    # Répertoires exclus des scans
+    directoryExclusionList: 'node_modules,bin,obj,packages,TestResults'
+
+    # =========================================================
+    # DÉTECTION AUTOMATIQUE CODEQL (NOUVEAU)
+    # =========================================================
+    # Détection automatique de la dernière version de CodeQL installée
+    # Le template cherche dans le répertoire de base et sélectionne la version la plus récente
+    enableAutoCodeQLVersionDetection: true
+
+    # Répertoire de base contenant les versions de CodeQL (format: X.Y.Z)
+    # Par défaut: \\fic2\unit\DevOps_RRQAF\Outils\CodeQL
+    # Exemple de structure:
+    #   \\fic2\unit\DevOps_RRQAF\Outils\CodeQL\
+    #     ├── 2.15.5\codeql\codeql.exe
+    #     ├── 2.16.0\codeql\codeql.exe
+    #     └── 2.16.1\codeql\codeql.exe  ← Sera automatiquement sélectionné
+    codeqltoolsdirectory: ''
+
+    # Répertoire de travail personnalisé (laisser vide pour défaut)
+    workingDirectory: ''

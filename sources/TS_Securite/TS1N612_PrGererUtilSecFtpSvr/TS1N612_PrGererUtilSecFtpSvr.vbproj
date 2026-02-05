@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{09A7E7F0-2AF7-41C0-A6C3-E9BA8730928E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>Off</OptionInfer>
+    <StartupObject></StartupObject>
+    <RootNamespace>TS1N612_PrGererUtilSecFtpSvr</RootNamespace>
+    <AssemblyName>TS1N612_PrGererUtilSecFtpSvr</AssemblyName>
+    <FileUpgradeFlags></FileUpgradeFlags>
+    <UpgradeBackupLocation></UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/%24safeprojectname%24/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TS1N612_PrGererUtilSecFtpSvr.xml</DocumentationFile>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <DebugType>full</DebugType>
+    <WarningsAsErrors>42020,42021,42022</WarningsAsErrors>
+    <NoWarn>41999,42016,42017,42018,42019,42032,42036,42353,42354,42355</NoWarn>
+    <BaseAddress>498401280</BaseAddress>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>TS1N612_PrGererUtilSecFtpSvr.xml</DocumentationFile>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <WarningsAsErrors>42020,42021,42022</WarningsAsErrors>
+    <NoWarn>41999,42016,42017,42018,42019,42032,42036,42353,42354,42355</NoWarn>
+    <BaseAddress>498401280</BaseAddress>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xaml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU4N011_Configuration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Exec\XU4N011_Configuration.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU5N011_Contexte, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Exec\XU5N011_Contexte.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU5N014_CreerContexte, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU5N024_AppelerCompIAppSrv, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Exec\XU5N024_AppelerCompIAppSrv.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU5N057_BaseDonnees, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Exec\XU5N057_BaseDonnees.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ2N724_LierDataCtrl">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N019_StrucMsg, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N041_GestionMsg">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N045_GestionErreur">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N081_AfficherAide">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N091_IBesoinValid">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N501_ClasseRRQ">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N904_CtlRRQ">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N112_Navigateur">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N113_INavigateur">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ3N118_Securite">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N905_CtlFormNavig">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="TsCpPrGererUtilSecFtp.vb" />
+    <Compile Include="TsCuTextBoxSelection.vb" />
+    <Compile Include="TsFdGererUtilSecFtpSvr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TsFfSommaireCreation.xaml.vb">
+      <DependentUpon>TsFfSommaireCreation.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TsFdGererUtilSecFtpSvr.resx">
+      <DependentUpon>TsFdGererUtilSecFtpSvr.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="TsFfSommaireCreation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Rrq\Exec\XU7N090_ReglesRoslyn.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties EffectuerCopieExec="1" DateCreationMD="2014-06-05" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <ItemGroup>
+    <ProjectReference Include="..\TS1N201_DtCdAccGenV1\TS1N201_DtCdAccGenV1.vbproj">
+      <Project>{10B59821-E040-4F03-9331-04207E992C1D}</Project>
+      <Name>TS1N201_DtCdAccGenV1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TS1N215_INiveauSecrt2\TS1N215_INiveauSecrt2.vbproj">
+      <Project>{B54E98FF-40AB-4DF1-BA0E-3EB5F9C722F1}</Project>
+      <Name>TS1N215_INiveauSecrt2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TS1N621_INiveauSecrt1\TS1N621_INiveauSecrt1.vbproj">
+      <Project>{377F8007-D1F5-4C24-AD05-087611439A77}</Project>
+      <Name>TS1N621_INiveauSecrt1</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

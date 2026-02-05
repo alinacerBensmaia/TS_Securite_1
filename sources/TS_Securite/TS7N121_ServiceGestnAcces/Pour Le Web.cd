@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Classe d'informations.">
+    <Position X="4.678" Y="4.01" Height="0.263" Width="2.161" />
+  </Comment>
+  <Comment CommentText="Classe d'objets réutilisés.">
+    <Position X="0.5" Y="4" Height="0.263" Width="3.752" />
+  </Comment>
+  <Comment CommentText="Classe d'erreur la plus fréquente.">
+    <Position X="0.5" Y="9" Height="0.263" Width="2.041" />
+  </Comment>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdAssignationRole">
+    <Position X="4.75" Y="4.5" Width="2" />
+    <Members>
+      <Method Name="ConvertirAssignation" Hidden="true" />
+      <Field Name="lectureSeule" Hidden="true" />
+      <Field Name="mDateFin" Hidden="true" />
+      <Field Name="mDescription" Hidden="true" />
+      <Field Name="mFinPrevu" Hidden="true" />
+      <Field Name="mID" Hidden="true" />
+      <Field Name="mNom" Hidden="true" />
+      <Method Name="New" Hidden="true" />
+      <Method Name="Operator &lt;&gt;" Hidden="true" />
+      <Method Name="Operator =" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+      <Method Name="TraductionAssignationRole" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>EABAEQgQAIIggBAUAAAAAAAAACAAAAAAAABBEAAAAAI=</HashCode>
+      <FileName>TsCdAssignationRole.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdDemandeDestruction">
+    <Position X="0.5" Y="4.5" Width="2" />
+    <Members>
+      <Field Name="LectureSeule" Hidden="true" />
+      <Field Name="mIDUtilisateur" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAQAAAAA=</HashCode>
+      <FileName>TsCdDemandeDestruction.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdDemndCreationModif">
+    <Position X="0.5" Y="6" Width="2" />
+    <Members>
+      <Method Name="ajouterDictio" Hidden="true" />
+      <Method Name="ChercherRole" Hidden="true" />
+      <Method Name="estRoleOriginal" Hidden="true" />
+      <Field Name="mIDUtilisateur" Hidden="true" />
+      <Field Name="mLectureSeule" Hidden="true" />
+      <Field Name="mMode" Hidden="true" />
+      <Field Name="mOperationsRoles" Hidden="true" />
+      <Field Name="mRolesOriginaux" Hidden="true" />
+      <Field Name="mUtilisateur" Hidden="true" />
+      <Field Name="mUtilisateurOriginal" Hidden="true" />
+      <Property Name="OperationsRoles" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Enum Name="Rrq.Securite.GestionAcces.TsCdDemndCreationModif.TsDCMode" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>TsCdDemndCreationModif.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAACAAAANIAIAAAgiAABEEAAgAAAAAAQGAAAQAIQAI=</HashCode>
+      <FileName>TsCdDemndCreationModif.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdEquipe">
+    <Position X="4.75" Y="8.25" Width="2" />
+    <Members>
+      <Field Name="LectureSeule" Hidden="true" />
+      <Field Name="mIDRole" Hidden="true" />
+      <Field Name="mNom" Hidden="true" />
+      <Field Name="mNoUniteAdmin" Hidden="true" />
+      <Method Name="New" Hidden="true" />
+      <Field Name="REO_E" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+      <Method Name="TraductionEquipe" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>BAAAgAAAAAAQAACUAAAAAAAAACAAAAAAAAAAAABAABA=</HashCode>
+      <FileName>TsCdEquipe.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdRole">
+    <Position X="4.75" Y="6.5" Width="2" />
+    <Members>
+      <Field Name="lectureSeule" Hidden="true" />
+      <Field Name="mDescription" Hidden="true" />
+      <Field Name="mID" Hidden="true" />
+      <Field Name="mNom" Hidden="true" />
+      <Method Name="New" Hidden="true" />
+      <Method Name="Operator &lt;&gt;" Hidden="true" />
+      <Method Name="Operator =" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+      <Method Name="TraductionRole" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAEQgQAIAggAAUAAAAAAAAAiAAAAAAAAABAAAAAAI=</HashCode>
+      <FileName>TsCdRole.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdUniteAdministrative">
+    <Position X="4.75" Y="9.75" Width="2" />
+    <Members>
+      <Field Name="lectureSeule" Hidden="true" />
+      <Field Name="mAbbreviation" Hidden="true" />
+      <Field Name="mIDRole" Hidden="true" />
+      <Field Name="mNo" Hidden="true" />
+      <Field Name="mNom" Hidden="true" />
+      <Method Name="New" Hidden="true" />
+      <Field Name="REO" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+      <Method Name="TraductionUnitAdmin" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAACAABAAIAAAIAUAAAAgAAAACAAAAAAAAAAAABQABA=</HashCode>
+      <FileName>TsCdUniteAdministrative.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdUtilisateur">
+    <Position X="2.75" Y="4.5" Width="1.5" />
+    <Members>
+      <Field Name="mCourriel" Hidden="true" />
+      <Field Name="mDateFin" Hidden="true" />
+      <Field Name="mFinPrevue" Hidden="true" />
+      <Field Name="mID" Hidden="true" />
+      <Field Name="mNom" Hidden="true" />
+      <Field Name="mNomComplet" Hidden="true" />
+      <Field Name="mNoUniteAdmin" Hidden="true" />
+      <Field Name="mPrenom" Hidden="true" />
+      <Field Name="mVille" Hidden="true" />
+      <Method Name="Operator &lt;&gt;" Hidden="true" />
+      <Method Name="Operator =" Hidden="true" />
+      <Field Name="protection" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+      <Method Name="TraductionUtilisateur" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Enum Name="Rrq.Securite.GestionAcces.TsCdUtilisateur.NiveauProtection">
+        <TypeIdentifier>
+          <NewMemberFileName>TsCdUtilisateur.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAEYxAAAIQkBAUEACAAgIAECAAAAIAACAAEAAIgIA=</HashCode>
+      <FileName>TsCdUtilisateur.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsExcErreurGeneral">
+    <Position X="0.5" Y="9.5" Width="2" />
+    <Members>
+      <Field Name="mType" Hidden="true" />
+      <Field Name="TYPE_DEFAULT" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAABAgAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>TsExcErreurGestnAcces.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Module Name="Rrq.Securite.GestionAcces.TsCaServiceGestnAcces">
+    <Position X="0.5" Y="0.5" Width="6.5" />
+    <TypeIdentifier>
+      <HashCode>CAQIAIAABAAAAkAAAAQAIAQAAAIAAAAAACACABBAAAA=</HashCode>
+      <FileName>TsCaServiceGestnAcces.vb</FileName>
+    </TypeIdentifier>
+  </Module>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

@@ -1,0 +1,20 @@
+﻿/*
+﻿/* À lire avant d'exécuter ce projet d'essais pour la 1re fois après une extraction de svn :
+/*
+Le fichier de paramètres de tests (ParametresTest.testsettings) contient
+les configurations nécessaires à l'exécution de ce test. Avant de démarrer le test, il faut
+ajouter ce fichier, présent dans le projet, comme élément de votre solution. 
+
+Voici la procédure :
+	- Enregistrer la solution
+	- Clique de droite sur la solution
+	- Choisir l'option Ajouter->Élément existant
+	- Dans le dialogue de sélection, sélectionner le fichier "ParametresTest.testsettings" présent dans le projet. 
+	- Le dialogue Paramètres s'ouvrira, il s'agit de cliquer sur Fermer
+
+
+/*
+/* Si vous modifiez les paramètres de test au niveau de la solution,
+/* n'oubliez pas de recopier le fichier au niveau du projet afin que
+/* les modifications puissent être archivées dans svn. 
+/*

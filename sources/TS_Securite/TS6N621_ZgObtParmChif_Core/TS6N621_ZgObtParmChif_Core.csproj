@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>KeyPair.snk</AssemblyOriginatorKeyFile>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <AnalysisLevel>latest</AnalysisLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'" />
+  <ItemGroup>
+    <PackageReference Include="System.Data.Common" Version="4.3.0" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="XU4N011_Configuration_Core">
+      <HintPath>XU4N011_Configuration_Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="TsDsObtnrParmtCertf.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>TsDsObtnrParmtCertf.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="TsDsObtnrParmtSel.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>TsDsObtnrParmtSel.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="tsDsObtParmChif.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>tsDsObtParmChif.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="TsDsObtnrParmtCertf.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TsDsObtnrParmtCertf.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="TsDsObtnrParmtSel.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TsDsObtnrParmtSel.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="tsDsObtParmChif.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tsDsObtParmChif.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties DossierDestinationCopie="C:\RRQ\Exec;" EffectuerCopieExec="1" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

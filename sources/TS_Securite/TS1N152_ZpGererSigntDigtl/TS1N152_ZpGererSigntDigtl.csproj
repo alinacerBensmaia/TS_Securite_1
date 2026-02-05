@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7CE3341A-3D28-4526-8518-307A8969E6F0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Rq.Infrastructure.Securite.SignatureDigital</RootNamespace>
+    <AssemblyName>TS1N152_ZpGererSigntDigtl</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Images\Application.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.DirectoryServices">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU2N071_GestionEvent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Exec\XU2N071_GestionEvent.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU4N011_Configuration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Exec\XU4N011_Configuration.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\ProfilInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ProfilInfo.Designer.cs">
+      <DependentUpon>ProfilInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UtilisateurInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UtilisateurInfo.Designer.cs">
+      <DependentUpon>UtilisateurInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FenetreChoixSignature.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FenetreChoixSignature.Designer.cs">
+      <DependentUpon>FenetreChoixSignature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FenetreSelectionTypeSignature.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FenetreSelectionTypeSignature.Designer.cs">
+      <DependentUpon>FenetreSelectionTypeSignature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internes\ActiveDirectory.cs" />
+    <Compile Include="Internes\Commandes\SecuriteFichier.cs" />
+    <Compile Include="Internes\Commandes\SecuriteRepertoire.cs" />
+    <Compile Include="Internes\Commandes\Xcopy.cs" />
+    <Compile Include="Internes\Extensions\ActiveDirectoryExtensions.cs" />
+    <Compile Include="Internes\AppConfiguration.cs" />
+    <Compile Include="Internes\Extensions\CommonExtensions.cs" />
+    <Compile Include="Internes\Extensions\ControlExtensions.cs" />
+    <Compile Include="Internes\Curseur.cs" />
+    <Compile Include="Internes\Enumerations\Environnements.cs" />
+    <Compile Include="Internes\Enumerations\Lois.cs" />
+    <Compile Include="Internes\JournalEvenements.cs" />
+    <Compile Include="Internes\Profils\Profil.cs" />
+    <Compile Include="Internes\Profils\ProfilUtilisateur.cs" />
+    <Compile Include="Internes\Profils\ProfilCoba.cs" />
+    <Compile Include="Internes\Signatures\Signature.cs" />
+    <Compile Include="Internes\Signatures\SignatureFormatters.cs" />
+    <Compile Include="Internes\Signatures\Signatures.cs" />
+    <Compile Include="Internes\Enumerations\SignatureTypes.cs" />
+    <Compile Include="Internes\Utilisateur.cs" />
+    <Compile Include="Internes\Enumerations\Villes.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FenetrePrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FenetrePrincipal.Designer.cs">
+      <DependentUpon>FenetrePrincipal.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Controls\ProfilInfo.resx">
+      <DependentUpon>ProfilInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UtilisateurInfo.resx">
+      <DependentUpon>UtilisateurInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FenetreChoixSignature.resx">
+      <DependentUpon>FenetreChoixSignature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FenetreSelectionTypeSignature.resx">
+      <DependentUpon>FenetreSelectionTypeSignature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="FenetrePrincipal.resx">
+      <DependentUpon>FenetrePrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Rrq\Exec\XU7N090_ReglesRoslyn.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Cancel.png" />
+    <Content Include="Images\Create.png" />
+    <Content Include="Images\Application.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties EffectuerCopieExec="1" DossierDestinationCopie="C:\RRQ\Exec;" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <ItemGroup>
+    <ProjectReference Include="..\TS4N212_ObtnrInfoAD\TS4N212_ObtnrInfoAD.vbproj">
+      <Project>{A523508C-EAEE-452F-B744-E9E383306FEA}</Project>
+      <Name>TS4N212_ObtnrInfoAD</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

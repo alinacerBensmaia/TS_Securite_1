@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TsDSInfosSecrtNavgt" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="TsEngrNavgt">
+    <xs:sequence>
+      <xs:element name="CoEnv" type="xs:string" />
+      <xs:element name="CoModSecNav" type="xs:string" />
+      <xs:element name="CoProAccSec" type="xs:string" />
+      <xs:element name="CoFonSec" type="xs:string" />
+      <xs:element name="NmFonSec" type="xs:string" />
+      <xs:element name="CoNivAccSec" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TsEngrNavgt" type="TsEngrNavgt" />
+  <xs:element name="Root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="TsEngrNavgt" type="TsEngrNavgt" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,26 @@
+trigger:
+  branches:
+    include:
+      - phase*/**
+  paths:
+    include:
+       - deploiement/TS_Securite/ClientServeur/**
+       - sources/Driver_Net/**
+       - sources/StructuresZonesComm/**
+       - sources/TS_Securite/**
+       - solutions/TS_Securite/TS_Securite.sln
+
+resources:
+  repositories:
+    - repository: ST3.Outils.DevOps
+      type: git
+      name: ST3.Outils.DevOps
+      ref: master
+
+extends:
+  template: Build/Extends/ST3.Extends.IC.yml@ST3.Outils.DevOps
+  parameters:      
+    solutionPath: '**/solutions/TS_Securite/TS_Securite.sln' #Exemple --> "**/solutions/RC_Registre_Cotisants_PFCM.Web.sln"
+    manifest: 'TS_Securite.manifest.json'      #Exemple --> "RC_Registre_Cotisants_PFCM.Web.Manifest.json" 
+    msbuildArguments: /p:TargetFrameworkVersion="v4.8"
+

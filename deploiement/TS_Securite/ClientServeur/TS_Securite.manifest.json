@@ -1,0 +1,2939 @@
+{
+  "Description": "*** Manifest du système TS_Securite TS_Securite ***",
+  "Composants": [
+    {
+      "NomComposant": "TS1N151_ZpGererSigntDigtl",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.exe","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "PRSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS1N152_ZpGererSigntDigtl",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.exe","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "PRSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS1N201_DtCdAccGenV1",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "LASU", "LOSU", "LOT", "PRSU", "RVIW", "SAW", "WELAF", "ZDIW" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS1N214_PrGerAccGen",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.exe","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "PRSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS1N215_CiCodAccGen",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "LASU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS1N215_INiveauSecrt1",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "LASU", "LOT", "PRSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS1N215_INiveauSecrt2",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "LASU", "LOT", "PRSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS1N215_INiveauSecrt9",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "LASU", "LOT", "PRSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS1N223_ZgObtCdAccGen",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb","{NomComposant}.tlb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [ "GAC {NomComposant}.dll" ],
+              "TypesServeur": [ "CSSAA", "ECH", "LAF", "LAIA", "LASU", "LOSU", "LOT", "NUM", "OTI", "OTSU", "PRE", "PRIA", "PRSU", "ROB2", "SIC", "WFU", "GCEA", "GCEA2", "GCEW", "GCEW2", "RVIW", "SAW", "WELAF", "ZDE", "ZDI", "ZDIW", "ZSEA" ]
+            }
+          ]
+        },
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\Bin\\",
+                "$ENV:RRQ_WEB_HOST\\SAWEEIS\\{Phase}\\EchangesElectroniques\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_HOST\\ZDEES\\{Phase}\\EchangesElectroniques\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ZDE" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWCAIS\\{Phase}\\RVI\\Bin\\",
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\Outils_RVI\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "RVIW" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS1N224_CbCodAccGen",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "LASU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS1N227_CbTratrDemndMotPass",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "LASU", "RVIW", "WELAF" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS1N230_IObtnrCompteGenerique",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "CSSAA", "ECH", "LAF", "LAIA", "LASU", "LOSU", "LOT", "NUM", "OTI", "OTSU", "PRE", "PRIA", "PRSU", "ROB2", "SIC", "WFU" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [ "GAC {NomComposant}.dll" ],
+              "TypesServeur": [ "GCEA", "GCEA2", "GCEW", "GCEW2", "RVIW", "SAW", "WELAF", "ZDE", "ZDI", "ZDIW", "ZSEA" ]
+            }
+          ]
+        },
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [ "*\\Debug*" ],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\Bin\\",
+                "$ENV:RRQ_WEB_HOST\\SAWEEIS\\{Phase}\\EchangesElectroniques\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_HOST\\ZDEES\\{Phase}\\EchangesElectroniques\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ZDE" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\wwwa.rrq.gouv.qc.ca\\{Phase}\\Transactionnel\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ZDIW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWCAIS\\{Phase}\\RVI\\Bin\\",
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\Outils_RVI\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "RVIW" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS1N231_AccesseurFichier",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "CSSAA", "ECH", "LAF", "LAIA", "LASU", "LOSU", "LOT", "NUM", "OTI", "OTSU", "PRE", "PRIA", "PRSU", "ROB2", "SIC", "WFU" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [ "GAC {NomComposant}.dll" ],
+              "TypesServeur": [ "GCEA", "GCEA2", "GCEW", "GCEW2", "RVIW", "SAW", "WELAF", "ZDE", "ZDI", "ZDIW", "ZSEA" ]
+            }
+          ]
+        },
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [ "*\\Debug*" ],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "GCEA", "GCEA2", "GCEW", "GCEW2", "RVIW", "SAW", "WELAF", "ZDE", "ZDI", "ZDIW", "ZSEA" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\Bin\\",
+                "$ENV:RRQ_WEB_HOST\\SAWEEIS\\{Phase}\\EchangesElectroniques\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_HOST\\ZDEES\\{Phase}\\EchangesElectroniques\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ZDE" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\wwwa.rrq.gouv.qc.ca\\{Phase}\\Transactionnel\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ZDIW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWCAIS\\{Phase}\\RVI\\Bin\\",
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\Outils_RVI\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "RVIW" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS1N232_AccesseurWCF",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "CSSAA", "ECH", "LAF", "LAIA", "LASU", "LOSU", "LOT", "NUM", "OTI", "OTSU", "PRE", "PRIA", "PRSU", "ROB2", "SIC", "WFU" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [ "GAC {NomComposant}.dll" ],
+              "TypesServeur": [ "GCEA", "GCEA2", "GCEW", "GCEW2", "RVIW", "SAW", "WELAF", "ZDE", "ZDI", "ZDIW", "ZSEA" ]
+            }
+          ]
+        },
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [ "*\\Debug*" ],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "GCEA", "GCEA2", "GCEW", "GCEW2", "RVIW", "SAW", "WELAF", "ZDE", "ZDI", "ZDIW", "ZSEA" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\Bin\\",
+                "$ENV:RRQ_WEB_HOST\\SAWEEIS\\{Phase}\\EchangesElectroniques\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_HOST\\ZDEES\\{Phase}\\EchangesElectroniques\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ZDE" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\wwwa.rrq.gouv.qc.ca\\{Phase}\\Transactionnel\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ZDIW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWCAIS\\{Phase}\\RVI\\Bin\\",
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\Outils_RVI\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "RVIW" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS1N233_CiAccesseurWCF",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ECH", "LAF", "LAIA", "LASU", "LOSU", "LOT", "NUM", "OTI", "OTSU", "PRE", "PRIA", "PRSU", "ROB2", "RVIW", "SAW", "SIC", "WELAF", "WFU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS1N233_IAccesseurWCF",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "CSSAA", "ECH", "LAF", "LAIA", "LASU", "LOSU", "LOT", "NUM", "OTI", "OTSU", "PRE", "PRIA", "PRSU", "ROB2", "SIC", "WFU" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [ "GAC {NomComposant}.dll" ],
+              "TypesServeur": [ "GCEA", "GCEA2", "GCEW", "GCEW2", "RVIW", "SAW", "WELAF", "ZDE", "ZDI", "ZDIW", "ZSEA" ]
+            }
+          ]
+        },
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [ "*\\Debug*" ],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\Bin\\",
+                "$ENV:RRQ_WEB_HOST\\SAWEEIS\\{Phase}\\EchangesElectroniques\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_HOST\\ZDEES\\{Phase}\\EchangesElectroniques\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ZDE" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\wwwa.rrq.gouv.qc.ca\\{Phase}\\Transactionnel\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ZDIW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWCAIS\\{Phase}\\RVI\\Bin\\",
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\Outils_RVI\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "RVIW" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS1N234_AccesseurService",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "CSSAA", "ECH", "LAF", "LAIA", "LASU", "LOSU", "LOT", "NUM", "OTI", "OTSU", "PRE", "PRIA", "PRSU", "ROB2", "SIC", "WFU" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [ "GAC {NomComposant}.dll" ],
+              "TypesServeur": [ "GCEA", "GCEA2", "GCEW", "GCEW2", "RVIW", "SAW", "WELAF", "ZDE", "ZDI", "ZDIW", "ZSEA" ]
+            }
+          ]
+        },
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [ "*\\Debug*" ],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "GCEA", "GCEA2", "GCEW", "GCEW2", "RVIW", "SAW", "WELAF", "ZDE", "ZDI", "ZDIW", "ZSEA" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\Bin\\",
+                "$ENV:RRQ_WEB_HOST\\SAWEEIS\\{Phase}\\EchangesElectroniques\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_HOST\\ZDEES\\{Phase}\\EchangesElectroniques\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ZDE" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\wwwa.rrq.gouv.qc.ca\\{Phase}\\Transactionnel\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ZDIW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWCAIS\\{Phase}\\RVI\\Bin\\",
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\Outils_RVI\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "RVIW" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS1N235_CsAccesseurServiceAOS",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ECH", "LAF", "LASU", "LOSU", "LOT", "ROB2", "RVIW", "SAW", "WELAF" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS1N235_IAccesseurServiceAOSV1",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ECH", "LAF", "LASU", "LOSU", "LOT", "ROB2", "RVIW", "SAW", "WELAF", "ZDIW" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS1N236_CbAccesFichrComptGenrq",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "CSSAA", "ECH", "LAF", "LAIA", "LASU", "LOSU", "LOT", "NUM", "OTI", "OTSU", "PRE", "PRIA", "PRSU", "ROB2", "SIC", "WFU" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [ "GAC {NomComposant}.dll" ],
+              "TypesServeur": [ "GCEA", "GCEA2", "GCEW", "GCEW2", "RVIW", "SAW", "WELAF", "ZDE", "ZDI", "ZDIW", "ZSEA" ]
+            }
+          ]
+        },
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [ "*\\Debug*" ],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "GCEA", "GCEA2", "GCEW", "GCEW2", "RVIW", "SAW", "WELAF", "ZDE", "ZDI", "ZDIW", "ZSEA" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\Bin\\",
+                "$ENV:RRQ_WEB_HOST\\SAWEEIS\\{Phase}\\EchangesElectroniques\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_HOST\\ZDEES\\{Phase}\\EchangesElectroniques\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ZDE" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\wwwa.rrq.gouv.qc.ca\\{Phase}\\Transactionnel\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ZDIW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWCAIS\\{Phase}\\RVI\\Bin\\",
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\Outils_RVI\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "RVIW" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS1N241_CdCertificatSecurite",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "CSSAA", "ECH", "LAF", "LAIA", "LASU", "LOSU", "LOT", "NUM", "OTI", "OTSU", "PRE", "PRIA", "PRSU", "ROB2", "SIC", "WFU" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [ "GAC {NomComposant}.dll" ],
+              "TypesServeur": [ "GCEA", "GCEA2", "GCEW", "GCEW2", "RVIW", "SAW", "WELAF", "ZDE", "ZDI", "ZDIW", "ZSEA" ]
+            }
+          ]
+        },
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [ "*\\Debug*" ],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "GCEA", "GCEA2", "GCEW", "GCEW2", "RVIW", "SAW", "WELAF", "ZDE", "ZDI", "ZDIW", "ZSEA" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\Bin\\",
+                "$ENV:RRQ_WEB_HOST\\SAWEEIS\\{Phase}\\EchangesElectroniques\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_HOST\\ZDEES\\{Phase}\\EchangesElectroniques\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ZDE" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\wwwa.rrq.gouv.qc.ca\\{Phase}\\Transactionnel\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ZDIW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWCAIS\\{Phase}\\RVI\\Bin\\",
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\Outils_RVI\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "RVIW" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS1N301_SecuriserAOS",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ECH", "ETL", "LAF", "LASU", "LOSU", "LOT", "ROB2" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [ "GAC {NomComposant}.dll" ],
+              "TypesServeur": [ "GCEA", "GCEA2", "GCEW", "GCEW2", "RVIW", "SAW", "WELAF", "ZDE", "ZDI", "ZDIW", "ZSEA" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS1N612_PrGererUtilSecFtpSvr",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "PRSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS1N621_CiGererUtilSecFtpSvr",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "LASU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS1N621_INiveauSecrt1",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "LASU", "PRSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS4N111_ImprimanteAD",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "LOT" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS4N212_ObtnrInfoAD",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "CSSAA", "ECH", "LAF", "LAIA", "LASU", "LOSU", "LOT", "PRE", "PRIA", "PRSU", "ROB2" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [ "GAC {NomComposant}.dll" ],
+              "TypesServeur": [ "GCEA", "GCEA2", "GCEW", "GCEW2", "RVIW", "SAW", "WELAF", "ZDE", "ZDI", "ZDIW", "ZSEA" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS4N213_AccesAD",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "CSSAA", "ECH", "LAF", "LASU", "LOSU", "LOT", "PRE", "PRIA", "PRSU", "ROB2" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [ "GAC {NomComposant}.dll" ],
+              "TypesServeur": [ "GCEA", "GCEA2", "GCEW", "GCEW2", "RVIW", "SAW", "WELAF", "ZDE", "ZDI", "ZDIW", "ZSEA" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS4N214_AccesseurADWCF",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "CSSAA", "ECH", "LAF", "LAIA", "LASU", "LOSU", "LOT", "PRE", "PRIA", "PRSU", "ROB2" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [ "GAC {NomComposant}.dll" ],
+              "TypesServeur": [ "GCEA", "GCEA2", "GCEW", "GCEW2", "RVIW", "SAW", "WELAF", "ZDE", "ZDI", "ZDIW", "ZSEA" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS4N215_CiObtnrInfoAD",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ECH", "LAF", "LAIA", "LASU", "LOSU", "LOT", "NUM", "OTI", "OTSU", "PRE", "PRIA", "PRSU", "ROB2", "RVIW", "SAW", "SIC", "WELAF", "WFU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS4N215_IObtnrInfoAD",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "CSSAA", "ECH", "LAF", "LAIA", "LASU", "LOSU", "LOT", "NUM", "OTI", "OTSU", "PRE", "PRIA", "PRSU", "ROB2", "RVIW", "SAW", "SIC", "WELAF", "WFU", "ZDIW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\wwwa.rrq.gouv.qc.ca\\{Phase}\\Transactionnel\\bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ZDIW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS4N301_Exceptions",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "CSSAA", "ECH", "LAF", "LAIA", "LASU", "LOSU", "LOT", "NUM", "OTI", "OTSU", "PRE", "PRIA", "PRSU", "ROB2", "SIC", "WFU" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [ "GAC {NomComposant}.dll" ],
+              "TypesServeur": [ "GCEA", "GCEA2", "GCEW", "GCEW2", "RVIW", "SAW", "WELAF", "ZDE", "ZDI", "ZDIW", "ZSEA" ]
+            }
+          ]
+        },
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [ "*\\Debug*" ],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "GCEA", "GCEA2", "GCEW", "GCEW2", "RVIW", "SAW", "WELAF", "ZDE", "ZDI", "ZDIW", "ZSEA" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\Bin\\",
+                "$ENV:RRQ_WEB_HOST\\SAWEEIS\\{Phase}\\EchangesElectroniques\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_HOST\\ZDEES\\{Phase}\\EchangesElectroniques\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ZDE" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\wwwa.rrq.gouv.qc.ca\\{Phase}\\Transactionnel\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ZDIW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWCAIS\\{Phase}\\RVI\\Bin\\",
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\Outils_RVI\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "RVIW" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS4N311_VerfrSecrtApplicative",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "CSSAA", "ECH", "LAF", "LAIA", "LASU", "LOSU", "LOT", "NUM", "OTI", "OTSU", "PRE", "PRIA", "PRSU", "ROB2", "SIC", "WFU" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [ "GAC {NomComposant}.dll" ],
+              "TypesServeur": [ "GCEA", "GCEA2", "GCEW", "GCEW2", "RVIW", "SAW", "WELAF", "ZDE", "ZDI", "ZDIW", "ZSEA" ]
+            }
+          ]
+        },
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [ "*\\Debug*" ],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "GCEA", "GCEA2", "GCEW", "GCEW2", "RVIW", "SAW", "WELAF", "ZDE", "ZDI", "ZDIW", "ZSEA" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\Bin\\",
+                "$ENV:RRQ_WEB_HOST\\SAWEEIS\\{Phase}\\EchangesElectroniques\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_HOST\\ZDEES\\{Phase}\\EchangesElectroniques\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ZDE" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\wwwa.rrq.gouv.qc.ca\\{Phase}\\Transactionnel\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ZDIW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWCAIS\\{Phase}\\RVI\\Bin\\",
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\Outils_RVI\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "RVIW" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS4N312_DtSecuriteApplicativeV1",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "CSSAA", "ECH", "LAF", "LAIA", "LASU", "LOSU", "LOT", "NUM", "OTI", "OTSU", "PRE", "PRIA", "PRSU", "ROB2", "SIC", "WFU" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [ "GAC {NomComposant}.dll" ],
+              "TypesServeur": [ "GCEA", "GCEA2", "GCEW", "GCEW2", "RVIW", "SAW", "WELAF", "ZDE", "ZDI", "ZDIW", "ZSEA" ]
+            }
+          ]
+        },
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [ "*\\Debug*" ],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\Bin\\",
+                "$ENV:RRQ_WEB_HOST\\SAWEEIS\\{Phase}\\EchangesElectroniques\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_HOST\\ZDEES\\{Phase}\\EchangesElectroniques\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ZDE" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\wwwa.rrq.gouv.qc.ca\\{Phase}\\Transactionnel\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ZDIW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWCAIS\\{Phase}\\RVI\\Bin\\",
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\Outils_RVI\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "RVIW" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS4N313_IVerfrSecrtApplicative",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "CSSAA", "ECH", "LAF", "LAIA", "LASU", "LOSU", "LOT", "NUM", "OTI", "OTSU", "PRE", "PRIA", "PRSU", "ROB2", "SIC", "WFU" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [ "GAC {NomComposant}.dll" ],
+              "TypesServeur": [ "GCEA", "GCEA2", "GCEW", "GCEW2", "RVIW", "SAW", "WELAF", "ZDE", "ZDI", "ZDIW", "ZSEA" ]
+            }
+          ]
+        },
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [ "*\\Debug*" ],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\Bin\\",
+                "$ENV:RRQ_WEB_HOST\\SAWEEIS\\{Phase}\\EchangesElectroniques\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_HOST\\ZDEES\\{Phase}\\EchangesElectroniques\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ZDE" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\wwwa.rrq.gouv.qc.ca\\{Phase}\\Transactionnel\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ZDIW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWCAIS\\{Phase}\\RVI\\Bin\\",
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\Outils_RVI\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "RVIW" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS4N321_AccesseurADLDS",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "CSSAA", "ECH", "LAF", "LAIA", "LASU", "LOSU", "LOT", "NUM", "OTI", "OTSU", "PRE", "PRIA", "PRSU", "ROB2", "SIC", "WFU" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [ "GAC {NomComposant}.dll" ],
+              "TypesServeur": [ "GCEA", "GCEA2", "GCEW", "GCEW2", "RVIW", "SAW", "WELAF", "ZDE", "ZDI", "ZDIW", "ZSEA" ]
+            }
+          ]
+        },
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [ "*\\Debug*" ],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\Bin\\",
+                "$ENV:RRQ_WEB_HOST\\SAWEEIS\\{Phase}\\EchangesElectroniques\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_HOST\\ZDEES\\{Phase}\\EchangesElectroniques\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ZDE" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\wwwa.rrq.gouv.qc.ca\\{Phase}\\Transactionnel\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ZDIW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWCAIS\\{Phase}\\RVI\\Bin\\",
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\Outils_RVI\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "RVIW" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS4N322_AccesseurWCF",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "CSSAA", "ECH", "LAF", "LAIA", "LASU", "LOSU", "LOT", "NUM", "OTI", "OTSU", "PRE", "PRIA", "PRSU", "ROB2", "SIC", "WFU" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [ "GAC {NomComposant}.dll" ],
+              "TypesServeur": [ "GCEA", "GCEA2", "GCEW", "GCEW2", "RVIW", "SAW", "WELAF", "ZDE", "ZDI", "ZDIW", "ZSEA" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\Bin\\",
+                "$ENV:RRQ_WEB_HOST\\SAWEEIS\\{Phase}\\EchangesElectroniques\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            }
+          ]
+        },
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [ "*\\Debug*" ],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWCAIS\\{Phase}\\RVI\\Bin\\",
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\Outils_RVI\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "RVIW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\wwwa.rrq.gouv.qc.ca\\{Phase}\\Transactionnel\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ZDIW" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS4N323_CiAccesseurWCF",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ECH", "LAF", "LAIA", "LASU", "LOSU", "LOT", "NUM", "OTI", "OTSU", "PRE", "PRIA", "PRSU", "ROB2", "RVIW", "SAW", "SIC", "WELAF", "WFU" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\Bin\\",
+                "$ENV:RRQ_WEB_HOST\\SAWEEIS\\{Phase}\\EchangesElectroniques\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS4N323_IAccesseurWCF",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "CSSAA", "ECH", "LAF", "LAIA", "LASU", "LOSU", "LOT", "NUM", "OTI", "OTSU", "PRE", "PRIA", "PRSU", "ROB2", "RVIW", "SAW", "SIC", "WELAF", "WFU", "ZDIW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\wwwa.rrq.gouv.qc.ca\\{Phase}\\Transactionnel\\bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ZDIW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS4N331_HelperMemrsSecurite",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "CSSAA", "ECH", "LAF", "LAIA", "LASU", "LOSU", "LOT", "NUM", "OTI", "OTSU", "PRE", "PRIA", "PRSU", "ROB2", "SIC", "WFU" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [ "GAC {NomComposant}.dll" ],
+              "TypesServeur": [ "GCEA", "GCEA2", "GCEW", "GCEW2", "RVIW", "SAW", "WELAF", "ZDE", "ZDI", "ZDIW", "ZSEA" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\Bin\\",
+                "$ENV:RRQ_WEB_HOST\\SAWEEIS\\{Phase}\\EchangesElectroniques\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWCAIS\\{Phase}\\RVI\\Bin\\",
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\Outils_RVI\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "RVIW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_HOST\\ZDEES\\{Phase}\\EchangesElectroniques\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ZDE" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS4N332_IHelperMemrsSecurite",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "CSSAA", "ECH", "LAF", "LAIA", "LASU", "LOSU", "LOT", "NUM", "OTI", "OTSU", "PRE", "PRIA", "PRSU", "ROB2", "RVIW", "SAW", "SIC", "WELAF", "WFU", "ZDIW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\wwwa.rrq.gouv.qc.ca\\{Phase}\\Transactionnel\\bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ZDIW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS4N333_HelperMemrsRuntime",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "CSSAA", "ECH", "LAF", "LAIA", "LASU", "LOSU", "LOT", "NUM", "OTI", "OTSU", "PRE", "PRIA", "PRSU", "ROB2", "SIC", "WFU" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [ "GAC {NomComposant}.dll" ],
+              "TypesServeur": [ "GCEA", "GCEA2", "GCEW", "GCEW2", "RVIW", "SAW", "WELAF", "ZDE", "ZDI", "ZDIW", "ZSEA" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\Bin\\",
+                "$ENV:RRQ_WEB_HOST\\SAWEEIS\\{Phase}\\EchangesElectroniques\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWCAIS\\{Phase}\\RVI\\Bin\\",
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\Outils_RVI\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "RVIW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_HOST\\ZDEES\\{Phase}\\EchangesElectroniques\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ZDE" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS4N401_CbFederationADFS",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "POSTEDEV", "CSSAA" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "RVIW", "WELAF" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS5N133_GererVerrous",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb","{NomComposant}.tlb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [ "GAC {NomComposant}.dll" ],
+              "TypesServeur": [ "LAF" ]
+            }
+          ]
+        },
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb","{NomComposant}.tlb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [ "GAC {NomComposant}.dll", "ASM {NomComposant}.dll" ],
+              "TypesServeur": [ "GCEA", "GCEA2", "GCEW", "GCEW2", "RVIW", "SAW", "WELAF", "ZDE", "ZDI", "ZDIW", "ZSEA" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS5N135_ZpMSMQPrive",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.exe","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "PRE" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS5N151_MSMQ",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "PRE" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS5N211_CbFonctionCommune",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "LOSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS5N211_SecrtDepotFichier",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "OTSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS5N212_CiChargerDepotNTFS",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "LOSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS5N221_CiSecuriserDepotNTFS",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "LOSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS6N011_ZgLibOutils",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "LASU", "PRSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS6N021_ZpGestionJeton",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb","{NomComposant}.tlb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [ "GAC {NomComposant}.dll" ],
+              "TypesServeur": [ "ECH", "LAF", "LASU", "LOSU", "LOT", "PRE", "ROB2" ]
+            }
+          ]
+        },
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [ "GAC {NomComposant}.dll" ],
+              "TypesServeur": [ "GCEA", "GCEA2", "GCEW", "GCEW2", "RVIW", "SAW", "WELAF", "ZDE", "ZDI", "ZDIW", "ZSEA" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS6N611_ZpGerParmChif",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.exe","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "PRSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS6N621_ZgObtParmChif",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb","{NomComposant}.tlb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [ "GAC {NomComposant}.dll" ],
+              "TypesServeur": [ "CSSAA", "ECH", "LAF", "LASU", "LOSU", "LOT", "NUM", "PRE", "PRSU", "ROB2", "SIC", "WFU" ]
+            }
+          ]
+        },
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [ "*\\Debug*" ],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWCAIS\\{Phase}\\RVI\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "RVIW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\Bin\\",
+                "$ENV:RRQ_WEB_HOST\\SAWEEIS\\{Phase}\\EchangesElectroniques\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_HOST\\ZDEES\\{Phase}\\EchangesElectroniques\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ZDE" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\wwwa.rrq.gouv.qc.ca\\{Phase}\\Transactionnel\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ZDIW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [ "GAC {NomComposant}.dll" ],
+              "TypesServeur": [ "GCEA", "GCEA2", "GCEW", "GCEW2", "RVIW", "SAW", "WELAF", "ZDE", "ZDI", "ZDIW", "ZSEA" ]
+            }			
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS6N621_ZgObtParmChif_Core",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "POSTEDEV" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS6N623_Accesseurs",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [ "GAC {NomComposant}.dll" ],
+              "TypesServeur": [ "CSSAA", "ECH", "LAF", "LAIA", "LASU", "LOSU", "LOT", "NUM", "OTI", "PRE", "PRIA", "PRSU", "ROB2", "SIC", "WFU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS6N624_CbGererFichierChiffr",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "CSSAA", "ECH", "LAF", "LAIA", "LASU", "LOSU", "LOT", "NUM", "OTI", "PRE", "PRIA", "PRSU", "ROB2", "SIC", "WFU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS6N626_CiGererFichierChiffr",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ECH", "LAF", "LAIA", "LASU", "LOSU", "LOT", "ROB2" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS6N626_IGererFichierChiffr",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "CSSAA", "ECH", "LAF", "LAIA", "LASU", "LOSU", "LOT", "PRE", "PRIA", "PRSU", "ROB2", "SIC", "WFU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS6N627_CsGererFichierChiffr",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "LAF", "LOT", "ROB2" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS6N627_IGererFichierChiffr",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "LAF", "LOT", "ROB2" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS6N628_DtParmChif",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb","{NomComposant}.tlb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [ "GAC {NomComposant}.dll" ],
+              "TypesServeur": [ "CSSAA", "ECH", "LAF", "LASU", "LOSU", "LOT", "NUM", "PRE", "PRSU", "ROB2", "SIC", "WFU" ]
+            }
+          ]
+        },
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [ "*\\Debug*" ],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWCAIS\\{Phase}\\RVI\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "RVIW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\Bin\\",
+                "$ENV:RRQ_WEB_HOST\\SAWEEIS\\{Phase}\\EchangesElectroniques\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_HOST\\ZDEES\\{Phase}\\EchangesElectroniques\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ZDE" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\wwwa.rrq.gouv.qc.ca\\{Phase}\\Transactionnel\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "ZDIW" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [ "GAC {NomComposant}.dll" ],
+              "TypesServeur": [ "GCEA", "GCEA2", "GCEW", "GCEW2", "RVIW", "SAW", "WELAF", "ZDE", "ZDI", "ZDIW", "ZSEA" ]
+            }			
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS6N631_ZpTrtParmChif",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "PRSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS6N811_CiImpSupAcd",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "LOT" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS6N812_CiSuiSupAcd",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "LOT" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS7D121_ServiceGestnAcces",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.exe","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\Driver_Net\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\Driver_Net\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "POSTEDEV" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS7D211_DriverDiffSage",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.exe","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\Driver_Net\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\Driver_Net\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "POSTEDEV" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS7D242_DriverAccesSage",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.exe","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\Driver_Net\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\Driver_Net\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "POSTEDEV" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS7N121_ServiceGestnAcces",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "PRSU", "GCEA", "GCEA2", "GCEW", "GCEW2", "RVIW", "SAW", "WELAF", "ZDE", "ZDI", "ZDIW", "ZSEA" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS7N123_PrEpurerCache",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.exe","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "LOSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS7N211_DiffSage",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "PRSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS7N221_PreparerCible",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.exe","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "PRSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS7N231_ConnecteurIDM",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "PRSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS7N232_AccesIDM",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "PRSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS7N241_ConnecteurSage",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "PRSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS7N242_AccesSage",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "PRSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS7N243_AccesSage",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "PRSU", "GCEA", "GCEA2", "GCEW", "GCEW2", "RVIW", "SAW", "WELAF", "ZDE", "ZDI", "ZDIW", "ZSEA" ]
+            },
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS7N311_ConnexionCibles",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "PRSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS7N312_SourceDiff",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "PRSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS7N321_ConnecteurAD",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "PRSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS7N322_AccesAD",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "LASU", "PRSU", "ROB2" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS7N323_VerifierGroupeAD",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.exe","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "PRSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS7N331_ConnecteurTSS",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "PRSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS7N332_AccesTSS",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "PRSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS7N333_ConvrTssCsv",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.exe","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "PRSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS7N341_ConnecteurCSV",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "PRSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS7N342_AccesCSV",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "PRSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS7N361_GererRessrADLDS",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "LASU", "PRSU", "ROB2" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS7N411_CiExtInfosSecrtNavgt",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "LOSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS7N412_CiExtInfosSecrtMenus",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "LOSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS7N413_DdInfosSecrtNavgt",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "LOSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS7N414_DdInfosSecrtMenus",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "LOSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS7N901_TableMsg",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS_Securite\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TSSStructuresZonesCom",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\StructuresZonesComm\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\StructuresZonesComm\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_EXEC\\{Phase}\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "LAF", "LOT", "ROB2", "RVIW", "WELAF" ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

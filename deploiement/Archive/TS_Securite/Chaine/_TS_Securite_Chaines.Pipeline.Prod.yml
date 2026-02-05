@@ -1,0 +1,62 @@
+# Pipeline de déploiement du système TS_Securite_Chaines
+
+trigger:
+  none
+
+resources:
+  repositories:
+    - repository: Outils
+      type: git
+      name: ST3.Outils.DevOps
+      ref: master
+
+parameters:
+- name: numeroDemandeChangement
+  displayName: Numero de demande de changement?
+  type: string
+  default: ""  
+- name: numeroPhase
+  displayName: Retour en phase - Veuillez indiquer la phase utilisé par le pipeline .Dev pour cette livraison (1 à 9)?
+  type: string
+  default: ""  
+- name: installationImmediate
+  displayName: Avec installation immediate? (Normalement seulement pour une graduation de chaine)
+  type: boolean
+  default: false 
+
+variables:
+- group: GrST3.Build.PathPhase
+- group: GrST3.Deploiement.PathDestination
+- name: manifest
+  value: "TS_Securite_Chaines.manifest.json"           
+
+stages:
+- stage: Build
+  displayName: 'Build & Test Stage'
+  jobs:
+  - job: Build
+    displayName: Compilation
+    pool : 
+      name: Compilation RRQ-AF    
+    variables:
+    - group: GrST3.Build.PathPhase
+    steps: 
+    - template: Build/ST3.Build.Template.DeterminerPhase.yml@Outils
+      parameters:      
+        numeroPhase: '${{parameters.numeroPhase}}'   
+  
+    - template: Build/ST3.Build.Template.PublierArtefacts.yml@Outils
+      parameters:      
+        manifest: '${{variables.manifest}}'                                    
+
+- template: Deploiement/ST3.Deploiement.Template.EffectuerDeploiementLivraisonProd.yml@Outils
+  parameters:      
+    manifest: '${{variables.manifest}}'
+    numeroDemandeChangement: '${{parameters.numeroDemandeChangement}}'
+    numeroPhase: '${{parameters.numeroPhase}}'
+    installationImmediate : '${{parameters.installationImmediate}}'
+
+
+
+             
+

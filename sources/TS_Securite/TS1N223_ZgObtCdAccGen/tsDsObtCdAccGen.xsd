@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="tsDsObtCdAccGen" targetNamespace="http://tempuri.org/tsDsObtCdAccGen.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/tsDsObtCdAccGen.xsd" xmlns:mstns="http://tempuri.org/tsDsObtCdAccGen.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="tsDsObtCdAccGen">
+		<xs:complexType>
+			<xs:choice>
+				<xs:element name="CdAcces">
+					<xs:complexType>
+						<xs:sequence></xs:sequence>
+						<xs:attribute name="Type" type="xs:string" />
+						<xs:attribute name="Cle" type="xs:string" />
+						<xs:attribute name="Envrn" type="xs:string" />
+						<xs:attribute name="Code" type="xs:string" />
+						<xs:attribute name="Mdp" type="xs:string" />
+						<xs:attribute name="Profil" type="xs:string" />
+						<xs:attribute name="Desc" type="xs:string" />
+						<xs:attribute name="Comm" type="xs:string" />
+						<xs:attribute name="CodeVerif" type="xs:string" />
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

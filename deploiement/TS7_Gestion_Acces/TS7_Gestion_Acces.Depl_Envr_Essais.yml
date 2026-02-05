@@ -1,0 +1,35 @@
+trigger:
+  none
+
+resources:
+  repositories:
+    - repository: ST3.Outils.DevOps
+      type: git
+      name: ST3.Outils.DevOps
+      ref: master
+
+parameters:
+  # Permet d'installer l'artefact au moment du déploiement sans attendre les plages de graduations 
+- name: installationImmediate
+  displayName: Avec installation immediate?  
+  type: boolean
+  default: false
+- name: preApprobationINTG
+  displayName: "Pré-approuver l'environnement Intégration"
+  type: boolean
+  default: false
+- name: preApprobationACCP
+  displayName: "Pré-approuver l'environnement Acceptation"
+  type: boolean
+  default: false
+  
+
+extends:
+  template: Deploiement/Extends/ST3.Extends.Deploiement.Environnement.Essais.yml@ST3.Outils.DevOps
+  parameters:              
+    manifest: "TS7_Gestion_Acces.Manifest.json" #Exemple   --> "FC_Fichier_Inscription_Clientele.Manifest.json"
+    installationImmediate: '${{parameters.installationImmediate}}'
+    preApprobationINTG: '${{parameters.preApprobationINTG}}'
+    preApprobationACCP: '${{parameters.preApprobationACCP}}'    
+    
+

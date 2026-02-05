@@ -1,0 +1,24 @@
+trigger:
+  branches:
+    include:
+      - phase*/**
+  paths:
+    include:
+       - deploiement/TS7_Gestion_Acces/**
+       - sources/TS7_Gestion_Acces/**
+       - solutions/TS7_Gestion_Acces/TS7_Gestion_Acces.sln
+
+resources:
+  repositories:
+    - repository: ST3.Outils.DevOps
+      type: git
+      name: ST3.Outils.DevOps
+      ref: master
+
+extends:
+  template: Build/Extends/ST3.Extends.IC.yml@ST3.Outils.DevOps
+  parameters:      
+    solutionPath: '**/solutions/TS7_Gestion_Acces/TS7_Gestion_Acces.sln' #Exemple --> "**/solutions/RC_Registre_Cotisants_PFCM.Web.sln"
+    manifest: 'TS7_Gestion_Acces.Manifest.json'      #Exemple --> "RC_Registre_Cotisants_PFCM.Web.Manifest.json" 
+    msbuildArguments: /p:TargetFrameworkVersion="v4.8"
+

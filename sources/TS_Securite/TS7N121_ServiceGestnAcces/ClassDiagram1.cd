@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Font Name="Tahoma" Size="8.25" />
+  <Comment CommentText="Type d'erreur Possible.">
+    <Position X="10.159" Y="0.5" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Classes de base sans lien avec d'autre classe">
+    <Position X="0.5" Y="0.5" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Classes à action décaler.">
+    <Position X="0.5" Y="2.675" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Classes de Service.">
+    <Position X="0.5" Y="6.187" Height="0.75" Width="1.7" />
+  </Comment>
+  <Class Name="Rrq.Securite.GestionAcces.TsCaDemandes" Collapsed="true">
+    <Position X="2.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TsCaDemandes.vb</FileName>
+      <HashCode>AIAAAogAAAAAAQAACAAAYAIAQgYEEICAAAAgAACFAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsExcRoleInexistant" Collapsed="true">
+    <Position X="10.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TsExcErreurGestnAcces.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsExcUtilisateurInexistant" Collapsed="true">
+    <Position X="10.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TsExcErreurGestnAcces.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsExcModificationImpossible" Collapsed="true">
+    <Position X="10.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TsExcErreurGestnAcces.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsExcRedondanceTrouve" Collapsed="true">
+    <Position X="10.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TsExcErreurGestnAcces.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsExcAjoutImpossible" Collapsed="true">
+    <Position X="10.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TsExcErreurGestnAcces.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsExcModificationIntrouvable" Collapsed="true">
+    <Position X="10.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TsExcErreurGestnAcces.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsExcSupressionIntrouvable" Collapsed="true">
+    <Position X="10.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TsExcErreurGestnAcces.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsExcSupressionImpossible" Collapsed="true">
+    <Position X="10.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TsExcErreurGestnAcces.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsExcErreurDemandeAjout" Collapsed="true">
+    <Position X="10.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TsExcErreurGestnAcces.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsExcErreurDemandeDestruction" Collapsed="true">
+    <Position X="10.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TsExcErreurGestnAcces.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsExcErreurDemandeModification" Collapsed="true">
+    <Position X="10.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TsExcErreurGestnAcces.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsExcErreurGeneral" Collapsed="true">
+    <Position X="10.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TsExcErreurGestnAcces.vb</FileName>
+      <HashCode>AAACAAAAAAAAAAAAAAAAABAgAAAAAAAAAQAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCaServiceGestnAcces">
+    <Position X="2.25" Y="6.25" Width="4.25" />
+    <TypeIdentifier>
+      <FileName>TsCaServiceGestnAcces.vb</FileName>
+      <HashCode>AAQAAIAAJAAAAsAAAAQAIAAAAAIAAAAAACACADBAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdAssignationRole" Collapsed="true">
+    <Position X="4" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TsCdAssignationRole.vb</FileName>
+      <HashCode>EABAEQgQAIIgghAUAAAAAAAAACAAAAAAAABBEAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdDemandeDestruction">
+    <Position X="5.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TsCdDemandeDestruction.vb</FileName>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAQAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdDemndCreationModif" Collapsed="true">
+    <Position X="4" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TsCdDemndCreationModif.vb</FileName>
+      <HashCode>AAAACAAAANIAIAAAggAAREEAAgAAAAAAQGAAAQAIQAI=</HashCode>
+    </TypeIdentifier>
+    <NestedTypes>
+      <Enum Name="Rrq.Securite.GestionAcces.TsCdDemndCreationModif.TsDCMode" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>TsCdDemndCreationModif.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdEquipe" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TsCdEquipe.vb</FileName>
+      <HashCode>BAAAgAAAAAAQAACUAAAAAAAAACAAAAAAAAAAAABAABA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdOperationRole" Collapsed="true">
+    <Position X="5.75" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>TsCdOperationRole.vb</FileName>
+      <HashCode>AAAAAAAQAIIgABAQAAAQAAAAACAAAAAAAAFBEABAAJA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdRole" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TsCdRole.vb</FileName>
+      <HashCode>AAAAEQgQAIAgggAUAAAAAAAAAiAAAAAAAAABAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdUniteAdministrative" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TsCdUniteAdministrative.vb</FileName>
+      <HashCode>AAACAABAAIAAAIAUAAAAgAAAACAAAAAAAAAAAABQABA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdUtilisateur" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TsCdUtilisateur.vb</FileName>
+      <HashCode>AAAAEYxAAAIQgBAUAACAAgIAECAAAAAAACAAEAAIgIA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCuAccesSage">
+    <Position X="7" Y="6.5" Width="2.25" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Object" Collapsed="true">
+    <Position X="7.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.ApplicationException">
+    <Position X="13.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Exception" Collapsed="true">
+    <Position X="16" Y="8.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+</ClassDiagram>

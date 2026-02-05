@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TS1N235_CsAccesseurServiceAOS</name>
+    </assembly>
+    <members>
+        <member name="T:TS1N235_CsAccesseurServiceAOS.TsCaAccesseurServiceAOS">
+            -----------------------------------------------------------------------------
+             Project : TS1N235_CsAccesseurServiceAOS
+             Class   : TsCaAccesseurServiceAOS
+            -----------------------------------------------------------------------------
+             <summary>
+             Classe d'affaire.
+             </summary>
+            -----------------------------------------------------------------------------
+        </member>
+    </members>
+</doc>

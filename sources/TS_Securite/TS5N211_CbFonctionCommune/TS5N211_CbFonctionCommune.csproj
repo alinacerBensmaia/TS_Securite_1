@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CFAD76D0-4BFB-4515-9D3C-4138FE6E35F3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TS5N211_CbFonctionCommune</RootNamespace>
+    <AssemblyName>TS5N211_CbFonctionCommune</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XD5N312_ContexteTravail, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Exec\XD5N312_ContexteTravail.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU2N041_AccesBd, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Exec\XU2N041_AccesBd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU2N053_EnvoiCourriel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Exec\XU2N053_EnvoiCourriel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU2N071_GestionEvent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Exec\XU2N071_GestionEvent.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU2N261_EmpruntIdent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Exec\XU2N261_EmpruntIdent.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU4N011_Configuration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Exec\Bin\XU4N011_Configuration.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU5N011_Contexte, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Exec\XU5N011_Contexte.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU5N041_Exceptions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Exec\XU5N041_Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessBD\EnregistrerReglesAAppliquer.cs" />
+    <Compile Include="AccessBD\TsCaObtenirInformation.cs" />
+    <Compile Include="AccessBD\TsCaSituationDeReference.cs" />
+    <Compile Include="Entites\TsCaRepertoire.cs" />
+    <Compile Include="Entites\TsCaRepertoireAcces.cs" />
+    <Compile Include="Entites\TsCaRepertoireAudit.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AccessBD\TsCaEnregistrerJournalisation.cs" />
+    <Compile Include="AccessBD\TsCaEnregistrerRepertoire.cs" />
+    <Compile Include="Entites\TsCaJournalisation.cs" />
+    <Compile Include="TsCaOutils.cs" />
+    <Compile Include="AccessBD\TsCaTablesChamps.cs" />
+    <Compile Include="Entites\TsCaRegleAAppliquer.cs" />
+    <Compile Include="TsCuGestnEvent.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Rrq\Exec\XU7N090_ReglesRoslyn.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties EffectuerCopieExec="1" DossierDestinationCopie="C:\RRQ\Exec;" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <ItemGroup>
+    <ProjectReference Include="..\TS4N212_ObtnrInfoAD\TS4N212_ObtnrInfoAD.vbproj">
+      <Project>{A523508C-EAEE-452F-B744-E9E383306FEA}</Project>
+      <Name>TS4N212_ObtnrInfoAD</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TS4N213_AccesAD\TS4N213_AccesAD.vbproj">
+      <Project>{5F87A258-9B23-40DB-BF26-63171A523D0D}</Project>
+      <Name>TS4N213_AccesAD</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

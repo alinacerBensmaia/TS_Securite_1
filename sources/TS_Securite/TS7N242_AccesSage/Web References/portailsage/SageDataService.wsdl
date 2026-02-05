@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://eurekify.com/webservices" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://eurekify.com/webservices" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://eurekify.com/webservices">
+      <s:element name="data_source_get_configurations">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="data_source_get_configurationsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="data_source_get_configurationsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="data_source_get_auditcards">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="data_source_get_auditcardsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="data_source_get_auditcardsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="data_source_get_bprs">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="data_source_get_bprsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="data_source_get_bprsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_get_databases">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_get_databasesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cfg_get_databasesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_get_properties">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_get_propertiesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cfg_get_propertiesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="udb_get_users">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udbName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="udb_get_usersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="udb_get_usersResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="rdb_get_resources">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rdbName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="rdb_get_resourcesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="rdb_get_resourcesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_get_roles">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_get_rolesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cfg_get_rolesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_get_configuration_users">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_get_configuration_usersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cfg_get_configuration_usersResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_get_configuration_resources">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_get_configuration_resourcesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cfg_get_configuration_resourcesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="database_get_fields">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dbName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dbType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="database_get_fieldsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="database_get_fieldsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_get_user_role_links">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_get_user_role_linksResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cfg_get_user_role_linksResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_get_user_resource_links">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_get_user_resource_linksResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cfg_get_user_resource_linksResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_get_role_resource_links">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_get_role_resource_linksResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cfg_get_role_resource_linksResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_get_role_role_links">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_get_role_role_linksResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cfg_get_role_role_linksResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="auditcard_get_alerts">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="auditCard" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="auditcard_get_alertsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="auditcard_get_alertsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bpr_get_rules">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="bpr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bpr_get_rulesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bpr_get_rulesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="data_source_get_configurationsSoapIn">
+    <wsdl:part name="parameters" element="tns:data_source_get_configurations" />
+  </wsdl:message>
+  <wsdl:message name="data_source_get_configurationsSoapOut">
+    <wsdl:part name="parameters" element="tns:data_source_get_configurationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="data_source_get_auditcardsSoapIn">
+    <wsdl:part name="parameters" element="tns:data_source_get_auditcards" />
+  </wsdl:message>
+  <wsdl:message name="data_source_get_auditcardsSoapOut">
+    <wsdl:part name="parameters" element="tns:data_source_get_auditcardsResponse" />
+  </wsdl:message>
+  <wsdl:message name="data_source_get_bprsSoapIn">
+    <wsdl:part name="parameters" element="tns:data_source_get_bprs" />
+  </wsdl:message>
+  <wsdl:message name="data_source_get_bprsSoapOut">
+    <wsdl:part name="parameters" element="tns:data_source_get_bprsResponse" />
+  </wsdl:message>
+  <wsdl:message name="cfg_get_databasesSoapIn">
+    <wsdl:part name="parameters" element="tns:cfg_get_databases" />
+  </wsdl:message>
+  <wsdl:message name="cfg_get_databasesSoapOut">
+    <wsdl:part name="parameters" element="tns:cfg_get_databasesResponse" />
+  </wsdl:message>
+  <wsdl:message name="cfg_get_propertiesSoapIn">
+    <wsdl:part name="parameters" element="tns:cfg_get_properties" />
+  </wsdl:message>
+  <wsdl:message name="cfg_get_propertiesSoapOut">
+    <wsdl:part name="parameters" element="tns:cfg_get_propertiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="udb_get_usersSoapIn">
+    <wsdl:part name="parameters" element="tns:udb_get_users" />
+  </wsdl:message>
+  <wsdl:message name="udb_get_usersSoapOut">
+    <wsdl:part name="parameters" element="tns:udb_get_usersResponse" />
+  </wsdl:message>
+  <wsdl:message name="rdb_get_resourcesSoapIn">
+    <wsdl:part name="parameters" element="tns:rdb_get_resources" />
+  </wsdl:message>
+  <wsdl:message name="rdb_get_resourcesSoapOut">
+    <wsdl:part name="parameters" element="tns:rdb_get_resourcesResponse" />
+  </wsdl:message>
+  <wsdl:message name="cfg_get_rolesSoapIn">
+    <wsdl:part name="parameters" element="tns:cfg_get_roles" />
+  </wsdl:message>
+  <wsdl:message name="cfg_get_rolesSoapOut">
+    <wsdl:part name="parameters" element="tns:cfg_get_rolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="cfg_get_configuration_usersSoapIn">
+    <wsdl:part name="parameters" element="tns:cfg_get_configuration_users" />
+  </wsdl:message>
+  <wsdl:message name="cfg_get_configuration_usersSoapOut">
+    <wsdl:part name="parameters" element="tns:cfg_get_configuration_usersResponse" />
+  </wsdl:message>
+  <wsdl:message name="cfg_get_configuration_resourcesSoapIn">
+    <wsdl:part name="parameters" element="tns:cfg_get_configuration_resources" />
+  </wsdl:message>
+  <wsdl:message name="cfg_get_configuration_resourcesSoapOut">
+    <wsdl:part name="parameters" element="tns:cfg_get_configuration_resourcesResponse" />
+  </wsdl:message>
+  <wsdl:message name="database_get_fieldsSoapIn">
+    <wsdl:part name="parameters" element="tns:database_get_fields" />
+  </wsdl:message>
+  <wsdl:message name="database_get_fieldsSoapOut">
+    <wsdl:part name="parameters" element="tns:database_get_fieldsResponse" />
+  </wsdl:message>
+  <wsdl:message name="cfg_get_user_role_linksSoapIn">
+    <wsdl:part name="parameters" element="tns:cfg_get_user_role_links" />
+  </wsdl:message>
+  <wsdl:message name="cfg_get_user_role_linksSoapOut">
+    <wsdl:part name="parameters" element="tns:cfg_get_user_role_linksResponse" />
+  </wsdl:message>
+  <wsdl:message name="cfg_get_user_resource_linksSoapIn">
+    <wsdl:part name="parameters" element="tns:cfg_get_user_resource_links" />
+  </wsdl:message>
+  <wsdl:message name="cfg_get_user_resource_linksSoapOut">
+    <wsdl:part name="parameters" element="tns:cfg_get_user_resource_linksResponse" />
+  </wsdl:message>
+  <wsdl:message name="cfg_get_role_resource_linksSoapIn">
+    <wsdl:part name="parameters" element="tns:cfg_get_role_resource_links" />
+  </wsdl:message>
+  <wsdl:message name="cfg_get_role_resource_linksSoapOut">
+    <wsdl:part name="parameters" element="tns:cfg_get_role_resource_linksResponse" />
+  </wsdl:message>
+  <wsdl:message name="cfg_get_role_role_linksSoapIn">
+    <wsdl:part name="parameters" element="tns:cfg_get_role_role_links" />
+  </wsdl:message>
+  <wsdl:message name="cfg_get_role_role_linksSoapOut">
+    <wsdl:part name="parameters" element="tns:cfg_get_role_role_linksResponse" />
+  </wsdl:message>
+  <wsdl:message name="auditcard_get_alertsSoapIn">
+    <wsdl:part name="parameters" element="tns:auditcard_get_alerts" />
+  </wsdl:message>
+  <wsdl:message name="auditcard_get_alertsSoapOut">
+    <wsdl:part name="parameters" element="tns:auditcard_get_alertsResponse" />
+  </wsdl:message>
+  <wsdl:message name="bpr_get_rulesSoapIn">
+    <wsdl:part name="parameters" element="tns:bpr_get_rules" />
+  </wsdl:message>
+  <wsdl:message name="bpr_get_rulesSoapOut">
+    <wsdl:part name="parameters" element="tns:bpr_get_rulesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SageDataServiceSoap">
+    <wsdl:operation name="data_source_get_configurations">
+      <wsdl:input message="tns:data_source_get_configurationsSoapIn" />
+      <wsdl:output message="tns:data_source_get_configurationsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="data_source_get_auditcards">
+      <wsdl:input message="tns:data_source_get_auditcardsSoapIn" />
+      <wsdl:output message="tns:data_source_get_auditcardsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="data_source_get_bprs">
+      <wsdl:input message="tns:data_source_get_bprsSoapIn" />
+      <wsdl:output message="tns:data_source_get_bprsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="cfg_get_databases">
+      <wsdl:input message="tns:cfg_get_databasesSoapIn" />
+      <wsdl:output message="tns:cfg_get_databasesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="cfg_get_properties">
+      <wsdl:input message="tns:cfg_get_propertiesSoapIn" />
+      <wsdl:output message="tns:cfg_get_propertiesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="udb_get_users">
+      <wsdl:input message="tns:udb_get_usersSoapIn" />
+      <wsdl:output message="tns:udb_get_usersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="rdb_get_resources">
+      <wsdl:input message="tns:rdb_get_resourcesSoapIn" />
+      <wsdl:output message="tns:rdb_get_resourcesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="cfg_get_roles">
+      <wsdl:input message="tns:cfg_get_rolesSoapIn" />
+      <wsdl:output message="tns:cfg_get_rolesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="cfg_get_configuration_users">
+      <wsdl:input message="tns:cfg_get_configuration_usersSoapIn" />
+      <wsdl:output message="tns:cfg_get_configuration_usersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="cfg_get_configuration_resources">
+      <wsdl:input message="tns:cfg_get_configuration_resourcesSoapIn" />
+      <wsdl:output message="tns:cfg_get_configuration_resourcesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="database_get_fields">
+      <wsdl:input message="tns:database_get_fieldsSoapIn" />
+      <wsdl:output message="tns:database_get_fieldsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="cfg_get_user_role_links">
+      <wsdl:input message="tns:cfg_get_user_role_linksSoapIn" />
+      <wsdl:output message="tns:cfg_get_user_role_linksSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="cfg_get_user_resource_links">
+      <wsdl:input message="tns:cfg_get_user_resource_linksSoapIn" />
+      <wsdl:output message="tns:cfg_get_user_resource_linksSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="cfg_get_role_resource_links">
+      <wsdl:input message="tns:cfg_get_role_resource_linksSoapIn" />
+      <wsdl:output message="tns:cfg_get_role_resource_linksSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="cfg_get_role_role_links">
+      <wsdl:input message="tns:cfg_get_role_role_linksSoapIn" />
+      <wsdl:output message="tns:cfg_get_role_role_linksSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="auditcard_get_alerts">
+      <wsdl:input message="tns:auditcard_get_alertsSoapIn" />
+      <wsdl:output message="tns:auditcard_get_alertsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="bpr_get_rules">
+      <wsdl:input message="tns:bpr_get_rulesSoapIn" />
+      <wsdl:output message="tns:bpr_get_rulesSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SageDataServiceSoap" type="tns:SageDataServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="data_source_get_configurations">
+      <soap:operation soapAction="http://eurekify.com/webservices/data_source_get_configurations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="data_source_get_auditcards">
+      <soap:operation soapAction="http://eurekify.com/webservices/data_source_get_auditcards" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="data_source_get_bprs">
+      <soap:operation soapAction="http://eurekify.com/webservices/data_source_get_bprs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cfg_get_databases">
+      <soap:operation soapAction="http://eurekify.com/webservices/cfg_get_databases" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cfg_get_properties">
+      <soap:operation soapAction="http://eurekify.com/webservices/cfg_get_properties" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="udb_get_users">
+      <soap:operation soapAction="http://eurekify.com/webservices/udb_get_users" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="rdb_get_resources">
+      <soap:operation soapAction="http://eurekify.com/webservices/rdb_get_resources" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cfg_get_roles">
+      <soap:operation soapAction="http://eurekify.com/webservices/cfg_get_roles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cfg_get_configuration_users">
+      <soap:operation soapAction="http://eurekify.com/webservices/cfg_get_configuration_users" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cfg_get_configuration_resources">
+      <soap:operation soapAction="http://eurekify.com/webservices/cfg_get_configuration_resources" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="database_get_fields">
+      <soap:operation soapAction="http://eurekify.com/webservices/database_get_fields" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cfg_get_user_role_links">
+      <soap:operation soapAction="http://eurekify.com/webservices/cfg_get_user_role_links" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cfg_get_user_resource_links">
+      <soap:operation soapAction="http://eurekify.com/webservices/cfg_get_user_resource_links" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cfg_get_role_resource_links">
+      <soap:operation soapAction="http://eurekify.com/webservices/cfg_get_role_resource_links" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cfg_get_role_role_links">
+      <soap:operation soapAction="http://eurekify.com/webservices/cfg_get_role_role_links" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="auditcard_get_alerts">
+      <soap:operation soapAction="http://eurekify.com/webservices/auditcard_get_alerts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bpr_get_rules">
+      <soap:operation soapAction="http://eurekify.com/webservices/bpr_get_rules" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SageDataService">
+    <wsdl:port name="SageDataServiceSoap" binding="tns:SageDataServiceSoap">
+      <soap:address location="http://portailsage/services/SageDataService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

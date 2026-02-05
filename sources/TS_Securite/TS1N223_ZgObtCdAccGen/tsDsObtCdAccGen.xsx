@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Ce fichier est automatiquement généré par le Concepteur de schéma XML. Il contient des informations de disposition pour les composants dans l'aire du concepteur.-->
+<XSDDesignerLayout layoutVersion="2" viewPortLeft="-1213" viewPortTop="0" zoom="100">
+    <tsDsObtCdAccGen_XmlElement left="317" top="254" width="4233" height="2625" selected="0" zOrder="1" index="0" expanded="1">
+        <CdAcces_XmlElement left="-551" top="3387" width="5969" height="4910" selected="0" zOrder="2" index="0" expanded="1" />
+    </tsDsObtCdAccGen_XmlElement>
+</XSDDesignerLayout>

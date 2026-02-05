@@ -1,0 +1,219 @@
+<?xml version="1.0"?>
+<doc>
+  <assembly>
+    <name>TS6N021_ZpGestionJeton</name>
+    <version>1.0.0.0</version>
+    <fullname>TS6N021_ZpGestionJeton, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c46858d1457dd03e</fullname>
+  </assembly>
+  <members>
+    <member name="T:TS6N021_ZpGestionJeton.TsCuGestionJeton">
+      <summary>
+ Cette classe permet d'obtenir et de valider un jeton de sécurité. Les jetons 
+ générés lors de l'appel à la méthode ObtenirJeton sont concervés dans un dépot 
+ en mémoire. 
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ 	[T208320]	2006-10-13	Created 
+ </history></member>
+    <member name="M:TS6N021_ZpGestionJeton.TsCuGestionJeton.ObtenirJeton(System.String,System.String)">
+      <summary>
+ Cette fonction génère un jeton, l'enregistre dans le dépot en mémoire et 
+ retour la clé à l'appelant. La clé est une clé cryptographique qui sert à 
+ identifié l'appel à un composant faite par un usager précis. 
+ </summary>
+ <param name="strUsager">Nom de l'usager authentifié sur le serveur local 
+ </param>
+ <param name="strComposant">Nom du composant .NET que l'usager souhaite 
+ accéder sur le serveur distant</param>
+ <returns>Clé cryptographique</returns>
+ <remarks>
+ </remarks>
+ <history>
+ 	[T208320]	2006-10-13	Created 
+ </history></member>
+    <member name="M:TS6N021_ZpGestionJeton.TsCuGestionJeton.ValiderJeton(System.String,System.String,System.String)">
+      <summary>
+ Cette fonction vérifie dans le dépot en mémoire si le jeton correspondant à 
+ la clé fournie en paramètre a expiré. Si le jeton n'est pas expiré il 
+ est marqué comme inactif dans le dépot. 
+ </summary>
+ <param name="strUsager">Nom de l'usager authentifié sur le serveur local 
+ </param>
+ <param name="strComposant">Nom du composant .NET que l'usager souhaite 
+ accéder sur le serveur distant</param>
+ <param name="strSessionID">Clé cryptographique identifiant le jeton</param>
+ <returns>True: validation ok, False: validation pas ok</returns>
+ <remarks>
+ </remarks>
+ <history>
+ 	[T208320]	2006-10-13	Created 
+ </history></member>
+    <member name="M:TS6N021_ZpGestionJeton.TsCuGestionJeton.ObtenirDepot(System.Data.DataSet@,System.String,System.String)">
+      <summary>
+ Cette fonction lit le dépot en mémoire et le retourne à l'appelant sous forme 
+ de dataset. 
+ </summary>
+ <param name="dsDepot">Dataset qui recevra le contenu du dépot</param>
+ <param name="strPropGroup">Nom du SharedPropertyGroup de COM+</param>
+ <param name="strProp">Nom du SharedProperty de COM+ qui contient le dépot 
+ </param>
+ <returns>True: traitement ok, False: traitement pas ok</returns>
+ <remarks>
+ </remarks>
+ <history>
+ 	[T208320]	2006-10-13	Created 
+ </history></member>
+    <member name="M:TS6N021_ZpGestionJeton.TsCuGestionJeton.EcrireCacheDepot(System.Data.DataSet@,System.String,System.String)">
+      <summary>
+ Cette procédure fait appel à la méthode d'écriture du dépot de la classe 
+ TsCuMenageJeton. 
+ </summary>
+ <param name="dsDepot">Dataset qui contient le dépot</param>
+ <param name="strPropGroup">Nom du SharedPropertyGroup de COM+</param>
+ <param name="strProp">Nom du SharedProperty de COM+ qui recevra le dépot 
+ </param>
+ <remarks>
+ </remarks>
+ <history>
+ 	[T208320]	2006-10-13	Created 
+ </history></member>
+    <member name="M:TS6N021_ZpGestionJeton.TsCuGestionJeton.EcrireCacheDepot(System.Data.DataSet@,System.EnterpriseServices.SharedProperty@)">
+      <summary>
+ Cette procédure fait appel à la méthode d'écriture du dépot de la classe 
+ TsCuMenageJeton. 
+ </summary>
+ <param name="dsDepot">Dataset qui contient le dépot</param>
+ <param name="objSP">Objet SharedProperty de COM+ qui recevra le dépot</param>
+ <remarks>
+ </remarks>
+ <history>
+ 	[T208320]	2006-10-13	Created 
+ </history></member>
+    <member name="M:TS6N021_ZpGestionJeton.TsCuGestionJeton.ObtenirCacheDepot(System.Data.DataSet@,System.String,System.String)">
+      <summary>
+ Cette fonction fait appel à la méthode de lecture du dépot de la classe 
+ TsCuMenageJeton. 
+ </summary>
+ <param name="dsDepot">Dataset qui recevra le contenu du dépot en mémoire 
+ </param>
+ <param name="strPropGroup">Nom du SharedPropertyGroup de COM+</param>
+ <param name="strProp">Nom du SharedProperty de COM+ qui contient le dépot 
+ </param>
+ <returns>True: traitement ok, False: traitement pas ok</returns>
+ <remarks>
+ </remarks>
+ <history>
+ 	[T208320]	2006-10-13	Created 
+ </history></member>
+    <member name="M:TS6N021_ZpGestionJeton.TsCuGestionJeton.ObtenirCacheDepot(System.Data.DataSet@,System.EnterpriseServices.SharedProperty@)">
+      <summary>
+ Cette fonction fait appel à la méthode de lecture du dépot de la classe 
+ TsCuMenageJeton. 
+ </summary>
+ <param name="dsDepot">Dataset qui recevra le contenu du dépot en mémoire 
+ </param>
+ <param name="objSP">Objet SharedProperty de COM+ qui contient le dépot</param>
+ <remarks>
+ </remarks>
+ <history>
+ 	[T208320]	2006-10-13	Created 
+ </history></member>
+    <member name="M:TS6N021_ZpGestionJeton.TsCuGestionJeton.GenererSessionID">
+      <summary>
+ Cette fonction retourne une clé cryptographique alléatoire qui servira de clé 
+ de session pour un nouveau jeton. 
+ </summary>
+ <returns>Clé cryptographique</returns>
+ <remarks>
+ </remarks>
+ <history>
+ 	[T208320]	2006-10-13	Created 
+ </history></member>
+    <member name="M:TS6N021_ZpGestionJeton.TsCuGestionJeton.InitDepot(System.Data.DataSet@)">
+      <summary>
+ Cette méthode initialise le dataset qui recoit le dépot en mémoire. 
+ </summary>
+ <param name="dsDepot">Dataset qui recevra le dépot en mémoire</param>
+ <remarks>
+ </remarks>
+ <history>
+ 	[T208320]	2006-10-13	Created 
+ </history></member>
+    <member name="T:TS6N021_ZpGestionJeton.TsCuMenageJeton">
+      <summary>
+ Cette classe gère le ménage du dépot des jetons en mémoire. Seulement une 
+ instance de cette classe est créée à la fois. 
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ 	[T208320]	2006-10-13	Created 
+ </history></member>
+    <member name="M:TS6N021_ZpGestionJeton.TsCuMenageJeton.EcrireCacheDepot(System.Data.DataSet@,System.String,System.String)">
+      <summary>
+ Cette procédure inscrit le contenu du dataset passé en paramètre dans une 
+ SharedProperty sous forme XML. 
+ </summary>
+ <param name="dsDepot">Dataset qui contient le dépot</param>
+ <param name="strPropGroup">Nom du SharedPropertyGroup</param>
+ <param name="strProp">Nom du SharedProperty</param>
+ <remarks>
+ </remarks>
+ <history>
+ 	[T208320]	2006-10-13	Created 
+ </history></member>
+    <member name="M:TS6N021_ZpGestionJeton.TsCuMenageJeton.EcrireCacheDepot(System.Data.DataSet@,System.EnterpriseServices.SharedProperty@)">
+      <summary>
+ Cette procédure inscrit le contenu du dataset passé en paramètre dans une 
+ SharedProperty sous forme XML. 
+ </summary>
+ <param name="dsDepot">Dataset qui contient le dépot</param>
+ <param name="objSP" />
+ <remarks>
+ </remarks>
+ <history>
+ 	[T208320]	2006-10-13	Created 
+ </history></member>
+    <member name="M:TS6N021_ZpGestionJeton.TsCuMenageJeton.ObtenirCacheDepot(System.Data.DataSet@,System.String,System.String)">
+      <summary>
+ Cette fonction lit le contenu du dépot de jeton dans le dataset passé en 
+ paramètre. 
+ </summary>
+ <param name="dsDepot">Dataset qui recevra le contenu du dépot</param>
+ <param name="strPropGroup">Nom du SharedPropertyGroup</param>
+ <param name="strProp">Nom du SharedProperty qui contient le dépot en mémorie 
+ </param>
+ <returns>True: traitement ok, False: traitement pas ok</returns>
+ <remarks>
+ </remarks>
+ <history>
+ 	[T208320]	2006-10-13	Created 
+ </history></member>
+    <member name="M:TS6N021_ZpGestionJeton.TsCuMenageJeton.ObtenirCacheDepot(System.Data.DataSet@,System.EnterpriseServices.SharedProperty@)">
+      <summary>
+ Cette fonction lit le contenu du dépot de jeton dans le dataset passé en 
+ paramètre. 
+ </summary>
+ <param name="dsDepot">Dataset qui recevra le contenu du dépot</param>
+ <param name="objSP">Objet SharedProperty qui contient le dépot en mémorie 
+ </param>
+ <remarks>
+ </remarks>
+ <history>
+ 	[T208320]	2006-10-13	Created 
+ </history></member>
+    <member name="M:TS6N021_ZpGestionJeton.TsCuMenageJeton.Menage">
+      <summary>
+ Cette procédure gère le ménage des jetons inactifs ou expirés dans le dépot 
+ en mémoire. Celle-ci est exécuté par une thread qui est démarrée à la création 
+ de la classe. 
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ 	[T208320]	2006-10-13	Created 
+ </history></member>
+  </members>
+</doc>

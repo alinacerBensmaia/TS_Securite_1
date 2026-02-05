@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TsDSDomaineValeur" targetNamespace="http://tempuri.org/TsDSDomaineValeur.xsd" xmlns:mstns="http://tempuri.org/TsDSDomaineValeur.xsd" xmlns="http://tempuri.org/TsDSDomaineValeur.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TsDSDomaineValeur" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="TsDSDomaineValeur" msprop:Generator_DataSetName="TsDSDomaineValeur" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DomaineValeur" msprop:Generator_UserTableName="DomaineValeur" msprop:Generator_RowDeletedName="DomaineValeurRowDeleted" msprop:Generator_RowChangedName="DomaineValeurRowChanged" msprop:Generator_RowClassName="DomaineValeurRow" msprop:Generator_RowChangingName="DomaineValeurRowChanging" msprop:Generator_RowEvArgName="DomaineValeurRowChangeEvent" msprop:Generator_RowEvHandlerName="DomaineValeurRowChangeEventHandler" msprop:Generator_TableClassName="DomaineValeurDataTable" msprop:Generator_TableVarName="tableDomaineValeur" msprop:Generator_RowDeletingName="DomaineValeurRowDeleting" msprop:Generator_TablePropName="DomaineValeur">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CO_VAL_DOM" msprop:Generator_UserColumnName="CO_VAL_DOM" msprop:Generator_ColumnPropNameInRow="CO_VAL_DOM" msprop:Generator_ColumnVarNameInTable="columnCO_VAL_DOM" msprop:Generator_ColumnPropNameInTable="CO_VAL_DOMColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DS_COU_VAL_DOM" msprop:Generator_UserColumnName="DS_COU_VAL_DOM" msprop:Generator_ColumnPropNameInRow="DS_COU_VAL_DOM" msprop:Generator_ColumnVarNameInTable="columnDS_COU_VAL_DOM" msprop:Generator_ColumnPropNameInTable="DS_COU_VAL_DOMColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

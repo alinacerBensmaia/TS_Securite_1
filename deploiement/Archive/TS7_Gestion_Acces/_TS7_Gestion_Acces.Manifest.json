@@ -1,0 +1,237 @@
+{
+  "Description": "*** Manifest du système TS_Securite TS7_Gestion_Acces ***",
+  "Composants": [
+    {
+      "NomComposant": "TS7I111_AccesUtilisateur",
+      "Distribuables": [
+        {
+          "Inclusions": [],
+          "Exclusions": [ "*\\Debug*","*\\Bin*","*\\obj*","*.config","*.asax","*.vb","*.vbproj*","*.resx","*.pdb","*.bak","*.scc","*.cbl","*.tld","*.asmx","*.wsdl","*.disco" ],
+          "Source": "\\sources\\TS7_Gestion_Acces\\{NomComposant}\\",
+          "DestinationArtefact": "\\sources\\TS7_Gestion_Acces\\{NomComposant}\\Distribuable1\\{NomComposant}\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\{NomComposant}\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            }
+          ]
+        },
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS7_Gestion_Acces\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS7_Gestion_Acces\\{NomComposant}\\Distribuable2\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS7I112_RAAccesUtilisateur",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS7_Gestion_Acces\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS7_Gestion_Acces\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS7I119_Utilitaires",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS7_Gestion_Acces\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS7_Gestion_Acces\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS7I131_GererRapports",
+      "Distribuables": [
+        {
+          "Inclusions": [],
+          "Exclusions": [ "*\\Debug*","*\\Bin*","*\\obj*","*.config","*.asax","*.vb","*.vbproj*","*.resx","*.pdb","*.bak","*.scc","*.cbl","*.tld","*.asmx","*.wsdl","*.disco" ],
+          "Source": "\\sources\\TS7_Gestion_Acces\\{NomComposant}\\",
+          "DestinationArtefact": "\\sources\\TS7_Gestion_Acces\\{NomComposant}\\Distribuable1\\{NomComposant}\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\{NomComposant}\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            }
+          ]
+        },
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS7_Gestion_Acces\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS7_Gestion_Acces\\{NomComposant}\\Distribuable2\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS7I132_CiGererRapports",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS7_Gestion_Acces\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS7_Gestion_Acces\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS7I141_RapportsRess",
+      "Distribuables": [
+        {
+          "Inclusions": [],
+          "Exclusions": [ "*\\Debug*","*\\Bin*","*\\obj*","*.config","*.asax","*.vb","*.vbproj*","*.resx","*.pdb","*.bak","*.scc","*.cbl","*.tld","*.asmx","*.wsdl","*.disco" ],
+          "Source": "\\sources\\TS7_Gestion_Acces\\{NomComposant}\\",
+          "DestinationArtefact": "\\sources\\TS7_Gestion_Acces\\{NomComposant}\\Distribuable1\\{NomComposant}\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\{NomComposant}\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            }
+          ]
+        },
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS7_Gestion_Acces\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS7_Gestion_Acces\\{NomComposant}\\Distribuable2\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS7I142_CiRapportRess",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS7_Gestion_Acces\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS7_Gestion_Acces\\{NomComposant}\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS7I211_GererSysteme",
+      "Distribuables": [
+        {
+          "Inclusions": [],
+          "Exclusions": [ "*\\Debug*","*\\Bin*","*\\obj*","*.config","*.asax","*.vb","*.vbproj*","*.resx","*.pdb","*.bak","*.scc","*.cbl","*.tld","*.asmx","*.wsdl","*.disco" ],
+          "Source": "\\sources\\TS7_Gestion_Acces\\{NomComposant}\\",
+          "DestinationArtefact": "\\sources\\TS7_Gestion_Acces\\{NomComposant}\\Distribuable1\\{NomComposant}\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\{NomComposant}\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            }
+          ]
+        },
+        {
+          "Inclusions": [ "{NomComposant}.dll","{NomComposant}.pdb" ],
+          "Exclusions": [],
+          "Source": "\\sources\\TS7_Gestion_Acces\\{NomComposant}\\Bin\\",
+          "DestinationArtefact": "\\sources\\TS7_Gestion_Acces\\{NomComposant}\\Distribuable2\\Bin\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_WEB_DRIVE\\SAWI\\{Phase}\\PetitsSystemes\\Bin\\"
+              ],
+              "ActionsInstallation": [],
+              "TypesServeur": [ "SAW" ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TS6N627_IGererFichierChiffr</name>
+    </assembly>
+    <members>
+        <member name="T:TS6N627_IGererFichierChiffr.TsIGererFichierChiffr">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:TS6N627_IGererFichierChiffr.TsIGererFichierChiffr.InscrireFichierChiffre(System.String@,System.String,System.String,System.String)">
+             <summary>
+            
+             </summary>
+             <param name="ChaineContexte">La chaîne de contexte nécessaire pour effectuer un appel.</param>
+             <param name="strNomFichier">Chemin du fichier</param>
+             <param name="strNomTypeDataset">Type d'objet DataSet à retourner</param>
+             <param name="strContenuFichier">Contenu à mettre dans le fichier</param>
+        </member>
+        <member name="M:TS6N627_IGererFichierChiffr.TsIGererFichierChiffr.ObtenirFichierChiffre(System.String@,System.String,System.String)">
+             <summary>
+            
+             </summary>
+             <param name="ChaineContexte">La chaîne de contexte nécessaire pour effectuer un appel.</param>
+             <param name="strNomFichier">Chemin du fichier</param>
+             <param name="strNomTypeDataset">Type d'objet DataSet à retourner</param>
+        </member>
+    </members>
+</doc>

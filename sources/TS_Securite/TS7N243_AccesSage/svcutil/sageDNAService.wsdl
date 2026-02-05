@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://dna.eurekify.com" xmlns:soapenc12="http://www.w3.org/2003/05/soap-encoding" xmlns:tns="http://dna.eurekify.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap11="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc11="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">
+  <wsdl:types>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://dna.eurekify.com">
+<xsd:complexType name="ArrayOfInt">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="int" type="xsd:int"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="fixAlertsNoBlock">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="tns:ArrayOfInt"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in3" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="fixAlertsNoBlockResponse">
+<xsd:complexType/>
+</xsd:element>
+<xsd:element name="fixAlerts">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="tns:ArrayOfInt"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in3" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="fixAlertsResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="clearCaches">
+<xsd:complexType/>
+</xsd:element>
+<xsd:element name="clearCachesResponse">
+<xsd:complexType/>
+</xsd:element>
+<xsd:element name="fixAlert">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in3" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="fixAlertResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="xsd:boolean"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getConnectionDetails">
+<xsd:complexType/>
+</xsd:element>
+<xsd:complexType name="ConnectionDetails">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="database" nillable="true" type="xsd:string"/>
+<xsd:element minOccurs="0" name="integratedSecurity" type="xsd:boolean"/>
+<xsd:element minOccurs="0" name="password" nillable="true" type="xsd:string"/>
+<xsd:element minOccurs="0" name="server" nillable="true" type="xsd:string"/>
+<xsd:element minOccurs="0" name="username" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="getConnectionDetailsResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="tns:ConnectionDetails"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getAuditTypesWithActions">
+<xsd:complexType/>
+</xsd:element>
+<xsd:complexType name="ArrayOfAuditType">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="AuditType" nillable="true" type="tns:AuditType"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="AuditType">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="actions" nillable="true" type="tns:ArrayOfAction"/>
+<xsd:element minOccurs="0" name="id" type="xsd:int"/>
+<xsd:element minOccurs="0" name="name" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="ArrayOfAction">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="Action" nillable="true" type="tns:Action"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="Action">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="code" nillable="true" type="xsd:string"/>
+<xsd:element minOccurs="0" name="description" nillable="true" type="xsd:string"/>
+<xsd:element minOccurs="0" name="name" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="getAuditTypesWithActionsResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="tns:ArrayOfAuditType"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="fixAlertResponse">
+    <wsdl:part name="parameters" element="tns:fixAlertResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="clearCachesRequest">
+    <wsdl:part name="parameters" element="tns:clearCaches">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAuditTypesWithActionsResponse">
+    <wsdl:part name="parameters" element="tns:getAuditTypesWithActionsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="fixAlertRequest">
+    <wsdl:part name="parameters" element="tns:fixAlert">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getConnectionDetailsRequest">
+    <wsdl:part name="parameters" element="tns:getConnectionDetails">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="fixAlertsNoBlockRequest">
+    <wsdl:part name="parameters" element="tns:fixAlertsNoBlock">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getConnectionDetailsResponse">
+    <wsdl:part name="parameters" element="tns:getConnectionDetailsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="clearCachesResponse">
+    <wsdl:part name="parameters" element="tns:clearCachesResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="fixAlertsRequest">
+    <wsdl:part name="parameters" element="tns:fixAlerts">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAuditTypesWithActionsRequest">
+    <wsdl:part name="parameters" element="tns:getAuditTypesWithActions">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="fixAlertsResponse">
+    <wsdl:part name="parameters" element="tns:fixAlertsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="fixAlertsNoBlockResponse">
+    <wsdl:part name="parameters" element="tns:fixAlertsNoBlockResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="SageDNAServicePortType">
+    <wsdl:operation name="fixAlertsNoBlock">
+      <wsdl:input name="fixAlertsNoBlockRequest" message="tns:fixAlertsNoBlockRequest">
+    </wsdl:input>
+      <wsdl:output name="fixAlertsNoBlockResponse" message="tns:fixAlertsNoBlockResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fixAlerts">
+      <wsdl:input name="fixAlertsRequest" message="tns:fixAlertsRequest">
+    </wsdl:input>
+      <wsdl:output name="fixAlertsResponse" message="tns:fixAlertsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="clearCaches">
+      <wsdl:input name="clearCachesRequest" message="tns:clearCachesRequest">
+    </wsdl:input>
+      <wsdl:output name="clearCachesResponse" message="tns:clearCachesResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fixAlert">
+      <wsdl:input name="fixAlertRequest" message="tns:fixAlertRequest">
+    </wsdl:input>
+      <wsdl:output name="fixAlertResponse" message="tns:fixAlertResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getConnectionDetails">
+      <wsdl:input name="getConnectionDetailsRequest" message="tns:getConnectionDetailsRequest">
+    </wsdl:input>
+      <wsdl:output name="getConnectionDetailsResponse" message="tns:getConnectionDetailsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAuditTypesWithActions">
+      <wsdl:input name="getAuditTypesWithActionsRequest" message="tns:getAuditTypesWithActionsRequest">
+    </wsdl:input>
+      <wsdl:output name="getAuditTypesWithActionsResponse" message="tns:getAuditTypesWithActionsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SageDNAServiceHttpBinding" type="tns:SageDNAServicePortType">
+    <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="fixAlertsNoBlock">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="fixAlertsNoBlockRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="fixAlertsNoBlockResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fixAlerts">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="fixAlertsRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="fixAlertsResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="clearCaches">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="clearCachesRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="clearCachesResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fixAlert">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="fixAlertRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="fixAlertResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getConnectionDetails">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="getConnectionDetailsRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getConnectionDetailsResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAuditTypesWithActions">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="getAuditTypesWithActionsRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAuditTypesWithActionsResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SageDNAService">
+    <wsdl:port name="SageDNAServiceHttpPort" binding="tns:SageDNAServiceHttpBinding">
+      <wsdlsoap:address location="https://gestionacces:8443/eurekify/services/sageDNAService"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

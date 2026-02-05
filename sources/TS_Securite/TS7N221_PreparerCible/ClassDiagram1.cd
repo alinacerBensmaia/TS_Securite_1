@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Rrq.Securite.GestionAcces.TsCaSynchroConfig">
+    <Position X="9.75" Y="4" Width="2.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCaDiffSage">
+    <Position X="9.75" Y="0.5" Width="2.75" />
+    <NestedTypes>
+      <Delegate Name="Rrq.Securite.GestionAcces.TsCaDiffSage.DeleguerCreateurCle(Of T)" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Delegate Name="Rrq.Securite.GestionAcces.TsCaDiffSage.Comparateur(Of TInput)" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdConnecteurAD">
+    <Position X="0.5" Y="7" Width="2" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCuConnecteurCible">
+    <Position X="0.5" Y="1" Width="2" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdConnxRoleRessr">
+    <Position X="5.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdConnxUserRole">
+    <Position X="7.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdConnxRoleRole">
+    <Position X="7.5" Y="2.5" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdConnxUserRessr">
+    <Position X="5.5" Y="2.5" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="Rrq.Securite.GestionAcces.TsIConncMajDefntRole">
+    <Position X="3" Y="3" Width="2" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="Rrq.Securite.GestionAcces.TsIConncMajDefntUser">
+    <Position X="3" Y="5.5" Width="2" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="Rrq.Securite.GestionAcces.TsITerminologieCible">
+    <Position X="3" Y="0.5" Width="2" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="Rrq.Securite.GestionAcces.TsIConncInteraction">
+    <Position X="3" Y="1.75" Width="2" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Arial" Size="9" />
+</ClassDiagram>

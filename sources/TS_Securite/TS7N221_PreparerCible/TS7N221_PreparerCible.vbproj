@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9D39C3F6-E6D7-4CEA-9FE2-6941C00FA844}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>On</OptionStrict>
+    <StartupObject>Rrq.Securite.GestionAcces.TsFdAssistant</StartupObject>
+    <RootNamespace>Rrq.Securite.GestionAcces</RootNamespace>
+    <AssemblyName>TS7N221_PreparerCible</AssemblyName>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <FileUpgradeFlags></FileUpgradeFlags>
+    <OldToolsVersion>12.0</OldToolsVersion>
+    <UpgradeBackupLocation></UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>TS7N221_PreparerCible.xml</DocumentationFile>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <DebugType>full</DebugType>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <BaseAddress>1901592576</BaseAddress>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>TS7N221_PreparerCible.xml</DocumentationFile>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <DebugType>Full</DebugType>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <BaseAddress>1901592576</BaseAddress>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU4N011_Configuration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ2N724_LierDataCtrl">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5H904_CtlRRQ, Version=1.0.0.0, Culture=neutral">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N041_GestionMsg, Version=1.0.0.0, Culture=neutral">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N047_MsgProgression, Version=1.0.0.0, Culture=neutral">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N081_AfficherAide">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N091_IBesoinValid">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N501_ClasseRRQ">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N904_CtlRRQ">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N906_CtlFormAutonome, Version=1.0.0.0, Culture=neutral">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N907_IControles">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Rrq.CS.ServicesCommuns.ScenarioTransactionnel" />
+    <Import Include="Rrq.CS.ServicesCommuns.ScenarioTransactionnel.Controles.CtlRRQ" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TsBaJournalisation.vb" />
+    <Compile Include="TsCdClasseUtile.vb" />
+    <Compile Include="TsCdInformationsDiff.vb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="TsFdAfficherApplq.Designer.vb">
+      <DependentUpon>TsFdAfficherApplq.vb</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="TsFdAfficherApplq.vb">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="TsFdAssistant.Designer.vb">
+      <DependentUpon>TsFdAssistant.vb</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="TsFdAssistant.vb">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="TsFdBoiteSelection.Designer.vb">
+      <DependentUpon>TsFdBoiteSelection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TsFdBoiteSelection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TsFdAfficherApplq.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TsFdAfficherApplq.vb</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TsFdAssistant.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TsFdAssistant.vb</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TsFdBoiteSelection.resx">
+      <DependentUpon>TsFdBoiteSelection.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xyTri ascendant %28liste%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xyTri descendant %28liste%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Rrq\Exec\XU7N090_ReglesRoslyn.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties EffectuerCopieExec="1" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <ItemGroup>
+    <ProjectReference Include="..\TS7N211_DiffSage\TS7N211_DiffSage.vbproj">
+      <Project>{CE6A3A00-8A26-443D-985D-04F724A64B39}</Project>
+      <Name>TS7N211_DiffSage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TS7N231_ConnecteurIDM\TS7N231_ConnecteurIDM.vbproj">
+      <Project>{7EE0C5AD-F343-4C6B-B010-4B0E051F58F6}</Project>
+      <Name>TS7N231_ConnecteurIDM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TS7N241_ConnecteurSage\TS7N241_ConnecteurSage.vbproj">
+      <Project>{C3D01C68-CB59-4CF2-B925-155701BD8E58}</Project>
+      <Name>TS7N241_ConnecteurSage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TS7N311_ConnexionCibles\TS7N311_ConnexionCibles.vbproj">
+      <Project>{A2FA024F-7FD2-4710-A270-4E26E1910B38}</Project>
+      <Name>TS7N311_ConnexionCibles</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TS7N312_SourceDiff\TS7N312_SourceDiff.vbproj">
+      <Project>{F1BB74AE-2B4C-4161-870E-B25F46483C8C}</Project>
+      <Name>TS7N312_SourceDiff</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TS7N321_ConnecteurAD\TS7N321_ConnecteurAD.vbproj">
+      <Project>{EAA8222F-E122-4B4A-8DA6-45A710252247}</Project>
+      <Name>TS7N321_ConnecteurAD</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TS7N331_ConnecteurTSS\TS7N331_ConnecteurTSS.vbproj">
+      <Project>{A8DA5713-DE8D-46A4-9722-5A83B3C8FF05}</Project>
+      <Name>TS7N331_ConnecteurTSS</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

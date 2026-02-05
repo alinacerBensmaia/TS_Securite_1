@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AC10F14E-AC73-4C37-B977-5510E16FBDDC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TS5N212_CiChargerDepotNTFS</RootNamespace>
+    <AssemblyName>TS5N212_CiChargerDepotNTFS</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XD5N011_BaseTravail, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Exec\XD5N011_BaseTravail.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XD5N312_ContexteTravail, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Exec\XD5N312_ContexteTravail.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XD5N411_InfoExecution, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Exec\XD5N411_InfoExecution.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XD8N111_AccesFichier, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Exec\XD8N111_AccesFichier.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU2N041_AccesBd, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Exec\XU2N041_AccesBd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU2N261_EmpruntIdent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Exec\XU2N261_EmpruntIdent.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU4N011_Configuration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Exec\XU4N011_Configuration.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU5N011_Contexte, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU5N032_BaseService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU5N033_BaseServiceSupport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Exec\XU5N033_BaseServiceSupport.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU5N041_Exceptions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Exec\XU5N041_Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TsCaControleur.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Rrq\Exec\XU7N090_ReglesRoslyn.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties DossierDestinationCopie="C:\RRQ\Exec;" EffectuerCopieExec="1" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <ItemGroup>
+    <ProjectReference Include="..\TS4N212_ObtnrInfoAD\TS4N212_ObtnrInfoAD.vbproj">
+      <Project>{A523508C-EAEE-452F-B744-E9E383306FEA}</Project>
+      <Name>TS4N212_ObtnrInfoAD</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TS4N213_AccesAD\TS4N213_AccesAD.vbproj">
+      <Project>{5F87A258-9B23-40DB-BF26-63171A523D0D}</Project>
+      <Name>TS4N213_AccesAD</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TS5N211_CbFonctionCommune\TS5N211_CbFonctionCommune.csproj">
+      <Project>{CFAD76D0-4BFB-4515-9D3C-4138FE6E35F3}</Project>
+      <Name>TS5N211_CbFonctionCommune</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

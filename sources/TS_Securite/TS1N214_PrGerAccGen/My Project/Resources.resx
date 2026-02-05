@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CmdChargerSysteme" xml:space="preserve">
+    <value>ChargerSystemes</value>
+  </data>
+  <data name="ColCle" xml:space="preserve">
+    <value>Cle</value>
+  </data>
+  <data name="ColCles" xml:space="preserve">
+    <value>Cles</value>
+  </data>
+  <data name="DossierFerme" xml:space="preserve">
+    <value>xyDossier fermé (arborescence).ico</value>
+  </data>
+  <data name="DossierOuvert" xml:space="preserve">
+    <value>xyDossier ouvert (arborescence).ico</value>
+  </data>
+  <data name="EnCours" xml:space="preserve">
+    <value>Programme en cours d'exécution</value>
+  </data>
+  <data name="EnvCodeAccp" xml:space="preserve">
+    <value>ACCP</value>
+  </data>
+  <data name="EnvCodeEssa" xml:space="preserve">
+    <value>ESSA</value>
+  </data>
+  <data name="EnvCodeForA" xml:space="preserve">
+    <value>FORA</value>
+  </data>
+  <data name="EnvCodeForP" xml:space="preserve">
+    <value>FORP</value>
+  </data>
+  <data name="EnvCodeIntg" xml:space="preserve">
+    <value>INTG</value>
+  </data>
+  <data name="EnvCodeProd" xml:space="preserve">
+    <value>PROD</value>
+  </data>
+  <data name="EnvCodeSiml" xml:space="preserve">
+    <value>SIML</value>
+  </data>
+  <data name="EnvCodeTous" xml:space="preserve">
+    <value>TOUS</value>
+  </data>
+  <data name="EnvCodeUnit" xml:space="preserve">
+    <value>UNIT</value>
+  </data>
+  <data name="EnvDescAccp" xml:space="preserve">
+    <value>Acceptation</value>
+  </data>
+  <data name="EnvDescEssa" xml:space="preserve">
+    <value>Essais</value>
+  </data>
+  <data name="EnvDescForA" xml:space="preserve">
+    <value>Formation Acceptation</value>
+  </data>
+  <data name="EnvDescForP" xml:space="preserve">
+    <value>Formation Production</value>
+  </data>
+  <data name="EnvDescIntg" xml:space="preserve">
+    <value>Intégration</value>
+  </data>
+  <data name="EnvDescProd" xml:space="preserve">
+    <value>Production</value>
+  </data>
+  <data name="EnvDescSimu" xml:space="preserve">
+    <value>Simulation</value>
+  </data>
+  <data name="EnvDescTous" xml:space="preserve">
+    <value>Tous</value>
+  </data>
+  <data name="EnvDescUnit" xml:space="preserve">
+    <value>Unitaire</value>
+  </data>
+  <data name="IconCle" xml:space="preserve">
+    <value>CleIcon</value>
+  </data>
+  <data name="IconCles" xml:space="preserve">
+    <value>ClesIcon</value>
+  </data>
+  <data name="IconSousSys" xml:space="preserve">
+    <value>SouSysIcon</value>
+  </data>
+  <data name="IconSys" xml:space="preserve">
+    <value>SysIcon</value>
+  </data>
+  <data name="LblChargerCours" xml:space="preserve">
+    <value>Chargement en cours...</value>
+  </data>
+  <data name="LblChargerSysteme" xml:space="preserve">
+    <value>Actualisation de la liste des systèmes en cours... Veuillez patienter.</value>
+  </data>
+  <data name="LblSysteme" xml:space="preserve">
+    <value>Systèmes</value>
+  </data>
+  <data name="NomCle" xml:space="preserve">
+    <value>NmCle</value>
+  </data>
+  <data name="NomSousSysteme" xml:space="preserve">
+    <value>NmSouSys</value>
+  </data>
+  <data name="NomSysteme" xml:space="preserve">
+    <value>Sys</value>
+  </data>
+  <data name="Root" xml:space="preserve">
+    <value>__root</value>
+  </data>
+  <data name="SousSystemeVide" xml:space="preserve">
+    <value>[Sans sous-système]</value>
+  </data>
+  <data name="TagCle" xml:space="preserve">
+    <value>CLE</value>
+  </data>
+  <data name="TagCleEnv" xml:space="preserve">
+    <value>CLE-ENV</value>
+  </data>
+  <data name="TagSousSysteme" xml:space="preserve">
+    <value>SOUS-SYSTEME</value>
+  </data>
+  <data name="TS12101E" xml:space="preserve">
+    <value>Le système de la clé est obligatoire</value>
+  </data>
+  <data name="TS12102E" xml:space="preserve">
+    <value>Le type de la clé est obligatoire</value>
+  </data>
+  <data name="TS12103E" xml:space="preserve">
+    <value>Au moins un environnement doit être choisi</value>
+  </data>
+  <data name="TS12104E" xml:space="preserve">
+    <value>Une seule instance du programme peut-être ouverte à la fois.</value>
+  </data>
+  <data name="TS12105E" xml:space="preserve">
+    <value>Il faut choisir un profil qui existe dans le dépôt de sécurité</value>
+  </data>
+  <data name="TS12106E" xml:space="preserve">
+    <value>Pour une clé en {0} utilisez un profil approprié</value>
+  </data>
+  <data name="TS12107E" xml:space="preserve">
+    <value>Un code, mot de passe et profil sont requis pour chaque environnement</value>
+  </data>
+  <data name="TS12108E" xml:space="preserve">
+    <value>Lorsque l'environnement ""Essais"" est choisi, le seul autre environnement accepté est celui de ""Production""</value>
+  </data>
+  <data name="TS12109E" xml:space="preserve">
+    <value>Le code de la clé est obligatoire</value>
+  </data>
+  <data name="TS12110E" xml:space="preserve">
+    <value>Le mot de passe de la clé est obligatoire</value>
+  </data>
+  <data name="TS12111E" xml:space="preserve">
+    <value>La description de la clé est obligatoire</value>
+  </data>
+  <data name="TS12112E" xml:space="preserve">
+    <value>Le code de vérification est obligatoire pour une clé de type inforoute avec vérification</value>
+  </data>
+  <data name="TS12113E" xml:space="preserve">
+    <value>Le code de la clé est obligatoire pour tous les environnements</value>
+  </data>
+  <data name="TS12114E" xml:space="preserve">
+    <value>Le mot de passe de la clé est obligatoire pour tous les environnements</value>
+  </data>
+  <data name="TS12115E" xml:space="preserve">
+    <value>Au moins un profil doit être associé à la clé pour tous les environnements</value>
+  </data>
+  <data name="TypeCleCodeDom" xml:space="preserve">
+    <value>DOM</value>
+  </data>
+  <data name="TypeCleCodeHors" xml:space="preserve">
+    <value>HOD</value>
+  </data>
+  <data name="TypeCleCodeInforte" xml:space="preserve">
+    <value>INF</value>
+  </data>
+  <data name="TypeCleCodeInforteVerif" xml:space="preserve">
+    <value>INV</value>
+  </data>
+  <data name="TypeCleDescDom" xml:space="preserve">
+    <value>Domaine</value>
+  </data>
+  <data name="TypeCleDescHors" xml:space="preserve">
+    <value>Hors domaine</value>
+  </data>
+  <data name="TypeCleDescInforte" xml:space="preserve">
+    <value>Inforoute</value>
+  </data>
+  <data name="TypeCleDescInforteVerif" xml:space="preserve">
+    <value>Inforoute avec vérification</value>
+  </data>
+  <data name="ConfirmImportMsg" xml:space="preserve">
+    <value>Désirez-vous vraiment importer des éléments en provenance du fichier de clés symboliques dans la banque de données?</value>
+  </data>
+  <data name="ConfirmExportMsg" xml:space="preserve">
+    <value>Désirez-vous vraiment exporter les clés symboliques vers un fichier?</value>
+  </data>
+  <data name="TS12116E" xml:space="preserve">
+    <value>Le mot de passe doit avoir {0} caractères</value>
+  </data>
+</root>

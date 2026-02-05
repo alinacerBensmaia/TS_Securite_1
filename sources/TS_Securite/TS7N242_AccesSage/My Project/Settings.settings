@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="TS7N242_AccesSage_portailsage3_SageDiffService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://portailsage/services/SageDiffService.asmx</Value>
+    </Setting>
+    <Setting Name="TS7N242_AccesSage_portailsage2_SageEntityDataService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://portailsage/services/SageEntityDataService.asmx</Value>
+    </Setting>
+    <Setting Name="TS7N242_AccesSage_portailsage1_SageBasicService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://portailsage/services/SageBasicService.asmx</Value>
+    </Setting>
+    <Setting Name="TS7N242_AccesSage_portailsage_SageDataService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://portailsage/services/SageDataService.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

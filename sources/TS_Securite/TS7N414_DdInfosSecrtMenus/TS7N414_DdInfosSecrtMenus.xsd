@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TsDSInfosSecrtMenus" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="TsEngrMenus">
+    <xs:sequence>
+      <xs:element name="CoEnv" type="xs:string" />
+      <xs:element name="NomTsConsrPanrm" type="xs:string" />
+      <xs:element name="CoNivAccSec" type="xs:string" />
+      <xs:element name="CodActnEcran" type="xs:string" />
+      <xs:element name="NumChoix" type="xs:string" />
+      <xs:element name="DesChoixMenu" type="xs:string" />
+      <xs:element name="DesTitreAffch" type="xs:string" />
+      <xs:element name="CodIndctApplc" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TsEngrMenus" type="TsEngrMenus" />
+  <xs:element name="Root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="TsEngrMenus" type="TsEngrMenus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

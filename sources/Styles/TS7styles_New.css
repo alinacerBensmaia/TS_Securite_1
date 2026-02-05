@@ -1,0 +1,452 @@
+﻿/* Générale */
+body {
+	font-family:Verdana, sans-serif;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* Bandeau PIV */
+.pivlogo {
+	float: left;
+	padding-top: 14px;
+	padding-bottom: 7px;
+	padding-left: 20px;
+}
+.pivbandeau { 
+	float: right;
+}
+.bandeBleuPIV {
+	float:right;
+	width:670px;
+	background:#4A5A67;
+	clear:right;
+	padding-top:1px;
+	padding-bottom:1px;
+	border-top:1px solid;
+}
+.divContainerUrl{
+	position:relative;
+	float:right;
+	width:800px;
+	right:0px;
+}
+.divContainerContenuUrl{
+	position:absolute;
+	border:solid 1px silver;
+	background-color:white;
+	padding:10px 10px 10px 10px;
+}
+.divContainerContenuUrl .lblInfoCopierColler, 
+.divContainerContenuUrl .txtUrlCopierColler{
+	display:block;
+	width:100%;
+	float:left;
+	font-size:12px;
+}
+.divContainerContenuUrl .txtUrlCopierColler{
+	width:90%;
+	margin:5px 5px 5px 5px;
+}
+.divContainerContenuUrl .lblFermerCopierColler{
+	margin-top:5px;
+}
+.listePIV {
+	list-style: none;
+	margin: 0;
+	float: right; 
+}
+.listePIV LI {
+	display: inline;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 13px;
+}
+.listePIV LI DIV {
+	display: inline;
+}
+.listePIV LI A{
+	color: white;
+	text-decoration: none;
+}
+.couleurBandeau 	{
+	margin-right:0px!important;
+}
+
+/* Page pour gabarit */
+.page {
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+.pageCentre {
+	display:block;
+	float:right;
+	width:670px;
+	padding-top:14px;
+	margin-left: 0px;
+}
+.pageCentreSansMenu {
+	float: right;
+	width: 900px;
+	padding-top: 30px;
+	padding-left: 15px
+}
+#divImg{
+	background: url('/petitssystemes/francais/images/NI1/loading.gif') no-repeat;
+	position:absolute;
+	top:49%;
+	left: 48%;
+	width:140px;
+	height:15px;
+
+}
+#divChargement{
+	background-color: Gray;
+	filter:alpha(opacity=60);
+	opacity:0.60;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	position: fixed;
+	height: 100%;
+}
+
+/*background: #FFFFD7;*/
+/* Pied de page */
+.basDePage {
+	text-align: center;
+	clear: both;
+	color: black;
+	font-size: 10px;
+	padding-top: 10px;
+}
+.basDePage a {
+	color: black;
+}
+
+.transparent {
+	background-color: transparent;
+}
+
+.infoI {
+	cursor: hand
+}
+
+/************************************/
+/* Styles à utiliser dans les pages */
+/************************************/
+
+.centrer {
+	text-align: center;
+}
+
+/* Boutons */
+.boutonnormal
+{
+	height:22px;
+	color: white;
+	padding: 1px;
+	border:1px solid white;
+	outline:1px solid black;
+	font-weight:bold;
+	font-size: 12px;
+	background: linear-gradient(#8E98A1, #53646C);
+}
+
+.boutonaction
+{
+	height:22px;
+	color: white;
+	padding: 1px;
+	border:1px solid white;
+	outline:1px solid black;
+	font-weight:bold;
+	font-size: 12px;
+	background: linear-gradient(#F28D21, #D66F2C);
+}
+
+/* tableau avec largeur maximum  */
+/*-------------------------------*/
+.tableaupage	{ width: 100%;}
+.tableaupage tr { vertical-align:middle;}
+.tableaupagesm	{ width: 900px; }
+
+/* grille avec dégradé  */
+/*----------------------*/
+.grille .bastableau td { border-top: 1px solid #4A5A67;}		
+.grille .bastableau {background-color: transparent;}
+.grille .entete td {
+	color: white;
+	vertical-align: middle;
+	font-size: 14px;
+	font-weight:normal;
+	background-color: #4A5A67;
+	padding: 5px 0px 5px 5px;
+}
+
+.grille .entete th {
+	color: white;
+	vertical-align: middle;
+	font-size: 14px;
+	font-weight:normal;
+	background-color: #4A5A67;
+	padding: 5px 0px 5px 5px;
+}
+
+.grille .entete th a { color: white; }
+.grille .entete td a { color: white; }
+.grille .entete td a:visited { color: white; }
+.grille .lignepaire a:visited {color: blue;}
+.grille .lignepaire td {	background-color: #D8E6EF; padding: 4px }
+.grille .ligneimpaire td {	background-color: #F7F7F7; padding: 4px }
+.grille .ligneimpaire a:visited {color: blue;}
+
+/* ZOne de pagination de la grille */
+/*---------------------------------*/
+.grillepagination {text-align: center;}
+.grillepagination a:visited {color: blue;}
+.grillepaginationgauche {text-align: left;}
+.grillepaginationgauche a:visited {color: blue;}
+
+
+.filarianne {
+	color: gray;
+	font-size: 12px;
+	}
+
+.lignepointille {
+	border-bottom: 1px dotted gray;
+	margin-bottom: 10px;
+	padding-bottom: 10px;}
+
+.lignepointilleapres {
+	padding-top: 10px;
+}
+
+.lignepleine {
+	border-bottom: 1px solid gray;
+	padding-bottom: 10px;
+}
+
+/* boutons radio */
+/*---------------*/
+.boutonradio { margin-top: 5px;}
+
+.boutonradio label {
+	padding-left: 5px; }
+
+.espacehaut { padding-top: 10px; }
+.espacehautdef { margin-top: 3px; }
+.espaceTableau td { padding: 4px }
+
+/* case à cocher */
+/*---------------*/
+.listecaseacoche label { padding-left: 5px; font-size: 13px;}
+
+/* texte, titre, sous-titre, étiquettes et objets */
+.texte       	{ font-size: 13px; font-family: Verdana, sans-serif; }
+.texte a:visited { color: blue; }
+.date input	{ font-size: 13px; }
+.formatSaisie	{ font-size: 9px; font-family: Geneva, Verdana, sans-serif; }
+textarea { font-family: Verdana, sans-serif; font-size: 13px;}
+
+.titre {
+	background: url('/petitssystemes/francais/images/NI1/bandetitreverte.jpg') no-repeat;
+	height: 42px;
+	width: 660px;
+	color: white;
+	padding: 11px 0 0 10px;
+	font-weight:bold;
+	font-size: 14px;
+	display:block;
+}
+
+
+/*  Section */
+.grandeSection {
+	background: url('/petitssystemes/francais/images/NI1/grandeSection2.gif') no-repeat; height: 33px; width: 670px;
+	color: white;
+	padding: 8px 0 0 10px;
+	font-weight:bold;
+	font-size: 14px;
+}
+
+.soustitre 	{ margin-top: 20px; color: #E47A26; font-weight:bold; font-size: 14px; }
+
+.etiquette	{ font-size: 13px; font-weight: bold;}
+.objetinterface	{ font-size: 10px; }
+.lignesoustitre	{ border-top:2px solid #E37925; }
+
+
+/* zone de message avec BOb, I ou X (erreur fonctionnelle) jaune=FFFFD7* bleu=#E7F5F6 orange=#FFF8E8/
+/*---------------------------------------------------------*/
+.valPagex { width:668px !important; margin: 0px 0px 15px 0px; background: #FFF8E8; background-image:url('/PetitsSystemes/francais/images/NI1/MsgIconeX.gif'); }
+.ValPageI { width:668px !important; margin: 0px 0px 15px 0px; padding-top: 15px; background: #FFF8E8; background-image:url('/PetitsSystemes/francais/images/NI1/MsgIconeI.gif'); }
+.ValPageBob, .valPageBob { float:right; width:668px !important; margin: 0px 0px 0px 0px; padding:5px 0px 5px 0px; background: #FFF8E8; background-image:url('/PetitsSystemes/francais/images/NI1/MsgIconeBob.gif'); }
+.Validation { list-Style-Position: outside; border-width: 1px 1px 1px 1px; border-style: solid; border-color: #CDCDCD; width: 100%; }
+.Validation li {  list-style-type: none; padding-left: 18px; padding-right: 8px; color: #111111; margin-bottom: 5px; }
+#ctl07_pnlInfoMessage {margin-top:15px;}
+
+/*****************************************/
+/*         Menu de gauche                */
+/*****************************************/
+.hautmenuvert {margin: 14px 0px -17px 10px; width: 210px; height: 17px;}
+
+.menudegrade UL {
+	height: 100%;
+	padding-left:0px;
+	background: linear-gradient(#FFF8E8, white);
+}
+
+.menu {
+	clear: both;
+	width: 220px;
+	float: left;
+	margin: 0px 0px 0px -3px;
+	font-size: 12px;
+	height: 100%;
+}
+
+.menu UL { margin-left: 10px; }
+
+#MenuActif {
+	background-color: #FCE7CC;
+	font-weight: bold;
+}
+.menudegrade li {
+	background-color: transparent;
+	list-style-type: none;
+	border-bottom: 1px #F38E22 solid;
+	padding: 6px 3px 6px 10px;
+}
+
+.menudegrade li a {
+	text-decoration: none;
+	color: black;
+	display:block;
+}
+
+.menudegrade .header {
+	background-color: #7ABA42;
+	font-weight: bold;
+	color: white;
+	padding: 6px 3px 6px 10px;
+}
+
+.menudegrade li:hover, .menudegrade li a:hover {
+	background-color: #FCE7CC;
+	display:block;
+}
+
+.menudegrade .header:hover{
+	background-color: #7ABA42;
+	display:block;
+}
+
+.MenuQuitter {
+	border-top: 1px #F38E22 solid;
+	font-weight: bold;
+}
+.MenuElementAccueil{
+	background: url('/petitssystemes/francais/images/site.gif') no-repeat right;
+}
+.MenuElementQuitter{
+	background: url('/petitssystemes/francais/images/NI1/quitter.gif') no-repeat right;
+}
+
+/************************************************/
+/******	bande pour boutons de navigation ********/
+/************************************************/
+
+.EncadreBoutonNavigation {
+	border-top: 1px dotted gray;
+	border-bottom: 1px solid gray;
+	padding: 8px 0 30px 0;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.EncadreBouton {
+	padding: 10px 0 33px 0;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.boutonAGauche{
+	float: left;
+	margin-right: 15px;
+}
+
+.boutonADroite{
+	margin-left: 15px;
+	float: right;
+}
+ 
+.defentete acronym{
+	color:white;
+}
+ 
+acronym{
+	border-bottom: 1px dashed;
+	color:Blue;
+	cursor: hand;
+}
+.RadEditor{
+	width:auto!important;
+}
+
+
+/************************************************/
+/******	Styles à l'écran ********/
+/************************************************/
+
+@media screen{
+	.degrade {
+		border-top:2px solid #E37925;
+		height: 100%;
+		background: linear-gradient(#E7F5F6, white);
+	}
+	.degradesansligne {
+		height: 100%;
+		background: linear-gradient(#E7F5F6, white);
+	}
+}
+
+
+/************************************************/
+/******	Styles à l'impression ********/
+/************************************************/
+
+@media print{
+	body		{ font-family: Trebuchet MS, Verdana, serif; }
+	.noPrint 	{ display: none;}
+	.basDePage 	{ display: none;}
+	.pivlogo 	{ display: none;}
+	.pivbandeau 	{ display: none; width:0px;}
+	.couleurBandeau 	{ float: left;}
+	.bandeBleuPIV {display: none;}
+	.menu 	{ display: none;}
+	/* page centre devient comme page (sans menu)*/
+	.pageCentre {width: 670px; float: left; background: white; border-style: solid; border-width: 0px; border-color: gray;}
+
+	.EncadreBoutonNavigation { display: none;}
+
+	.degrade {
+		border-top:2px solid black;
+	}
+	.degradesansligne {
+		height: 100%;
+	}
+	.grille .entete td {
+		color: black;
+		font-weight: bold;
+	}
+	.grille { width: 100%;}
+	.grille tr { vertical-align:middle;}
+	.tableaupage	{ width: 100%;}
+	.tableaupage tr { vertical-align:middle;}
+	.sautDePage { page-break-before:always; }
+	.sautDePagetable { page-break-before:always }
+
+}

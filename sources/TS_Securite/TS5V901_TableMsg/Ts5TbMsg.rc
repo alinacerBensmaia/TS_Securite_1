@@ -1,0 +1,67 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+/////////////////////////////////////////////////////////////////////////////
+// Français (Canada) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRC)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH_CANADIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    1                       "E Le * * n'a pas été retrouvé dans le fichier ini présent au serveur COM *."
+    2                       "E Le mot de passe du compte * n'a pas été trouvé. Contacter le responsable de la sécurité."
+    3                       "E Le rôle * à assigner au composant * ne fait pas partis de la liste liée au lot d'application *."
+    4                       "E Le groupe ou compte utilisateur * à assigner au rôle * n'est pas reconnu par le serveur du domaine."
+    5                       "A L'action que vous vous apprêtez à exécuter, *, sur le serveur * implique une mise à jour des données. Désirez-vous réellement effectuer cette modification?."
+    6                       "E Une erreur fut rencontrée lors de la création du composant distant TS1V112_SecuriteCOM sur le serveur COM *."
+END
+
+#endif    // Français (Canada) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,76 @@
+## Pipeline de déploiement du système NI
+
+trigger:
+  none
+
+resources:
+  repositories:
+    - repository: Outils
+      type: git
+      name: ST3.Outils.DevOps
+      ref: master
+
+variables:
+- group: GrST3.Build.PathPhase
+- group: GrST3.Deploiement.PathDestination
+- name: buildConfiguration
+  value: 'Release'
+- name: buildPlatform
+  value: 'Any CPU'
+- name: solution
+  value: '**/solutions/TS_Securite/TS_Securite.sln'
+- name: logFileVerbosity
+  value: normal
+- name: createLogFile
+  value: false
+- name: manifest
+  value: "TS_Securite.Manifest.json" 
+  
+stages:
+- stage: Build
+  displayName: 'Build & Test Stage'
+  jobs:
+  - job: Build
+    displayName: Compilation
+    pool : 
+      name: Compilation RRQ-AF
+    workspace:
+      clean: all
+    variables:
+    - group: GrST3.Build.PathPhase
+    steps: 
+    - template: Build/ST3.Build.Template.DeterminerPhase.yml@Outils
+      parameters:      
+        numeroPhase: '${{parameters.numeroPhase}}'   
+    - template: Build/ST3.Build.Template.PreCompilation.yml@Outils   
+    
+    - task: PowerShell@2
+      displayName: "Afficher les variable d'environnement"       
+      inputs:
+        targetType: 'inline'
+        script: 'get-childitem -path env:*'
+
+    - task: NuGetCommand@2
+      inputs:
+        restoreSolution: '${{variables.solution}}'  
+
+    - task: VSBuild@1
+      displayName: 'Compilation de(s) la (les) solution(s)' 
+      env:
+        SYSTEM_ACCESSTOKEN: $(system.accesstoken)   
+      inputs:      
+        platform: '${{variables.buildPlatform}}'    
+        configuration: '${{variables.buildConfiguration}}'
+        solution: '${{variables.solution}}'
+        msbuildArgs: /t:build -restore /p:referencepath="$(DeterminerPhase.ReferencePath) /p:DeployOnBuild=true"'     
+        logFileVerbosity: '${{variables.logFileVerbosity}}'
+        createLogFile: '${{variables.createLogFile}}' 
+      
+    - template: Build/ST3.Build.Template.PublierArtefacts.yml@Outils
+      parameters:      
+        manifest: '${{variables.manifest}}'                                    
+
+- template: Deploiement/Essais_Integres/ST3.Test.Deploiement.Template.EffectuerDeploiementVersEnvironnementsDev.yml@Outils
+
+  parameters:      
+    manifest: '${{variables.manifest}}'

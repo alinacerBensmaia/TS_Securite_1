@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<menupetitsysteme>
+	<menuitem type="rubrique">
+		<texte>Accès</texte>
+		<hyperlien/>
+			<menuitem type="Accueil">
+				<groupesAD>
+					<groupeAD valeur="ROG_#ENVIRONNEMENT#_Gestion des acces demandeur" /> 
+					<groupeAD valeur="ROX_#ENVIRONNEMENT#_NavigSAW_TS7_GestionAcces#UA#" /> 
+					<groupeAD valeur="ROX_#ENVIRONNEMENT#_NavigSAW_TS7_GestionAccesConsultation" /> 
+					<groupeAD valeur="ROG_#ENVIRONNEMENT#_NavigSAW_TS7_GestionAccesPilotage" /> 
+				</groupesAD>	
+				<texte>Assigner les rôles à un employé</texte>
+				<hyperlien>../TS7I111_AccesUtilisateur/TS7SGererRolesEmploye.aspx?codetrans=ts7role</hyperlien>
+				<imageMenu/>
+				<infobulle></infobulle>
+				<codetrans>ts7role</codetrans>
+			</menuitem>
+			<menuitem>
+				<texte>Produire un tableau des assignations par unité administrative</texte>
+				<hyperlien>../TS7I131_GererRapports/rap_ParUnitAdm.aspx</hyperlien>
+				<imageMenu/>
+				<infobulle></infobulle>
+<groupesAD>
+					<groupeAD valeur="ROG_#ENVIRONNEMENT#_Gestion des acces consultation" /> 
+					<groupeAD valeur="ROX_#ENVIRONNEMENT#_NavigSAW_TS7_GestionAcces#UA#" /> 
+					<groupeAD valeur="ROX_#ENVIRONNEMENT#_NavigSAW_TS7_GestionAccesConsultation" /> 
+					<groupeAD valeur="ROG_#ENVIRONNEMENT#_NavigSAW_TS7_GestionAccesPilotage" /> 
+				</groupesAD>	
+			</menuitem>
+			
+
+	</menuitem>
+	<menuitem type="rubrique" environnement="U;I">
+		<texte>Pilotage</texte>
+		<hyperlien/>
+			<menuitem environnement="U;I">
+  <texte>Changer d'identité</texte> 
+  <hyperlien>../TS7I211_GererSysteme/TS7SChangementIdentite.aspx</hyperlien> 
+  <imageMenu /> 
+  <infobulle /> 
+<groupesAD>
+		<groupeAD valeur="GTS7#ENVIRONNEMENT#GestionAcces" /> 
+		<groupeAD valeur="ROG_#ENVIRONNEMENT#_NavigSAW_TS7_GestionAccesPilotage" /> 
+	</groupesAD>
+  </menuitem>
+
+			
+<groupesAD>
+		<groupeAD valeur="GTS7#ENVIRONNEMENT#GestionAcces" /> 
+		<groupeAD valeur="ROG_#ENVIRONNEMENT#_NavigSAW_TS7_GestionAccesPilotage" /> 
+	</groupesAD>
+	</menuitem>
+
+
+	<menuitem type="quitter">
+		<infobulle>Quitter l'application</infobulle>		
+	</menuitem>
+
+</menupetitsysteme>
+
+

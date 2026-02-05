@@ -1,0 +1,42 @@
+# Pipeline de déploiement du système TS_Securite
+
+trigger:
+  none
+
+resources:
+  repositories:
+    - repository: Outils
+      type: git
+      name: ST3.Outils.DevOps
+      ref: master
+
+variables:
+- group: GrST3.Build.PathPhase
+- group: GrST3.Deploiement.PathDestination
+- name: manifest
+  value: "TS_Securite_Chaines.manifest.json" 
+
+stages:
+- stage: Build
+  displayName: 'Build & Test Stage'
+  jobs:
+  - job: Build
+    displayName: Compilation
+    pool : 
+      name: Compilation RRQ-AF
+    workspace:
+      clean: all
+    variables:
+    - group: GrST3.Build.PathPhase
+    steps: 
+
+    - template: Build/ST3.Build.Template.DeterminerPhase.yml@Outils
+    
+    - template: Build/ST3.Build.Template.PublierArtefacts.yml@Outils
+      parameters:      
+        manifest: '${{variables.manifest}}'                                  
+
+- template: Deploiement/Essais_Integres/ST3.Test.Deploiement.Template.EffectuerDeploiementVersEnvironnementsDev.yml@Outils  
+  parameters:      
+    manifest: '${{variables.manifest}}'
+

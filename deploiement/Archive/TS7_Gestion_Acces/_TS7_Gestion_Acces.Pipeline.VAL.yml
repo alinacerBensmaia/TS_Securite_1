@@ -1,0 +1,98 @@
+# Pipeline de déploiement du système TS7
+
+trigger:
+  branches:
+    include:
+    - master
+    - Livraison*     
+
+resources:
+  repositories:
+    - repository: Outils
+      type: git
+      name: ST3.Outils.DevOps
+      ref: master
+
+variables:
+- group: GrST3.Build.PathPhase
+- group: GrST3.Deploiement.PathDestination
+- name: buildConfiguration
+  value: 'Release'
+- name: buildPlatform
+  value: 'Any CPU'
+- name: solution1
+  value: '**/solutions/TS7_Gestion_Acces/TS7_Gestion_Acces.sln'
+
+
+- name: logFileVerbosity
+  value: normal
+- name: createLogFile
+  value: false
+
+stages:
+- stage: Build
+  displayName: 'Build & Test Stage'
+  jobs:
+  - job: Build
+    displayName: Compilation
+    pool : 
+      name: Compilation RRQ-AF
+    workspace:
+      clean: all
+    variables:
+    - group: GrST3.Build.PathPhase
+    steps: 
+
+    - template: Build/ST3.Build.Template.DeterminerPhase.yml@Outils
+      parameters:      
+        numeroPhase: '${{parameters.numeroPhase}}'   
+    
+    - task: PowerShell@2
+      displayName: "Afficher les variable d'environnement"       
+      inputs:
+        targetType: 'inline'
+        script: 'get-childitem -path env:*'
+    
+    - task: NuGetCommand@2
+      inputs:
+        restoreSolution: '**/*.sln'
+
+    - task: MSBuild@1
+      displayName: 'TS7_Gestion_Acces'    
+      condition: always()
+      inputs:
+        platform: '${{variables.buildPlatform}}'    
+        configuration: '${{variables.buildConfiguration}}'
+        solution: '${{variables.solution1}}'
+        msbuildArguments: /p:referencepath="$(DeterminerPhase.ReferencePath) /p:DeployOnBuild=true" /p:TargetFrameworkVersion="v4.8"                        
+        logFileVerbosity: '${{variables.logFileVerbosity}}'
+        createLogFile: '${{variables.createLogFile}}'  
+
+    - task: ndepend.ndependextension.ndepend-task.NDependTask@1
+      displayName: 'Ndepend'
+      condition: always()
+      env:
+        SYSTEM_ACCESSTOKEN: $(system.accesstoken)
+        PullRequest2: true
+        viewName: 'test'
+        
+    - task: dependency-check.dependencycheck.dependency-check-build-task.dependency-check-build-task@6
+      displayName: 'Dependency Check'
+      condition: always()
+      inputs:
+        projectName: $(Build.Repository.Name)
+        scanPath: $(Build.SourcesDirectory)
+        format: 'HTML,JSON,JUNIT'
+        failOnCVSS: 11        
+        additionalArguments: '--log odc.log'           
+
+    - task: PublishTestResults@2
+      condition: always()
+      displayName: 'Résultat Dependency Check'
+      inputs:
+        testResultsFormat: 'JUnit' 
+        testResultsFiles: 'dependency-check\*junit.xml' 
+        testRunTitle: 'DependencyCheck'
+        searchFolder: '$(Common.TestResultsDirectory)' 
+    
+    

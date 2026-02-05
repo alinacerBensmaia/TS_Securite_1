@@ -1,0 +1,21 @@
+trigger:
+  branches:
+    include:
+      - phase*/**
+  paths:
+    include:
+       - deploiement/TS_Securite/Chaine/**
+       - sources/Chaines/**
+
+resources:
+  repositories:
+    - repository: ST3.Outils.DevOps
+      type: git
+      name: ST3.Outils.DevOps
+      ref: master
+
+extends:
+  template: Build/Extends/ST3.Extends.IC.yml@ST3.Outils.DevOps
+  parameters:      
+    manifest: 'TS_Securite_Chaines.manifest.json'      #Exemple --> "RC_Registre_Cotisants_PFCM.Web.Manifest.json" 
+

@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ADBB886F-8E5B-4DC6-A122-147952D44711}</ProjectGuid>
+    <SccProjectName>"%24/InfraCommune/PosteDéveloppeur/Phase_1/TS_Sécurité/TS1_SécuritéClientServeur/TS1N223_ZgObtCdAccGen", UXDAAAAA</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <SccProvider>MSSCCI:Microsoft Visual SourceSafe</SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon></ApplicationIcon>
+    <AssemblyKeyContainerName></AssemblyKeyContainerName>
+    <AssemblyName>TS1N223_ZgObtCdAccGen</AssemblyName>
+    <AssemblyOriginatorKeyFile>ts1n223.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>On</OptionStrict>
+    <RootNamespace>Rrq.Securite</RootNamespace>
+    <StartupObject>Rrq.Securite.%28Aucun%29</StartupObject>
+    <FileUpgradeFlags></FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <UpgradeBackupLocation></UpgradeBackupLocation>
+    <SccAuxPath></SccAuxPath>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OptionInfer>On</OptionInfer>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TS1N223_ZgObtCdAccGen.xml</DocumentationFile>
+    <BaseAddress>1852899328</BaseAddress>
+    <ConfigurationOverrideFile></ConfigurationOverrideFile>
+    <DefineConstants></DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>true</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>TS1N223_ZgObtCdAccGen.xml</DocumentationFile>
+    <BaseAddress>1852899328</BaseAddress>
+    <ConfigurationOverrideFile></ConfigurationOverrideFile>
+    <DefineConstants></DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>true</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.configuration">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU2N071_GestionEvent">
+      <Name>XU2N071_GestionEvent</Name>
+      <HintPath>..\..\..\..\..\..\RRQ\Exec\XU2N071_GestionEvent.dll</HintPath>
+      <AssemblyFolderKey>hklm\dn\rrq.cs.execution</AssemblyFolderKey>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU2N243_ChargementAssembly, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Exec\XU2N243_ChargementAssembly.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU4N011_Configuration">
+      <Name>XU4N011_Configuration</Name>
+      <HintPath>..\..\..\..\..\..\RRQ\Exec\XU4N011_Configuration.dll</HintPath>
+      <AssemblyFolderKey>hklm\dn\rrq.cs.execution</AssemblyFolderKey>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU5N057_BaseDonnees, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Exec\XU5N057_BaseDonnees.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enumerations.vb" />
+    <Compile Include="tsCuException.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsCuInfoUtil.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsCuJournalisation.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsCuObtCdAccGen.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsCuTrtCdAccGen.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsCuVarShared.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tsInObtCdAccGen.vb" />
+    <None Include="ts1n223.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Rrq\Exec\XU7N090_ReglesRoslyn.dll" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties EffectuerCopieExec="1" DossierDestinationCopie="C:\RRQ\Exec;" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent></PreBuildEvent>
+    <PostBuildEvent></PostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TS1N230_IObtnrCompteGenerique\TS1N230_IObtnrCompteGenerique.vbproj">
+      <Project>{3E576822-BEB8-4563-A233-4B2CDC9BF276}</Project>
+      <Name>TS1N230_IObtnrCompteGenerique</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TS1N231_AccesseurFichier\TS1N231_AccesseurFichier.vbproj">
+      <Project>{B98D162E-9AE8-4769-940F-167FF96F770A}</Project>
+      <Name>TS1N231_AccesseurFichier</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TS1N232_AccesseurWCF\TS1N232_AccesseurWCF.vbproj">
+      <Project>{5071A2D9-7FAB-438F-A8EB-FD3B220FD5E0}</Project>
+      <Name>TS1N232_AccesseurWCF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TS1N234_AccesseurService\TS1N234_AccesseurService.vbproj">
+      <Project>{40203BFA-EC23-4FF6-A64F-68AB51E26A31}</Project>
+      <Name>TS1N234_AccesseurService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TS4N212_ObtnrInfoAD\TS4N212_ObtnrInfoAD.vbproj">
+      <Project>{A523508C-EAEE-452F-B744-E9E383306FEA}</Project>
+      <Name>TS4N212_ObtnrInfoAD</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TS4N301_Exceptions\TS4N301_Exceptions.vbproj">
+      <Project>{C57DDE1D-E066-4E6F-93BF-9B35E65B61E3}</Project>
+      <Name>TS4N301_Exceptions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TS4N311_VerfrSecrtApplicative\TS4N311_VerfrSecrtApplicative.vbproj">
+      <Project>{DA3C94B7-2BD6-420B-9252-3A4B7FC4A434}</Project>
+      <Name>TS4N311_VerfrSecrtApplicative</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TS4N312_DtSecuriteApplicativeV1\TS4N312_DtSecuriteApplicativeV1.vbproj">
+      <Project>{5107107F-25DB-4A56-AEF7-4CFACCEE0948}</Project>
+      <Name>TS4N312_DtSecuriteApplicativeV1</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

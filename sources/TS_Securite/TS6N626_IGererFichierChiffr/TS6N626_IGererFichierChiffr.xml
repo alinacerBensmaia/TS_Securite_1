@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TS6N626_IGererFichierChiffr</name>
+    </assembly>
+    <members>
+        <member name="T:TS6N626_IGererFichierChiffr.TsIGererFichierChiffr">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:TS6N626_IGererFichierChiffr.TsIGererFichierChiffr.InscrireFichierChiffre(System.String,System.String,System.String)">
+             <summary>
+            
+             </summary>
+             <param name="strNomFichier"></param>
+             <param name="contenuFichier"></param>
+        </member>
+        <member name="M:TS6N626_IGererFichierChiffr.TsIGererFichierChiffr.ObtenirFichierChiffre(System.String,System.String)">
+             <summary>
+            
+             </summary>
+             <param name="strNomFichier"></param>
+             <param name="NomTypeDataset"></param>
+        </member>
+    </members>
+</doc>

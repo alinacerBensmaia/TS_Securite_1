@@ -1,0 +1,63 @@
+﻿<Window x:Class="TsFfSommaireCreation"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:ts="clr-namespace:TS1N612_PrGererUtilSecFtpSvr"
+             Title="Informations pour clés symboliques"
+             Height="400" Width="600" ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <ListBox Name="lstSommaire" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Margin="5" SelectionChanged="lstSommaire_SelectionChanged" ScrollViewer.CanContentScroll="False" >
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="150"></ColumnDefinition>
+                            <ColumnDefinition Width="400"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Row="0" Grid.Column="0" Content="{Binding Path=CoEnv}" FontWeight="Bold" />
+                        
+                        <Label Grid.Row="1" Grid.Column="0">Nom de la clé</Label>
+                        <ts:TsCuTextBoxSelection Grid.Row="1" Grid.Column="1" Margin="5,2,5,2" Text="{Binding Path=NmUtl}" IsReadOnly="True" />
+
+                        <Label Grid.Row="2" Grid.Column="0">Compte</Label>
+                        <ts:TsCuTextBoxSelection Grid.Row="2" Grid.Column="1" Margin="5,2,5,2" Text="{Binding Path=NmCom}" IsReadOnly="True" />
+
+                        <Label Grid.Row="3" Grid.Column="0">Mot de passe</Label>
+                        <ts:TsCuTextBoxSelection Grid.Row="3" Grid.Column="1" Margin="5,2,5,2" Text="{Binding Path=VlMotPasCle}" IsReadOnly="True" />
+
+                        <Label Grid.Row="4" Grid.Column="0">Description</Label>
+                        <ts:TsCuTextBoxSelection Grid.Row="4" Grid.Column="1" Margin="5,2,5,2" Text="{Binding Path=DsCle}" IsReadOnly="True" />
+
+                        <Label Grid.Row="5" Grid.Column="0">Profil</Label>
+                        <ts:TsCuTextBoxSelection Grid.Row="5" Grid.Column="1" Margin="5,2,5,2" Text="{Binding Path=NmProUtl}" IsReadOnly="True" />
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Label Name="lblStatut" Grid.Row="1" Grid.ColumnSpan="3" HorizontalContentAlignment="Center" Margin="3"></Label>
+        <Button Name="btnCopierTout" Grid.Row="2" Grid.Column="0" Margin="5" Padding="5" HorizontalAlignment="Left">Copier tout dans le presse-papier</Button>
+        <Button Name="btnOk" Grid.Row="2" Grid.Column="1" Margin="5" >Ok</Button>
+        <Button Name="btnCreerCle" Grid.Row="2" Grid.Column="2" Margin="5" Padding="5" HorizontalAlignment="Right">Créer les clés symboliques</Button>
+    </Grid>
+</Window>

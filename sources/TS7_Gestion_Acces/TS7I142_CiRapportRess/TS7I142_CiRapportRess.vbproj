@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2021D7C6-A859-4311-9CEE-38508E58919F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TS7I142_CiRapportRess</RootNamespace>
+    <AssemblyName>TS7I142_CiRapportRess</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>On</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>TS7I142_CiRapportRess.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <BaseAddress>1229193216</BaseAddress>
+    <CodeAnalysisRuleSet>C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Team Tools\\Static Analysis Tools\\Rule Sets\\XU7N090_ReglesRoslyn001.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>TS7I142_CiRapportRess.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <BaseAddress>1229193216</BaseAddress>
+    <CodeAnalysisRuleSet>C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Team Tools\\Static Analysis Tools\\Rule Sets\\XU7N090_ReglesRoslyn001.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="TS7N121_ServiceGestnAcces, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="TS7N243_AccesSage, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\RRQ\Exec\TS7N243_AccesSage.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU5N041_Exceptions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Exec\XU5N041_Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Compositeur\Feuille1\TsCaFeuillePrincipale.vb" />
+    <Compile Include="Compositeur\Feuille1\TsDtSourcFeuilPrinc.vb" />
+    <Compile Include="Compositeur\Source\TsDtSourceRessources.vb" />
+    <Compile Include="Compositeur\TsCuOutilsRapport.vb" />
+    <Compile Include="Compositeur\TsICompositeurFeuille.vb" />
+    <Compile Include="Excel_XML\Workbook\Worksheet\WorksheetOptions\TsCuPrint.vb" />
+    <Compile Include="TsCaGererRapports.vb" />
+    <Compile Include="Compositeur\Source\TsDtSourceUa.vb" />
+    <Compile Include="Compositeur\Source\TsDtSourceEmploye.vb" />
+    <Compile Include="Compositeur\SectionRapport\TsCaCellulesRapport.vb" />
+    <Compile Include="Compositeur\SectionRapport\TsCaColonneRapport.vb" />
+    <Compile Include="Compositeur\TsCaComposerRapport.vb" />
+    <Compile Include="Compositeur\SectionRapport\TsCaLignesRapport.vb" />
+    <Compile Include="Compositeur\SectionRapport\TsCaStylesRapport.vb" />
+    <Compile Include="Compositeur\Source\TsDtSourceRapport.vb" />
+    <Compile Include="Compositeur\TsCuConstantesRapport.vb" />
+    <Compile Include="Excel_XML\TsCuOutilsExcel.vb" />
+    <Compile Include="Excel_XML\Workbook\Style\TsCuStyleAlignment.vb" />
+    <Compile Include="Excel_XML\Workbook\Style\TsCuStyleBorder.vb" />
+    <Compile Include="Excel_XML\Workbook\Style\TsCuStyleFont.vb" />
+    <Compile Include="Excel_XML\Workbook\Style\TsCuStyleInterior.vb" />
+    <Compile Include="Excel_XML\Workbook\Style\TsCuStyleNumberFormat.vb" />
+    <Compile Include="Excel_XML\Workbook\Style\TsCuStyleProtection.vb" />
+    <Compile Include="Excel_XML\Workbook\TsCuDocumentProperties.vb" />
+    <Compile Include="Excel_XML\Workbook\TsCuExcelWorkbook.vb" />
+    <Compile Include="Excel_XML\TsCuExcelXml.vb" />
+    <Compile Include="Excel_XML\Workbook\Style\TsCuStyle.vb" />
+    <Compile Include="Excel_XML\Workbook\TsCuWorkbook.vb" />
+    <Compile Include="Excel_XML\Workbook\Worksheet\AutoFilter\TsCuAutoFiller.vb" />
+    <Compile Include="Excel_XML\Workbook\Worksheet\AutoFilter\TsCuAutoFilterAnd.vb" />
+    <Compile Include="Excel_XML\Workbook\Worksheet\AutoFilter\TsCuAutoFilterColumn.vb" />
+    <Compile Include="Excel_XML\Workbook\Worksheet\AutoFilter\TsCuAutoFilterCondition.vb" />
+    <Compile Include="Excel_XML\Workbook\Worksheet\AutoFilter\TsCuAutoFilterOr.vb" />
+    <Compile Include="Excel_XML\Workbook\Worksheet\ConditionnalFormatting\TsCuCondition.vb" />
+    <Compile Include="Excel_XML\Workbook\Worksheet\ConditionnalFormatting\TsCuFormat.vb" />
+    <Compile Include="Excel_XML\Workbook\Worksheet\Table\TsCuCell.vb" />
+    <Compile Include="Excel_XML\Workbook\Worksheet\Table\TsCuColumn.vb" />
+    <Compile Include="Excel_XML\Workbook\Worksheet\ConditionnalFormatting\TsCuConditionalFormating.vb" />
+    <Compile Include="Excel_XML\Workbook\Worksheet\Table\TsCuData.vb" />
+    <Compile Include="Excel_XML\Workbook\Worksheet\WorksheetOptions\TsCuFooter.vb" />
+    <Compile Include="Excel_XML\Workbook\Worksheet\WorksheetOptions\TsCuHeader.vb" />
+    <Compile Include="Excel_XML\Workbook\Worksheet\WorksheetOptions\TsCuLayout.vb" />
+    <Compile Include="Excel_XML\Workbook\Worksheet\Table\TsCuNamedCell.vb" />
+    <Compile Include="Excel_XML\Workbook\Worksheet\TsCuNamedRange.vb" />
+    <Compile Include="Excel_XML\Workbook\Worksheet\WorksheetOptions\TsCuPageMargins.vb" />
+    <Compile Include="Excel_XML\Workbook\Worksheet\WorksheetOptions\TsCuPageSetup.vb" />
+    <Compile Include="Excel_XML\Workbook\Worksheet\Table\TsCuRow.vb" />
+    <Compile Include="Excel_XML\Workbook\Worksheet\Table\TsCuTable.vb" />
+    <Compile Include="Excel_XML\Workbook\Worksheet\TsCuWorksheet.vb" />
+    <Compile Include="Excel_XML\Workbook\Worksheet\WorksheetOptions\TsCuWorkSheetOptions.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TsCdObtenirDonnee.vb" />
+    <Compile Include="TsCuConfiguration.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Rrq\Exec\XU7N090_ReglesRoslyn.dll" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties DossierDestinationCopie="C:\RRQ\Exec;" EffectuerCopieExec="1" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

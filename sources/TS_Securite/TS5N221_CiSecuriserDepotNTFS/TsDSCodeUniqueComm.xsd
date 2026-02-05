@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TsDSCodeUniqueComm" targetNamespace="http://tempuri.org/TsDSCodeUniqueComm.xsd" xmlns:mstns="http://tempuri.org/TsDSCodeUniqueComm.xsd" xmlns="http://tempuri.org/TsDSCodeUniqueComm.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TsDSCodeUniqueComm" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="TsDSCodeUniqueComm" msprop:Generator_UserDSName="TsDSCodeUniqueComm" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CodeUniqueComm" msprop:Generator_UserTableName="CodeUniqueComm" msprop:Generator_RowDeletedName="CodeUniqueCommRowDeleted" msprop:Generator_TableClassName="CodeUniqueCommDataTable" msprop:Generator_RowChangedName="CodeUniqueCommRowChanged" msprop:Generator_RowClassName="CodeUniqueCommRow" msprop:Generator_RowChangingName="CodeUniqueCommRowChanging" msprop:Generator_RowEvArgName="CodeUniqueCommRowChangeEvent" msprop:Generator_RowEvHandlerName="CodeUniqueCommRowChangeEventHandler" msprop:Generator_TablePropName="CodeUniqueComm" msprop:Generator_TableVarName="tableCodeUniqueComm" msprop:Generator_RowDeletingName="CodeUniqueCommRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CO_UNI_COM_CEC" msprop:Generator_UserColumnName="CO_UNI_COM_CEC" msprop:Generator_ColumnPropNameInRow="CO_UNI_COM_CEC" msprop:Generator_ColumnVarNameInTable="columnCO_UNI_COM_CEC" msprop:Generator_ColumnPropNameInTable="CO_UNI_COM_CECColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DS_COD_UNI_COM_CEC" msprop:Generator_UserColumnName="DS_COD_UNI_COM_CEC" msprop:Generator_ColumnPropNameInRow="DS_COD_UNI_COM_CEC" msprop:Generator_ColumnVarNameInTable="columnDS_COD_UNI_COM_CEC" msprop:Generator_ColumnPropNameInTable="DS_COD_UNI_COM_CECColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

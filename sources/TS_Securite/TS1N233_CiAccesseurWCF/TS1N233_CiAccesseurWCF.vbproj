@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <CodeAnalysisAdditionalOptions>/assemblycomparemode:StrongNameIgnoringVersion</CodeAnalysisAdditionalOptions>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8EC21447-027A-49F4-B327-AC6CB65AEE9C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>On</OptionStrict>
+    <OptionInfer>Off</OptionInfer>
+    <StartupObject></StartupObject>
+    <RootNamespace>TS1N233_CiAccesseurWCF</RootNamespace>
+    <AssemblyName>TS1N233_CiAccesseurWCF</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TS1N233_CiAccesseurWCF.xml</DocumentationFile>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <DebugType>full</DebugType>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <BaseAddress>1799094272</BaseAddress>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>TS1N233_CiAccesseurWCF.xml</DocumentationFile>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <BaseAddress>1799094272</BaseAddress>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU2N214_ValidationConceptuel">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU4N011_Configuration">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU4N211_DeclarerRessource">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU5N032_BaseService">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU5N031_BaseIntegration">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU5N036_IDiagnostique">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU5N041_Exceptions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU5N051_AppelerAOS">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU5N057_BaseDonnees">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="DeclarerRessource.vb" />
+    <Compile Include="TsCaAccesseurWCF.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Rrq\Exec\XU7N090_ReglesRoslyn.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties EffectuerCopieExec="1" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <ItemGroup>
+    <ProjectReference Include="..\TS1N233_IAccesseurWCF\TS1N233_IAccesseurWCF.vbproj">
+      <Project>{6FE7433F-6896-4109-B80A-86B3BC05C4BD}</Project>
+      <Name>TS1N233_IAccesseurWCF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TS1N236_CbAccesFichrComptGenrq\TS1N236_CbAccesFichrComptGenrq.vbproj">
+      <Project>{8C4D9687-F926-43D5-8B00-C7BFAF5F878E}</Project>
+      <Name>TS1N236_CbAccesFichrComptGenrq</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

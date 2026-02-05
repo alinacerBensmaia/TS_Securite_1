@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <CodeAnalysisAdditionalOptions>/assemblycomparemode:StrongNameIgnoringVersion</CodeAnalysisAdditionalOptions>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{53DD0845-A24F-4A4D-ADA5-180DF7745BE4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>Off</OptionInfer>
+    <StartupObject></StartupObject>
+    <RootNamespace>TS1N621_CiGererUtilSecFtpSvr</RootNamespace>
+    <AssemblyName>TS1N621_CiGererUtilSecFtpSvr</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TS1N621_CiGererUtilSecFtpSvr.xml</DocumentationFile>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <DebugType>full</DebugType>
+    <WarningsAsErrors></WarningsAsErrors>
+    <BaseAddress>1799094272</BaseAddress>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>TS1N621_CiGererUtilSecFtpSvr.xml</DocumentationFile>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <WarningsAsErrors></WarningsAsErrors>
+    <BaseAddress>1799094272</BaseAddress>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.SFTPCOMINTERFACELib, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\Exec\Interop.SFTPCOMINTERFACELib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU4N011_Configuration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Exec\XU4N011_Configuration.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU4N211_DeclarerRessource">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU5N011_Contexte, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Exec\XU5N011_Contexte.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU5N013_StrucMsg, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55f3b177bc5aaf09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Exec\XU5N013_StrucMsg.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU5N031_BaseIntegration">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU5N032_BaseService">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU5N041_Exceptions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N019_StrucMsg, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Exec\XZ5N019_StrucMsg.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XZ5N045_GestionErreur">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XU5N057_BaseDonnees">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="DeclarerRessource.vb" />
+    <Compile Include="TsCaNiveauSecrt1.vb" />
+    <Compile Include="TsDsListeUtilisateurs.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TsDsListeUtilisateurs.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TsDsListeUtilisateurs.xsc">
+      <DependentUpon>TsDsListeUtilisateurs.xsd</DependentUpon>
+    </None>
+    <None Include="TsDsListeUtilisateurs.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TsDsListeUtilisateurs.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TsDsListeUtilisateurs.xss">
+      <DependentUpon>TsDsListeUtilisateurs.xsd</DependentUpon>
+    </None>
+    <None Include="TsDsListeUtilisateurs.xsx">
+      <DependentUpon>TsDsListeUtilisateurs.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Rrq\Exec\XU7N090_ReglesRoslyn.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TS1N227_CbTratrDemndMotPass\TS1N227_CbTratrDemndMotPass.vbproj">
+      <Project>{9d0b1a22-ebde-4af0-9d26-aafb7350d826}</Project>
+      <Name>TS1N227_CbTratrDemndMotPass</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TS1N621_INiveauSecrt1\TS1N621_INiveauSecrt1.vbproj">
+      <Project>{377f8007-d1f5-4c24-ad05-087611439a77}</Project>
+      <Name>TS1N621_INiveauSecrt1</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties EffectuerCopieExec="1" DateCreationMD="2014-06-13" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <ItemGroup>
+    <ProjectReference Include="..\TS6N011_ZgLibOutils\TS6N011_ZgLibOutils.vbproj">
+      <Project>{1ED1F58D-235C-48BB-A8BA-4BB185A9F7A6}</Project>
+      <Name>TS6N011_ZgLibOutils</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Rrq.Securite.GestionAcces.TsCaServiceGestnAcces">
+    <Position X="0.5" Y="0.5" Width="3.75" />
+    <TypeIdentifier>
+      <FileName>TsCaServiceGestnAcces.vb</FileName>
+      <HashCode>AAAAAEABBACAAuAAAAQEAAgAAAAAAAAAAAACABBgAAA=</HashCode>
+    </TypeIdentifier>
+    <Members>
+      <Method Name="dejaPresentRole" Hidden="true" />
+      <Method Name="ObtenirNomFamille" Hidden="true" />
+      <Method Name="ObtenirPrenom" Hidden="true" />
+      <Field Name="REO" Hidden="true" />
+      <Field Name="RO" Hidden="true" />
+      <Field Name="ServiceSage" Hidden="true" />
+    </Members>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdDemandeDestruction">
+    <Position X="7.25" Y="8.25" Width="2" />
+    <TypeIdentifier>
+      <FileName>TsCdDemandeDestruction.vb</FileName>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAQAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Members>
+      <Field Name="LectureSeule" Hidden="true" />
+      <Field Name="mIDUtilisateur" Hidden="true" />
+    </Members>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdDemndCreationModif">
+    <Position X="0.5" Y="6.25" Width="5.75" />
+    <TypeIdentifier>
+      <FileName>TsCdDemndCreationModif.vb</FileName>
+      <HashCode>AAAAiABAAFIAAAAAggAAAEAAAgAAAAAAACAAAQAIQAI=</HashCode>
+    </TypeIdentifier>
+    <Members>
+      <Field Name="LectureSeule" Hidden="true" />
+      <Field Name="mIDUtilisateur" Hidden="true" />
+      <Field Name="mOperationsRoles" Hidden="true" />
+      <Field Name="mRolesOriginaux" Hidden="true" />
+      <Field Name="mUtilisateur" Hidden="true" />
+      <Field Name="mUtilisateurOriginal" Hidden="true" />
+    </Members>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCaDemandes">
+    <Position X="0.5" Y="4" Width="4.25" />
+    <TypeIdentifier>
+      <FileName>TsCaDemandes.vb</FileName>
+      <HashCode>AKgEEQAAAAAAAAAACAAAAAEAAgQAAIAAAAAgAAABAIA=</HashCode>
+    </TypeIdentifier>
+    <Members>
+      <Method Name="ecrireAjout" Hidden="true" />
+      <Method Name="ecrireModification" Hidden="true" />
+      <Method Name="ecrireSupprimer" Hidden="true" />
+      <Field Name="LIGNE_DEMARCATION" Hidden="true" />
+      <Method Name="serialiseCreation" Hidden="true" />
+      <Method Name="serialiseModifiaction" Hidden="true" />
+      <Method Name="serialiseSupression" Hidden="true" />
+      <Method Name="validerUtilisateur" Hidden="true" />
+    </Members>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdAssignationRole">
+    <Position X="9.75" Y="2.75" Width="4.5" />
+    <TypeIdentifier>
+      <FileName>TsCdAssignationRole.vb</FileName>
+      <HashCode>MAAAkAAQAAIggBAUAAAAAAAIACAAAEAAAAABEAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Members>
+      <Field Name="LectureSeule" Hidden="true" />
+      <Field Name="mDateFin" Hidden="true" />
+      <Field Name="mDescription" Hidden="true" />
+      <Field Name="mFinPrevu" Hidden="true" />
+      <Field Name="mID" Hidden="true" />
+      <Field Name="mNom" Hidden="true" />
+      <Field Name="mParticulier" Hidden="true" />
+      <Method Name="traductionAssignationRole" Hidden="true" />
+    </Members>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdEquipe">
+    <Position X="12" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>TsCdEquipe.vb</FileName>
+      <HashCode>AAAAkABAAAAAgIAUAAAAAAAAACAAAAAAAAAAQABQABA=</HashCode>
+    </TypeIdentifier>
+    <Members>
+      <Field Name="LectureSeule" Hidden="true" />
+      <Field Name="mAbbreviation" Hidden="true" />
+      <Field Name="mID" Hidden="true" />
+      <Field Name="mIDRole" Hidden="true" />
+      <Field Name="mNom" Hidden="true" />
+      <Field Name="REO" Hidden="true" />
+      <Method Name="traductionEquipe" Hidden="true" />
+    </Members>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdOperationRole">
+    <Position X="7.25" Y="4" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>TsCdOperationRole.vb</FileName>
+      <HashCode>IAAAgAAQAAIgABAQAAAQAAAIACAAAAAAAAEBEABAAIA=</HashCode>
+    </TypeIdentifier>
+    <Members>
+      <Method Name="conversion" Hidden="true" />
+      <Field Name="LectureSeule" Hidden="true" />
+      <Field Name="mDateFin" Hidden="true" />
+      <Field Name="mDescription" Hidden="true" />
+      <Field Name="mFinPrevue" Hidden="true" />
+      <Field Name="mIdRole" Hidden="true" />
+      <Field Name="mNom" Hidden="true" />
+      <Field Name="mOperation" Hidden="true" />
+      <Field Name="mParticulier" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Rrq.Securite.GestionAcces.TsCdOperationRole.TsSgaOperation">
+        <TypeIdentifier>
+          <NewMemberFileName>TsCdOperationRole.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdRole">
+    <Position X="5" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>TsCdRole.vb</FileName>
+      <HashCode>IAAAkQgQAAAgggAUAAAAAAAAACAAAAIAAAABAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Members>
+      <Field Name="LectureSeul" Hidden="true" />
+      <Field Name="mDescription" Hidden="true" />
+      <Field Name="mID" Hidden="true" />
+      <Field Name="mNom" Hidden="true" />
+      <Field Name="mParticulier" Hidden="true" />
+      <Method Name="Operator &lt;&gt;" Hidden="true" />
+      <Method Name="Operator =" Hidden="true" />
+      <Field Name="RO" Hidden="true" />
+      <Method Name="traductionRole" Hidden="true" />
+    </Members>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdUniteAdministrative">
+    <Position X="9.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>TsCdUniteAdministrative.vb</FileName>
+      <HashCode>AAAAgABAAgAAAIAUAAAAgAAAACAAAAAAAAAAAABQABA=</HashCode>
+    </TypeIdentifier>
+    <Members>
+      <Field Name="LectureSeule" Hidden="true" />
+      <Field Name="mAbbreviation" Hidden="true" />
+      <Field Name="mIDRole" Hidden="true" />
+      <Field Name="mNo" Hidden="true" />
+      <Field Name="mNom" Hidden="true" />
+      <Field Name="REO" Hidden="true" />
+      <Method Name="traductionUnitAdmin" Hidden="true" />
+    </Members>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdUtilisateur">
+    <Position X="4.5" Y="0.5" Width="5" />
+    <TypeIdentifier>
+      <FileName>TsCdUtilisateur.vb</FileName>
+      <HashCode>BAAAkYgAAAIAwBAUgACAAgIAUCAAAAACACAAGAAIgIA=</HashCode>
+    </TypeIdentifier>
+    <Members>
+      <Field Name="LectureSeule" Hidden="true" />
+      <Field Name="mCourriel" Hidden="true" />
+      <Field Name="mDateFin" Hidden="true" />
+      <Field Name="mFinPrevue" Hidden="true" />
+      <Field Name="mID" Hidden="true" />
+      <Field Name="mIDEquipe" Hidden="true" />
+      <Field Name="mNom" Hidden="true" />
+      <Field Name="mNomComplet" Hidden="true" />
+      <Field Name="mNoUtiteAdmin" Hidden="true" />
+      <Field Name="mPrenom" Hidden="true" />
+      <Field Name="mVille" Hidden="true" />
+      <Method Name="Operator &lt;&gt;" Hidden="true" />
+      <Method Name="Operator =" Hidden="true" />
+      <Method Name="traductionUsager" Hidden="true" />
+    </Members>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsExcAjoutImpossible" Collapsed="true">
+    <Position X="9.75" Y="7" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>TsExcErreurGestnAcces.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsExcErreurDemandeAjout" Collapsed="true">
+    <Position X="9.75" Y="7.75" Width="2" />
+    <TypeIdentifier>
+      <FileName>TsExcErreurGestnAcces.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsExcErreurDemandeDestruction" Collapsed="true">
+    <Position X="11.75" Y="6.25" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>TsExcErreurGestnAcces.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsExcErreurDemandeModification" Collapsed="true">
+    <Position X="11.75" Y="5.5" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>TsExcErreurGestnAcces.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsExcErreurGeneral" Collapsed="true">
+    <Position X="9.75" Y="5.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>TsExcErreurGestnAcces.vb</FileName>
+      <HashCode>AAACAAAAAAAAAAAAAAAAABAgAAAAAAAAAQAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsExcModificationImpossible" Collapsed="true">
+    <Position X="9.75" Y="8.5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>TsExcErreurGestnAcces.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsExcModificationIntrouvable" Collapsed="true">
+    <Position X="12" Y="7" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>TsExcErreurGestnAcces.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsExcRedondanceTrouve" Collapsed="true">
+    <Position X="12.25" Y="9.25" Width="2" />
+    <TypeIdentifier>
+      <FileName>TsExcErreurGestnAcces.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsExcRoleInexistant" Collapsed="true">
+    <Position X="9.75" Y="6.25" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>TsExcErreurGestnAcces.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsExcSupressionImpossible" Collapsed="true">
+    <Position X="9.75" Y="9.25" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>TsExcErreurGestnAcces.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsExcSupressionIntrouvable" Collapsed="true">
+    <Position X="12" Y="7.75" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>TsExcErreurGestnAcces.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsExcUtilisateurInexistant" Collapsed="true">
+    <Position X="12.25" Y="8.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>TsExcErreurGestnAcces.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="TS70002E" xml:space="preserve">
+    <value>Aucun &lt;b&gt;nom&lt;/b&gt; ne correspond à votre recherche. Veuillez vérifier les informations et y apporter les corrections requises.</value>
+  </data>
+  <data name="TS70003E" xml:space="preserve">
+    <value>L'unité administrative de la section &lt;b&gt;Autre unité administrative&lt;/b&gt; doit être différente de la principale. Veuillez modifier votre choix.</value>
+  </data>
+  <data name="TS70004E" xml:space="preserve">
+    <value>Les équipes de la section &lt;b&gt;Unité administrative principale&lt;/b&gt; doivent être différentes. Veuillez modifier votre choix.</value>
+  </data>
+  <data name="TS70005E" xml:space="preserve">
+    <value>Vous devez inscrire le &lt;b&gt;nom &lt;/b&gt;et/ou le &lt;b&gt;prénom&lt;/b&gt;  ou le &lt;b&gt;code utilisateur&lt;/b&gt;.</value>
+  </data>
+  <data name="TS70007E" xml:space="preserve">
+    <value>Les équipes de la section &lt;b&gt;Autre unité administrative&lt;/b&gt; doivent être différentes. Veuillez modifier votre choix.</value>
+  </data>
+  <data name="TS70009E" xml:space="preserve">
+    <value>Un {0} doit être sélectionné.</value>
+  </data>
+  <data name="TS70010E" xml:space="preserve">
+    <value>La date de &lt;b&gt;fin de contrat&lt;/b&gt; doit être supérieure à la date effective.</value>
+  </data>
+  <data name="TS70011I" xml:space="preserve">
+    <value>La demande d'ajout des rôles de l'employé {0} a été transmise avec succès.</value>
+  </data>
+  <data name="TS70012I" xml:space="preserve">
+    <value>La demande de modification des rôles de l'employé {0}  a été transmise avec succès.</value>
+  </data>
+  <data name="TS70014I" xml:space="preserve">
+    <value>La demande de modification des accès au répertoire a été transmise avec succès. </value>
+  </data>
+  <data name="TS70015E" xml:space="preserve">
+    <value>La prolongation d'un rôle sert à la conserver au-delà de la date effective de la demande.  Veuillez corriger l'une ou l'autre des dates.</value>
+  </data>
+  <data name="TS70017I" xml:space="preserve">
+    <value>Aucun changement apporté aux rôles de l'employé, veuillez réviser ou attacher un fichier, inscrire un commentaire à la section Accès non couverts par les rôles.</value>
+  </data>
+  <data name="TS70018E" xml:space="preserve">
+    <value>Une {0} doit être sélectionnée.</value>
+  </data>
+  <data name="TS70019E" xml:space="preserve">
+    <value>Le format du champ &lt;b&gt;courriel&lt;/b&gt; est erroné. Utilisez le format «prénom».«nom»@rrq.gouv.qc.ca.</value>
+  </data>
+  <data name="TS70020E" xml:space="preserve">
+    <value>La &lt;b&gt;Date effective de la demande&lt;/b&gt; doit être supérieure ou égale à la date du jour.</value>
+  </data>
+  <data name="TS70021I" xml:space="preserve">
+    <value>L'adresse de courriel existe déjà.  Une nouvelle adresse de courriel a été générée automatiquement pour cet employé.</value>
+  </data>
+  <data name="TS70022E" xml:space="preserve">
+    <value>Aucun rôle sélectionné pour cet employé. Veuillez réviser ou attacher un fichier, inscrire un commentaire à la section Accès non couverts par les rôles.</value>
+  </data>
+  <data name="TS70023I" xml:space="preserve">
+    <value>Le propriétaire du rôle sera avisé des demandes de prolongation des accès au-delà de 2 semaines.</value>
+  </data>
+  <data name="TS70024E" xml:space="preserve">
+    <value>La sélection du rôle métier {0} nécessite la sélection d'au moins une tâche correspondante.</value>
+  </data>
+  <data name="TS70025E" xml:space="preserve">
+    <value>La sélection de la tâche {0} nécessite la sélection du rôle métier correspondant.</value>
+  </data>
+  <data name="TS70026I" xml:space="preserve">
+    <value>Vous ne pouvez pas sélectionner plus de cinq unités administratives.</value>
+  </data>
+  <data name="TS70027E" xml:space="preserve">
+    <value>Le champ {0} doit être complété.</value>
+  </data>
+  <data name="TS70028I" xml:space="preserve">
+    <value>Vérifier auprès du demandeur si l'employé fait partie d'une des unités inscrites comme owner du rôle {0} et accorder le REO approprié si requis.</value>
+  </data>
+  <data name="TS70029I" xml:space="preserve">
+    <value>Vérifier auprès du demandeur si l'employé fait partie d'une des unités inscrites comme owner {0} et accorder les REO appropriés si requis.</value>
+  </data>
+  <data name="TS70030I" xml:space="preserve">
+    <value>Vérifier auprès du demandeur si l'employé doit conserver les accès communs à tous les employés de l'unité {0} même si aucun rôle pour cette unité ne sera assigné à l'employé. Dans la négative, retirer le REO correspondant.</value>
+  </data>
+  <data name="TS70031I" xml:space="preserve">
+    <value>Vérifier auprès du demandeur si l'employé doit conserver les accès communs à tous les employés des unités {0} même si aucun rôle pour ces unités ne sera assigné à l'employé. Dans la négative, retirer les REO correspondant.</value>
+  </data>
+  <data name="TS70032E" xml:space="preserve">
+    <value>Vous pouvez sélectionner un maximum de 5 unités administratives seulement.</value>
+  </data>
+  <data name="TS70033I" xml:space="preserve">
+    <value>Le retrait d'un rôle prend effet à la date effective de la demande alors que la prolongation permet de conserver le rôle au-delà de cette date.  L'action "Retirer" a eu préséance.  Corrigez au besoin.</value>
+  </data>
+  <data name="TS70034E" xml:space="preserve">
+    <value>Vous devez sélectionner entre 1 et 5 unités administratives</value>
+  </data>
+  <data name="TS70035I" xml:space="preserve">
+    <value>Veuillez noter qu'il peut s'écouler un délai pouvant aller jusqu'à une journée ouvrable, suivant la confirmation de réalisation par le CASI, avant que les modifications apportées aux rôles de l'employé soient reflétées dans les tableaux d'assignations.</value>
+  </data>
+  <data name="TS70036E" xml:space="preserve">
+    <value>L'employé sera laissé sans rôle à l'atteinte de la date de prolongation la plus lointaine.  Veuillez réviser ou inscrire un commentaire à la section Accès non couverts par les rôles.</value>
+  </data>
+  <data name="TS70037E" xml:space="preserve">
+    <value>La sélection de {0} est incohérente avec {1}.</value>
+  </data>
+  <data name="TS70038E" xml:space="preserve">
+    <value>La sélection de {0} nécessite la sélection de {1}.</value>
+  </data>
+  <data name="TS70039E" xml:space="preserve">
+    <value>La sélection de {0} nécessite la sélection d'un et un seul des rôles identifiés.</value>
+  </data>
+  <data name="TS70040E" xml:space="preserve">
+    <value>La sélection de {0} nécessite la sélection d'au moins un des rôles identifiés.</value>
+  </data>
+  <data name="TS70042A" xml:space="preserve">
+    <value>L'employé détient au moins un &lt;b&gt;Compte supplémentaire&lt;/b&gt;.</value>
+  </data>
+  <data name="TS70042E" xml:space="preserve">
+    <value>Votre sélection (CR : {0} ) excède la capacité du système. Veuillez réduire le nombre d'unités administratives sélectionnées.</value>
+  </data>
+  <data name="TS70043E" xml:space="preserve">
+    <value>Votre sélection (CR : {0} ) excède la capacité du système. Veuillez signaler un problème au CASI.</value>
+  </data>
+  <data name="TS70043I" xml:space="preserve">
+    <value>La conservation du ou des comptes supplémentaires suivants: {0} nécessite une confirmation du demandeur.</value>
+  </data>
+  <data name="TS70044I" xml:space="preserve">
+    <value>Confirmer auprès du demandeur que l'employé doit conserver les comptes supplémentaires suivants : {0}.</value>
+  </data>
+</root>

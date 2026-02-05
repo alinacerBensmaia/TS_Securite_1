@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://eurekify.com/webservices" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://eurekify.com/webservices" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://eurekify.com/webservices">
+      <s:element name="diff_get_all">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldCfg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="updatedCfg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="diff_get_allResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="diff_get_allResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="users_get_added">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldCfg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="updatedCfg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="users_get_addedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="users_get_addedResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="users_get_removed">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldCfg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="updatedCfg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="users_get_removedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="users_get_removedResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="roles_get_added">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldCfg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="updatedCfg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="roles_get_addedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="roles_get_addedResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="roles_get_removed">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldCfg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="updatedCfg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="roles_get_removedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="roles_get_removedResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="resources_get_added">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldCfg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="updatedCfg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="resources_get_addedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="resources_get_addedResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="resources_get_removed">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldCfg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="updatedCfg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="resources_get_removedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="resources_get_removedResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="links_get_added_user_role">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldCfg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="updatedCfg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="links_get_added_user_roleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="links_get_added_user_roleResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="links_get_removed_user_role">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldCfg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="updatedCfg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="links_get_removed_user_roleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="links_get_removed_user_roleResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="links_get_added_user_resource">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldCfg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="updatedCfg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="links_get_added_user_resourceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="links_get_added_user_resourceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="links_get_removed_user_resource">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldCfg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="updatedCfg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="links_get_removed_user_resourceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="links_get_removed_user_resourceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="links_get_added_role_resource">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldCfg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="updatedCfg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="links_get_added_role_resourceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="links_get_added_role_resourceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="links_get_removed_role_resource">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldCfg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="updatedCfg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="links_get_removed_role_resourceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="links_get_removed_role_resourceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="links_get_added_role_role">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldCfg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="updatedCfg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="links_get_added_role_roleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="links_get_added_role_roleResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="links_get_removed_role_role">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldCfg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="updatedCfg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="links_get_removed_role_roleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="links_get_removed_role_roleResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="auditcards_get_added_alerts">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldAud" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="updatedAud" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="auditcards_get_added_alertsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="auditcards_get_added_alertsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="auditcards_get_removed_alerts">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldAud" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="updatedAud" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="auditcards_get_removed_alertsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="auditcards_get_removed_alertsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="auditcards_get_alerts_status_updates">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldAud" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="updatedAud" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="auditcards_get_alerts_status_updatesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="auditcards_get_alerts_status_updatesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="diff_get_allSoapIn">
+    <wsdl:part name="parameters" element="tns:diff_get_all" />
+  </wsdl:message>
+  <wsdl:message name="diff_get_allSoapOut">
+    <wsdl:part name="parameters" element="tns:diff_get_allResponse" />
+  </wsdl:message>
+  <wsdl:message name="users_get_addedSoapIn">
+    <wsdl:part name="parameters" element="tns:users_get_added" />
+  </wsdl:message>
+  <wsdl:message name="users_get_addedSoapOut">
+    <wsdl:part name="parameters" element="tns:users_get_addedResponse" />
+  </wsdl:message>
+  <wsdl:message name="users_get_removedSoapIn">
+    <wsdl:part name="parameters" element="tns:users_get_removed" />
+  </wsdl:message>
+  <wsdl:message name="users_get_removedSoapOut">
+    <wsdl:part name="parameters" element="tns:users_get_removedResponse" />
+  </wsdl:message>
+  <wsdl:message name="roles_get_addedSoapIn">
+    <wsdl:part name="parameters" element="tns:roles_get_added" />
+  </wsdl:message>
+  <wsdl:message name="roles_get_addedSoapOut">
+    <wsdl:part name="parameters" element="tns:roles_get_addedResponse" />
+  </wsdl:message>
+  <wsdl:message name="roles_get_removedSoapIn">
+    <wsdl:part name="parameters" element="tns:roles_get_removed" />
+  </wsdl:message>
+  <wsdl:message name="roles_get_removedSoapOut">
+    <wsdl:part name="parameters" element="tns:roles_get_removedResponse" />
+  </wsdl:message>
+  <wsdl:message name="resources_get_addedSoapIn">
+    <wsdl:part name="parameters" element="tns:resources_get_added" />
+  </wsdl:message>
+  <wsdl:message name="resources_get_addedSoapOut">
+    <wsdl:part name="parameters" element="tns:resources_get_addedResponse" />
+  </wsdl:message>
+  <wsdl:message name="resources_get_removedSoapIn">
+    <wsdl:part name="parameters" element="tns:resources_get_removed" />
+  </wsdl:message>
+  <wsdl:message name="resources_get_removedSoapOut">
+    <wsdl:part name="parameters" element="tns:resources_get_removedResponse" />
+  </wsdl:message>
+  <wsdl:message name="links_get_added_user_roleSoapIn">
+    <wsdl:part name="parameters" element="tns:links_get_added_user_role" />
+  </wsdl:message>
+  <wsdl:message name="links_get_added_user_roleSoapOut">
+    <wsdl:part name="parameters" element="tns:links_get_added_user_roleResponse" />
+  </wsdl:message>
+  <wsdl:message name="links_get_removed_user_roleSoapIn">
+    <wsdl:part name="parameters" element="tns:links_get_removed_user_role" />
+  </wsdl:message>
+  <wsdl:message name="links_get_removed_user_roleSoapOut">
+    <wsdl:part name="parameters" element="tns:links_get_removed_user_roleResponse" />
+  </wsdl:message>
+  <wsdl:message name="links_get_added_user_resourceSoapIn">
+    <wsdl:part name="parameters" element="tns:links_get_added_user_resource" />
+  </wsdl:message>
+  <wsdl:message name="links_get_added_user_resourceSoapOut">
+    <wsdl:part name="parameters" element="tns:links_get_added_user_resourceResponse" />
+  </wsdl:message>
+  <wsdl:message name="links_get_removed_user_resourceSoapIn">
+    <wsdl:part name="parameters" element="tns:links_get_removed_user_resource" />
+  </wsdl:message>
+  <wsdl:message name="links_get_removed_user_resourceSoapOut">
+    <wsdl:part name="parameters" element="tns:links_get_removed_user_resourceResponse" />
+  </wsdl:message>
+  <wsdl:message name="links_get_added_role_resourceSoapIn">
+    <wsdl:part name="parameters" element="tns:links_get_added_role_resource" />
+  </wsdl:message>
+  <wsdl:message name="links_get_added_role_resourceSoapOut">
+    <wsdl:part name="parameters" element="tns:links_get_added_role_resourceResponse" />
+  </wsdl:message>
+  <wsdl:message name="links_get_removed_role_resourceSoapIn">
+    <wsdl:part name="parameters" element="tns:links_get_removed_role_resource" />
+  </wsdl:message>
+  <wsdl:message name="links_get_removed_role_resourceSoapOut">
+    <wsdl:part name="parameters" element="tns:links_get_removed_role_resourceResponse" />
+  </wsdl:message>
+  <wsdl:message name="links_get_added_role_roleSoapIn">
+    <wsdl:part name="parameters" element="tns:links_get_added_role_role" />
+  </wsdl:message>
+  <wsdl:message name="links_get_added_role_roleSoapOut">
+    <wsdl:part name="parameters" element="tns:links_get_added_role_roleResponse" />
+  </wsdl:message>
+  <wsdl:message name="links_get_removed_role_roleSoapIn">
+    <wsdl:part name="parameters" element="tns:links_get_removed_role_role" />
+  </wsdl:message>
+  <wsdl:message name="links_get_removed_role_roleSoapOut">
+    <wsdl:part name="parameters" element="tns:links_get_removed_role_roleResponse" />
+  </wsdl:message>
+  <wsdl:message name="auditcards_get_added_alertsSoapIn">
+    <wsdl:part name="parameters" element="tns:auditcards_get_added_alerts" />
+  </wsdl:message>
+  <wsdl:message name="auditcards_get_added_alertsSoapOut">
+    <wsdl:part name="parameters" element="tns:auditcards_get_added_alertsResponse" />
+  </wsdl:message>
+  <wsdl:message name="auditcards_get_removed_alertsSoapIn">
+    <wsdl:part name="parameters" element="tns:auditcards_get_removed_alerts" />
+  </wsdl:message>
+  <wsdl:message name="auditcards_get_removed_alertsSoapOut">
+    <wsdl:part name="parameters" element="tns:auditcards_get_removed_alertsResponse" />
+  </wsdl:message>
+  <wsdl:message name="auditcards_get_alerts_status_updatesSoapIn">
+    <wsdl:part name="parameters" element="tns:auditcards_get_alerts_status_updates" />
+  </wsdl:message>
+  <wsdl:message name="auditcards_get_alerts_status_updatesSoapOut">
+    <wsdl:part name="parameters" element="tns:auditcards_get_alerts_status_updatesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SageDiffServiceSoap">
+    <wsdl:operation name="diff_get_all">
+      <wsdl:input message="tns:diff_get_allSoapIn" />
+      <wsdl:output message="tns:diff_get_allSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="users_get_added">
+      <wsdl:input message="tns:users_get_addedSoapIn" />
+      <wsdl:output message="tns:users_get_addedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="users_get_removed">
+      <wsdl:input message="tns:users_get_removedSoapIn" />
+      <wsdl:output message="tns:users_get_removedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="roles_get_added">
+      <wsdl:input message="tns:roles_get_addedSoapIn" />
+      <wsdl:output message="tns:roles_get_addedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="roles_get_removed">
+      <wsdl:input message="tns:roles_get_removedSoapIn" />
+      <wsdl:output message="tns:roles_get_removedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="resources_get_added">
+      <wsdl:input message="tns:resources_get_addedSoapIn" />
+      <wsdl:output message="tns:resources_get_addedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="resources_get_removed">
+      <wsdl:input message="tns:resources_get_removedSoapIn" />
+      <wsdl:output message="tns:resources_get_removedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="links_get_added_user_role">
+      <wsdl:input message="tns:links_get_added_user_roleSoapIn" />
+      <wsdl:output message="tns:links_get_added_user_roleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="links_get_removed_user_role">
+      <wsdl:input message="tns:links_get_removed_user_roleSoapIn" />
+      <wsdl:output message="tns:links_get_removed_user_roleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="links_get_added_user_resource">
+      <wsdl:input message="tns:links_get_added_user_resourceSoapIn" />
+      <wsdl:output message="tns:links_get_added_user_resourceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="links_get_removed_user_resource">
+      <wsdl:input message="tns:links_get_removed_user_resourceSoapIn" />
+      <wsdl:output message="tns:links_get_removed_user_resourceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="links_get_added_role_resource">
+      <wsdl:input message="tns:links_get_added_role_resourceSoapIn" />
+      <wsdl:output message="tns:links_get_added_role_resourceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="links_get_removed_role_resource">
+      <wsdl:input message="tns:links_get_removed_role_resourceSoapIn" />
+      <wsdl:output message="tns:links_get_removed_role_resourceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="links_get_added_role_role">
+      <wsdl:input message="tns:links_get_added_role_roleSoapIn" />
+      <wsdl:output message="tns:links_get_added_role_roleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="links_get_removed_role_role">
+      <wsdl:input message="tns:links_get_removed_role_roleSoapIn" />
+      <wsdl:output message="tns:links_get_removed_role_roleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="auditcards_get_added_alerts">
+      <wsdl:input message="tns:auditcards_get_added_alertsSoapIn" />
+      <wsdl:output message="tns:auditcards_get_added_alertsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="auditcards_get_removed_alerts">
+      <wsdl:input message="tns:auditcards_get_removed_alertsSoapIn" />
+      <wsdl:output message="tns:auditcards_get_removed_alertsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="auditcards_get_alerts_status_updates">
+      <wsdl:input message="tns:auditcards_get_alerts_status_updatesSoapIn" />
+      <wsdl:output message="tns:auditcards_get_alerts_status_updatesSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SageDiffServiceSoap" type="tns:SageDiffServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="diff_get_all">
+      <soap:operation soapAction="http://eurekify.com/webservices/diff_get_all" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="users_get_added">
+      <soap:operation soapAction="http://eurekify.com/webservices/users_get_added" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="users_get_removed">
+      <soap:operation soapAction="http://eurekify.com/webservices/users_get_removed" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="roles_get_added">
+      <soap:operation soapAction="http://eurekify.com/webservices/roles_get_added" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="roles_get_removed">
+      <soap:operation soapAction="http://eurekify.com/webservices/roles_get_removed" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="resources_get_added">
+      <soap:operation soapAction="http://eurekify.com/webservices/resources_get_added" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="resources_get_removed">
+      <soap:operation soapAction="http://eurekify.com/webservices/resources_get_removed" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="links_get_added_user_role">
+      <soap:operation soapAction="http://eurekify.com/webservices/links_get_added_user_role" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="links_get_removed_user_role">
+      <soap:operation soapAction="http://eurekify.com/webservices/links_get_removed_user_role" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="links_get_added_user_resource">
+      <soap:operation soapAction="http://eurekify.com/webservices/links_get_added_user_resource" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="links_get_removed_user_resource">
+      <soap:operation soapAction="http://eurekify.com/webservices/links_get_removed_user_resource" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="links_get_added_role_resource">
+      <soap:operation soapAction="http://eurekify.com/webservices/links_get_added_role_resource" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="links_get_removed_role_resource">
+      <soap:operation soapAction="http://eurekify.com/webservices/links_get_removed_role_resource" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="links_get_added_role_role">
+      <soap:operation soapAction="http://eurekify.com/webservices/links_get_added_role_role" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="links_get_removed_role_role">
+      <soap:operation soapAction="http://eurekify.com/webservices/links_get_removed_role_role" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="auditcards_get_added_alerts">
+      <soap:operation soapAction="http://eurekify.com/webservices/auditcards_get_added_alerts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="auditcards_get_removed_alerts">
+      <soap:operation soapAction="http://eurekify.com/webservices/auditcards_get_removed_alerts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="auditcards_get_alerts_status_updates">
+      <soap:operation soapAction="http://eurekify.com/webservices/auditcards_get_alerts_status_updates" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SageDiffService">
+    <wsdl:port name="SageDiffServiceSoap" binding="tns:SageDiffServiceSoap">
+      <soap:address location="http://portailsage/services/SageDiffService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

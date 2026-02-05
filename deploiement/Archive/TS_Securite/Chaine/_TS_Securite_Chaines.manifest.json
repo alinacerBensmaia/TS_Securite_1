@@ -1,0 +1,110 @@
+{
+  "Description": "*** Manifest du système TS_Securite TS_Securite ***",
+  "Composants": [
+    {
+      "NomComposant": "TS1DA",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.ses","{NomComposant}.upr" ],
+          "Exclusions": [],
+          "Source": "\\sources\\Chaines\\{NomComposant}\\",
+          "DestinationArtefact": "\\sources\\Chaines\\{NomComposant}\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_APP_DRIVE\\ORSYP\\"
+              ],
+              "ActionsInstallation": [ "Orsyp {NomComposant}.ses" ],
+              "TypesServeur": [ "OTI" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS5DB",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.ses","{NomComposant}.upr" ],
+          "Exclusions": [],
+          "Source": "\\sources\\Chaines\\{NomComposant}\\",
+          "DestinationArtefact": "\\sources\\Chaines\\{NomComposant}\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_APP_DRIVE\\ORSYP\\"
+              ],
+              "ActionsInstallation": [ "Orsyp {NomComposant}.ses" ],
+              "TypesServeur": [ "OTSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS5HA",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.ses","{NomComposant}.upr" ],
+          "Exclusions": [],
+          "Source": "\\sources\\Chaines\\{NomComposant}\\",
+          "DestinationArtefact": "\\sources\\Chaines\\{NomComposant}\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_APP_DRIVE\\ORSYP\\"
+              ],
+              "ActionsInstallation": [ "Orsyp {NomComposant}.ses" ],
+              "TypesServeur": [ "OTSU" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS6MA",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.ses","{NomComposant}.upr" ],
+          "Exclusions": [],
+          "Source": "\\sources\\Chaines\\{NomComposant}\\",
+          "DestinationArtefact": "\\sources\\Chaines\\{NomComposant}\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_APP_DRIVE\\ORSYP\\"
+              ],
+              "ActionsInstallation": [ "Orsyp {NomComposant}.ses" ],
+              "TypesServeur": [ "OTI" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NomComposant": "TS7HA",
+      "Distribuables": [
+        {
+          "Inclusions": [ "{NomComposant}.ses","{NomComposant}.upr" ],
+          "Exclusions": [],
+          "Source": "\\sources\\Chaines\\{NomComposant}\\",
+          "DestinationArtefact": "\\sources\\Chaines\\{NomComposant}\\",
+          "ModeleDeCopie": "Fichier",
+          "Installations": [
+            {
+              "RepertoireDestination": [
+                "$ENV:RRQ_APP_DRIVE\\ORSYP\\"
+              ],
+              "ActionsInstallation": [ "Orsyp {NomComposant}.ses" ],
+              "TypesServeur": [ "OTSU" ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

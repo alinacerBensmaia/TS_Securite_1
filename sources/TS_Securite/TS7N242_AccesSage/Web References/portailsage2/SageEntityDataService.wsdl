@@ -1,0 +1,930 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://eurekify.com/webservices" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://eurekify.com/webservices" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://eurekify.com/webservices">
+      <s:element name="user_get_direct_roles">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="personID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="user_get_direct_rolesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user_get_direct_rolesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="user_get_dual_roles">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="personID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="user_get_dual_rolesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user_get_dual_rolesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="user_get_indirect_roles">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="personID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="user_get_indirect_rolesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user_get_indirect_rolesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="user_get_direct_resources">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="personID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="user_get_direct_resourcesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user_get_direct_resourcesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="user_get_dual_resources">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="personID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="user_get_dual_resourcesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user_get_dual_resourcesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="user_get_indirect_resources">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="personID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="user_get_indirect_resourcesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user_get_indirect_resourcesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="role_get_direct_users">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RoleName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="role_get_direct_usersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="role_get_direct_usersResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="role_get_dual_users">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RoleName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="role_get_dual_usersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="role_get_dual_usersResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="role_get_indirect_users">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RoleName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="role_get_indirect_usersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="role_get_indirect_usersResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="role_get_direct_resources">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RoleName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="role_get_direct_resourcesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="role_get_direct_resourcesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="role_get_dual_resources">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RoleName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="role_get_dual_resourcesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="role_get_dual_resourcesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="role_get_indirect_resources">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RoleName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="role_get_indirect_resourcesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="role_get_indirect_resourcesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="role_get_parent_roles">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RoleName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="role_get_parent_rolesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="role_get_parent_rolesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="role_get_child_roles">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RoleName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="role_get_child_rolesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="role_get_child_rolesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="resource_get_direct_users">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName3" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="resource_get_direct_usersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="resource_get_direct_usersResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="resource_get_dual_users">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName3" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="resource_get_dual_usersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="resource_get_dual_usersResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="resource_get_indirect_users">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName3" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="resource_get_indirect_usersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="resource_get_indirect_usersResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="resource_get_direct_roles">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName3" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="resource_get_direct_rolesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="resource_get_direct_rolesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="resource_get_dual_roles">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName3" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="resource_get_dual_rolesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="resource_get_dual_rolesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="resource_get_indirect_roles">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName3" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="resource_get_indirect_rolesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="resource_get_indirect_rolesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="user_get_fields">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udbName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="user_get_fieldsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user_get_fieldsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="resource_get_fields">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rdbName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName3" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="resource_get_fieldsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="resource_get_fieldsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="role_get_fields">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="roleName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="role_get_fieldsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="role_get_fieldsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="database_get_fields">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dbName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dbType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="database_get_fieldsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="database_get_fieldsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_get_databases">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_get_databasesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cfg_get_databasesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="user_get_direct_rolesSoapIn">
+    <wsdl:part name="parameters" element="tns:user_get_direct_roles" />
+  </wsdl:message>
+  <wsdl:message name="user_get_direct_rolesSoapOut">
+    <wsdl:part name="parameters" element="tns:user_get_direct_rolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="user_get_dual_rolesSoapIn">
+    <wsdl:part name="parameters" element="tns:user_get_dual_roles" />
+  </wsdl:message>
+  <wsdl:message name="user_get_dual_rolesSoapOut">
+    <wsdl:part name="parameters" element="tns:user_get_dual_rolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="user_get_indirect_rolesSoapIn">
+    <wsdl:part name="parameters" element="tns:user_get_indirect_roles" />
+  </wsdl:message>
+  <wsdl:message name="user_get_indirect_rolesSoapOut">
+    <wsdl:part name="parameters" element="tns:user_get_indirect_rolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="user_get_direct_resourcesSoapIn">
+    <wsdl:part name="parameters" element="tns:user_get_direct_resources" />
+  </wsdl:message>
+  <wsdl:message name="user_get_direct_resourcesSoapOut">
+    <wsdl:part name="parameters" element="tns:user_get_direct_resourcesResponse" />
+  </wsdl:message>
+  <wsdl:message name="user_get_dual_resourcesSoapIn">
+    <wsdl:part name="parameters" element="tns:user_get_dual_resources" />
+  </wsdl:message>
+  <wsdl:message name="user_get_dual_resourcesSoapOut">
+    <wsdl:part name="parameters" element="tns:user_get_dual_resourcesResponse" />
+  </wsdl:message>
+  <wsdl:message name="user_get_indirect_resourcesSoapIn">
+    <wsdl:part name="parameters" element="tns:user_get_indirect_resources" />
+  </wsdl:message>
+  <wsdl:message name="user_get_indirect_resourcesSoapOut">
+    <wsdl:part name="parameters" element="tns:user_get_indirect_resourcesResponse" />
+  </wsdl:message>
+  <wsdl:message name="role_get_direct_usersSoapIn">
+    <wsdl:part name="parameters" element="tns:role_get_direct_users" />
+  </wsdl:message>
+  <wsdl:message name="role_get_direct_usersSoapOut">
+    <wsdl:part name="parameters" element="tns:role_get_direct_usersResponse" />
+  </wsdl:message>
+  <wsdl:message name="role_get_dual_usersSoapIn">
+    <wsdl:part name="parameters" element="tns:role_get_dual_users" />
+  </wsdl:message>
+  <wsdl:message name="role_get_dual_usersSoapOut">
+    <wsdl:part name="parameters" element="tns:role_get_dual_usersResponse" />
+  </wsdl:message>
+  <wsdl:message name="role_get_indirect_usersSoapIn">
+    <wsdl:part name="parameters" element="tns:role_get_indirect_users" />
+  </wsdl:message>
+  <wsdl:message name="role_get_indirect_usersSoapOut">
+    <wsdl:part name="parameters" element="tns:role_get_indirect_usersResponse" />
+  </wsdl:message>
+  <wsdl:message name="role_get_direct_resourcesSoapIn">
+    <wsdl:part name="parameters" element="tns:role_get_direct_resources" />
+  </wsdl:message>
+  <wsdl:message name="role_get_direct_resourcesSoapOut">
+    <wsdl:part name="parameters" element="tns:role_get_direct_resourcesResponse" />
+  </wsdl:message>
+  <wsdl:message name="role_get_dual_resourcesSoapIn">
+    <wsdl:part name="parameters" element="tns:role_get_dual_resources" />
+  </wsdl:message>
+  <wsdl:message name="role_get_dual_resourcesSoapOut">
+    <wsdl:part name="parameters" element="tns:role_get_dual_resourcesResponse" />
+  </wsdl:message>
+  <wsdl:message name="role_get_indirect_resourcesSoapIn">
+    <wsdl:part name="parameters" element="tns:role_get_indirect_resources" />
+  </wsdl:message>
+  <wsdl:message name="role_get_indirect_resourcesSoapOut">
+    <wsdl:part name="parameters" element="tns:role_get_indirect_resourcesResponse" />
+  </wsdl:message>
+  <wsdl:message name="role_get_parent_rolesSoapIn">
+    <wsdl:part name="parameters" element="tns:role_get_parent_roles" />
+  </wsdl:message>
+  <wsdl:message name="role_get_parent_rolesSoapOut">
+    <wsdl:part name="parameters" element="tns:role_get_parent_rolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="role_get_child_rolesSoapIn">
+    <wsdl:part name="parameters" element="tns:role_get_child_roles" />
+  </wsdl:message>
+  <wsdl:message name="role_get_child_rolesSoapOut">
+    <wsdl:part name="parameters" element="tns:role_get_child_rolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="resource_get_direct_usersSoapIn">
+    <wsdl:part name="parameters" element="tns:resource_get_direct_users" />
+  </wsdl:message>
+  <wsdl:message name="resource_get_direct_usersSoapOut">
+    <wsdl:part name="parameters" element="tns:resource_get_direct_usersResponse" />
+  </wsdl:message>
+  <wsdl:message name="resource_get_dual_usersSoapIn">
+    <wsdl:part name="parameters" element="tns:resource_get_dual_users" />
+  </wsdl:message>
+  <wsdl:message name="resource_get_dual_usersSoapOut">
+    <wsdl:part name="parameters" element="tns:resource_get_dual_usersResponse" />
+  </wsdl:message>
+  <wsdl:message name="resource_get_indirect_usersSoapIn">
+    <wsdl:part name="parameters" element="tns:resource_get_indirect_users" />
+  </wsdl:message>
+  <wsdl:message name="resource_get_indirect_usersSoapOut">
+    <wsdl:part name="parameters" element="tns:resource_get_indirect_usersResponse" />
+  </wsdl:message>
+  <wsdl:message name="resource_get_direct_rolesSoapIn">
+    <wsdl:part name="parameters" element="tns:resource_get_direct_roles" />
+  </wsdl:message>
+  <wsdl:message name="resource_get_direct_rolesSoapOut">
+    <wsdl:part name="parameters" element="tns:resource_get_direct_rolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="resource_get_dual_rolesSoapIn">
+    <wsdl:part name="parameters" element="tns:resource_get_dual_roles" />
+  </wsdl:message>
+  <wsdl:message name="resource_get_dual_rolesSoapOut">
+    <wsdl:part name="parameters" element="tns:resource_get_dual_rolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="resource_get_indirect_rolesSoapIn">
+    <wsdl:part name="parameters" element="tns:resource_get_indirect_roles" />
+  </wsdl:message>
+  <wsdl:message name="resource_get_indirect_rolesSoapOut">
+    <wsdl:part name="parameters" element="tns:resource_get_indirect_rolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="user_get_fieldsSoapIn">
+    <wsdl:part name="parameters" element="tns:user_get_fields" />
+  </wsdl:message>
+  <wsdl:message name="user_get_fieldsSoapOut">
+    <wsdl:part name="parameters" element="tns:user_get_fieldsResponse" />
+  </wsdl:message>
+  <wsdl:message name="resource_get_fieldsSoapIn">
+    <wsdl:part name="parameters" element="tns:resource_get_fields" />
+  </wsdl:message>
+  <wsdl:message name="resource_get_fieldsSoapOut">
+    <wsdl:part name="parameters" element="tns:resource_get_fieldsResponse" />
+  </wsdl:message>
+  <wsdl:message name="role_get_fieldsSoapIn">
+    <wsdl:part name="parameters" element="tns:role_get_fields" />
+  </wsdl:message>
+  <wsdl:message name="role_get_fieldsSoapOut">
+    <wsdl:part name="parameters" element="tns:role_get_fieldsResponse" />
+  </wsdl:message>
+  <wsdl:message name="database_get_fieldsSoapIn">
+    <wsdl:part name="parameters" element="tns:database_get_fields" />
+  </wsdl:message>
+  <wsdl:message name="database_get_fieldsSoapOut">
+    <wsdl:part name="parameters" element="tns:database_get_fieldsResponse" />
+  </wsdl:message>
+  <wsdl:message name="cfg_get_databasesSoapIn">
+    <wsdl:part name="parameters" element="tns:cfg_get_databases" />
+  </wsdl:message>
+  <wsdl:message name="cfg_get_databasesSoapOut">
+    <wsdl:part name="parameters" element="tns:cfg_get_databasesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SageEntityDataServiceSoap">
+    <wsdl:operation name="user_get_direct_roles">
+      <wsdl:input message="tns:user_get_direct_rolesSoapIn" />
+      <wsdl:output message="tns:user_get_direct_rolesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="user_get_dual_roles">
+      <wsdl:input message="tns:user_get_dual_rolesSoapIn" />
+      <wsdl:output message="tns:user_get_dual_rolesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="user_get_indirect_roles">
+      <wsdl:input message="tns:user_get_indirect_rolesSoapIn" />
+      <wsdl:output message="tns:user_get_indirect_rolesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="user_get_direct_resources">
+      <wsdl:input message="tns:user_get_direct_resourcesSoapIn" />
+      <wsdl:output message="tns:user_get_direct_resourcesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="user_get_dual_resources">
+      <wsdl:input message="tns:user_get_dual_resourcesSoapIn" />
+      <wsdl:output message="tns:user_get_dual_resourcesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="user_get_indirect_resources">
+      <wsdl:input message="tns:user_get_indirect_resourcesSoapIn" />
+      <wsdl:output message="tns:user_get_indirect_resourcesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="role_get_direct_users">
+      <wsdl:input message="tns:role_get_direct_usersSoapIn" />
+      <wsdl:output message="tns:role_get_direct_usersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="role_get_dual_users">
+      <wsdl:input message="tns:role_get_dual_usersSoapIn" />
+      <wsdl:output message="tns:role_get_dual_usersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="role_get_indirect_users">
+      <wsdl:input message="tns:role_get_indirect_usersSoapIn" />
+      <wsdl:output message="tns:role_get_indirect_usersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="role_get_direct_resources">
+      <wsdl:input message="tns:role_get_direct_resourcesSoapIn" />
+      <wsdl:output message="tns:role_get_direct_resourcesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="role_get_dual_resources">
+      <wsdl:input message="tns:role_get_dual_resourcesSoapIn" />
+      <wsdl:output message="tns:role_get_dual_resourcesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="role_get_indirect_resources">
+      <wsdl:input message="tns:role_get_indirect_resourcesSoapIn" />
+      <wsdl:output message="tns:role_get_indirect_resourcesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="role_get_parent_roles">
+      <wsdl:input message="tns:role_get_parent_rolesSoapIn" />
+      <wsdl:output message="tns:role_get_parent_rolesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="role_get_child_roles">
+      <wsdl:input message="tns:role_get_child_rolesSoapIn" />
+      <wsdl:output message="tns:role_get_child_rolesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="resource_get_direct_users">
+      <wsdl:input message="tns:resource_get_direct_usersSoapIn" />
+      <wsdl:output message="tns:resource_get_direct_usersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="resource_get_dual_users">
+      <wsdl:input message="tns:resource_get_dual_usersSoapIn" />
+      <wsdl:output message="tns:resource_get_dual_usersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="resource_get_indirect_users">
+      <wsdl:input message="tns:resource_get_indirect_usersSoapIn" />
+      <wsdl:output message="tns:resource_get_indirect_usersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="resource_get_direct_roles">
+      <wsdl:input message="tns:resource_get_direct_rolesSoapIn" />
+      <wsdl:output message="tns:resource_get_direct_rolesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="resource_get_dual_roles">
+      <wsdl:input message="tns:resource_get_dual_rolesSoapIn" />
+      <wsdl:output message="tns:resource_get_dual_rolesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="resource_get_indirect_roles">
+      <wsdl:input message="tns:resource_get_indirect_rolesSoapIn" />
+      <wsdl:output message="tns:resource_get_indirect_rolesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="user_get_fields">
+      <wsdl:input message="tns:user_get_fieldsSoapIn" />
+      <wsdl:output message="tns:user_get_fieldsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="resource_get_fields">
+      <wsdl:input message="tns:resource_get_fieldsSoapIn" />
+      <wsdl:output message="tns:resource_get_fieldsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="role_get_fields">
+      <wsdl:input message="tns:role_get_fieldsSoapIn" />
+      <wsdl:output message="tns:role_get_fieldsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="database_get_fields">
+      <wsdl:input message="tns:database_get_fieldsSoapIn" />
+      <wsdl:output message="tns:database_get_fieldsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="cfg_get_databases">
+      <wsdl:input message="tns:cfg_get_databasesSoapIn" />
+      <wsdl:output message="tns:cfg_get_databasesSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SageEntityDataServiceSoap" type="tns:SageEntityDataServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="user_get_direct_roles">
+      <soap:operation soapAction="http://eurekify.com/webservices/user_get_direct_roles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="user_get_dual_roles">
+      <soap:operation soapAction="http://eurekify.com/webservices/user_get_dual_roles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="user_get_indirect_roles">
+      <soap:operation soapAction="http://eurekify.com/webservices/user_get_indirect_roles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="user_get_direct_resources">
+      <soap:operation soapAction="http://eurekify.com/webservices/user_get_direct_resources" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="user_get_dual_resources">
+      <soap:operation soapAction="http://eurekify.com/webservices/user_get_dual_resources" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="user_get_indirect_resources">
+      <soap:operation soapAction="http://eurekify.com/webservices/user_get_indirect_resources" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="role_get_direct_users">
+      <soap:operation soapAction="http://eurekify.com/webservices/role_get_direct_users" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="role_get_dual_users">
+      <soap:operation soapAction="http://eurekify.com/webservices/role_get_dual_users" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="role_get_indirect_users">
+      <soap:operation soapAction="http://eurekify.com/webservices/role_get_indirect_users" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="role_get_direct_resources">
+      <soap:operation soapAction="http://eurekify.com/webservices/role_get_direct_resources" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="role_get_dual_resources">
+      <soap:operation soapAction="http://eurekify.com/webservices/role_get_dual_resources" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="role_get_indirect_resources">
+      <soap:operation soapAction="http://eurekify.com/webservices/role_get_indirect_resources" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="role_get_parent_roles">
+      <soap:operation soapAction="http://eurekify.com/webservices/role_get_parent_roles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="role_get_child_roles">
+      <soap:operation soapAction="http://eurekify.com/webservices/role_get_child_roles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="resource_get_direct_users">
+      <soap:operation soapAction="http://eurekify.com/webservices/resource_get_direct_users" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="resource_get_dual_users">
+      <soap:operation soapAction="http://eurekify.com/webservices/resource_get_dual_users" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="resource_get_indirect_users">
+      <soap:operation soapAction="http://eurekify.com/webservices/resource_get_indirect_users" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="resource_get_direct_roles">
+      <soap:operation soapAction="http://eurekify.com/webservices/resource_get_direct_roles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="resource_get_dual_roles">
+      <soap:operation soapAction="http://eurekify.com/webservices/resource_get_dual_roles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="resource_get_indirect_roles">
+      <soap:operation soapAction="http://eurekify.com/webservices/resource_get_indirect_roles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="user_get_fields">
+      <soap:operation soapAction="http://eurekify.com/webservices/user_get_fields" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="resource_get_fields">
+      <soap:operation soapAction="http://eurekify.com/webservices/resource_get_fields" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="role_get_fields">
+      <soap:operation soapAction="http://eurekify.com/webservices/role_get_fields" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="database_get_fields">
+      <soap:operation soapAction="http://eurekify.com/webservices/database_get_fields" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cfg_get_databases">
+      <soap:operation soapAction="http://eurekify.com/webservices/cfg_get_databases" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SageEntityDataService">
+    <wsdl:port name="SageEntityDataServiceSoap" binding="tns:SageEntityDataServiceSoap">
+      <soap:address location="http://portailsage/services/SageEntityDataService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

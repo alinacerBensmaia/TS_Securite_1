@@ -1,0 +1,30 @@
+trigger:
+  none
+
+resources:
+  repositories:
+    - repository: ST3.Outils.DevOps
+      type: git
+      name: ST3.Outils.DevOps
+      ref: master
+
+parameters:
+  # Numero de demande de changement obligatoire pour une livraison en Prod 
+- name: numeroDemandeChangement
+  displayName: "Numero de demande de changement (Format: CHGXXXXXXX)?"
+  type: string
+  default: ""  
+
+  # Permet d'installer l'artefact au moment du déploiement sans attendre les plages de graduations 
+- name: installationImmediate
+  displayName: Avec installation immediate?  
+  type: boolean
+  default: false
+
+extends:
+  template: Deploiement/Extends/ST3.Extends.Deploiement.Environnement.Prod.yml@ST3.Outils.DevOps
+  parameters:          
+    manifest: "TS_Securite.manifest.json" #Exemple   --> "FC_Fichier_Inscription_Clientele.Manifest.json"
+    installationImmediate: '${{parameters.installationImmediate}}'    
+    numeroDemandeChangement: '${{parameters.numeroDemandeChangement}}'
+

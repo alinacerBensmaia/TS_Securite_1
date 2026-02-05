@@ -1,0 +1,93 @@
+﻿.texte
+{
+    font-size: 15px;
+    font-family: Verdana, sans-serif;
+}
+textarea
+{
+    font-size: 15px;
+}
+.date input
+{
+    font-size: 15px;
+    font-family: Verdana, sans-serif;
+}
+.titre
+{
+    font-size: 16px;
+}
+.grandeSection
+{
+    font-size: 16px;
+}
+.soustitre
+{
+    font-size: 15px;
+}
+.etiquette
+{
+    font-size: 15px;
+}
+.objetinterface
+{
+    font-size: 12px;
+}
+.menuPIV
+{
+    font-size: 15px;
+}
+.listePIV LI
+{
+    font-size: 14px;
+}
+
+.boutonnormal, .boutonaction
+{
+    font-size: 13px;
+}
+
+.basDePage
+{
+    font-size: 12px;
+}
+
+.EncadreBoutonNavigation
+{
+    padding: 10px 0 36px 0;
+}
+
+.grille .entete td a
+{
+    font-size: 15px;
+}
+.grille .entete td
+{
+    font-size: 15px;
+}
+
+.listecaseacoche label
+{
+    font-size: 15px;
+}
+.menu
+{
+    font-size: 14px;
+}
+
+.hautmenuvert
+{
+    /*margin: 14px 0px -29px 10px;*/
+    width: 210px;
+    height: 15px;
+}
+
+.filarianne
+{
+    color: gray;
+    font-size: 14px;
+}
+
+/* Fix pour premier element du menu lorsque utiliser avec Rrq.Web.GabaritsPetitsSystemes.Controles.NI1SMasterPage */
+#divMasterPage #ctl05 .menu .hautmenuvert  + .menudegrade ul li.header {
+    padding: 0 0 7px 10px;
+}

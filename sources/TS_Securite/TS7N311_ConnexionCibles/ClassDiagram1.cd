@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Rrq.Securite.GestionAcces.My.MySettings" Collapsed="true">
+    <Position X="5.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsAtCibleRBACAttribute" Collapsed="true">
+    <Position X="7.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAIAAAAQAAAAAAAAAAAAiAAAA=</HashCode>
+      <FileName>TsAtCibleRBACAttribute.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsAtMethodeIgnorableAttribute" Collapsed="true">
+    <Position X="9.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAEAAAAAAgAKAA=</HashCode>
+      <FileName>TsAtMethodeIgnorableAttribute.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdConnxAttrb" Collapsed="true">
+    <Position X="8.5" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAABAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TsCdConnxAttrb.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdConnxRessr" Collapsed="true">
+    <Position X="6" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TsCdConnxRessr.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdConnxRessrAttrb" Collapsed="true">
+    <Position X="8.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TsCdConnxRessrAttrb.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdConnxRole" Collapsed="true">
+    <Position X="6" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>TsCdConnxRole.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdConnxRoleAttrb" Collapsed="true">
+    <Position X="8.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>TsCdConnxRoleAttrb.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdConnxRoleRessr" Collapsed="true">
+    <Position X="6" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgIAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>TsCdConnxRoleRessr.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdConnxRoleRole" Collapsed="true">
+    <Position X="6" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TsCdConnxRoleRole.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdConnxUser" Collapsed="true">
+    <Position X="6" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TsCdConnxUser.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdConnxUserAttrb" Collapsed="true">
+    <Position X="8.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TsCdConnxUserAttrb.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdConnxUserRessr" Collapsed="true">
+    <Position X="6" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAgIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TsCdConnxUserRessr.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdConnxUserRole" Collapsed="true">
+    <Position X="6" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>TsCdConnxUserRole.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCdElementConnexion">
+    <Position X="6.5" Y="2" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TsCdElementConnexion.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCuConnecteurCible" Collapsed="true">
+    <Position X="1.75" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAgCBACgCEAAAARIAAAAAggAAAQAIIAgA4ASIxUM=</HashCode>
+      <FileName>TsCuConnecteurCible.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Rrq.Securite.GestionAcces.TsCuConnecteurCibleIgnorable" Collapsed="true">
+    <Position X="1.5" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAgCBAAgCEAAAARAAAAAAgAAAAQAIIAgA4ACAgUM=</HashCode>
+      <FileName>TsCuConnecteurCibleIgnorable.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Rrq.Securite.GestionAcces.TsIConncMajDefntRessr" Collapsed="true">
+    <Position X="7.5" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgCAAAAAAAAAAAAAAAAAAAAIAgAQAAAAAA=</HashCode>
+      <FileName>TsIConncDefntRessr.vb</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Rrq.Securite.GestionAcces.TsIConncMajDefntRole" Collapsed="true">
+    <Position X="9.25" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAEAAAAAAAAAAAgAAAAQAIAAAAgAAAgAM=</HashCode>
+      <FileName>TsIConncDefntRole.vb</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Rrq.Securite.GestionAcces.TsIConncMajDefntUser" Collapsed="true">
+    <Position X="5.75" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAACBAAAAAAAAARAAAAAAAAAAAAAAAAAAIACAAUA=</HashCode>
+      <FileName>TsIConncDefntUser.vb</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Rrq.Securite.GestionAcces.TsIConncInteraction" Collapsed="true">
+    <Position X="5.75" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>TsIConncInit.vb</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Rrq.Securite.GestionAcces.TsITerminologieCible" Collapsed="true">
+    <Position X="7.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>TsITerminologieCible.vb</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Rrq.Securite.GestionAcces.TsECcAction" Collapsed="true">
+    <Position X="5.75" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>TsECcAction.vb</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Rrq.Securite.GestionAcces.TsECcCibleAJour">
+    <Position X="11" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAABAAAAAAAAAEAAgAAACAAAAgAAA=</HashCode>
+      <FileName>TsECcCibleAJour.vb</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Module Name="Rrq.Securite.GestionAcces.My.Resources.Resources" Collapsed="true">
+    <Position X="7.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="Rrq.Securite.GestionAcces.My.MySettingsProperty" Collapsed="true">
+    <Position X="5.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="Rrq.Securite.GestionAcces.TsBaSupportConnecteur" Collapsed="true">
+    <Position X="9.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAEAAAAAAgAAAA=</HashCode>
+      <FileName>TsBaSupportConnecteur.vb</FileName>
+    </TypeIdentifier>
+  </Module>
+  <Font Name="Arial" Size="9" />
+</ClassDiagram>

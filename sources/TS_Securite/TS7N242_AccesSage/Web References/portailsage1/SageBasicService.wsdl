@@ -1,0 +1,1124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://eurekify.com/webservices" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://eurekify.com/webservices" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://eurekify.com/webservices">
+      <s:element name="udb_new_user">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udbName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="personID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="org" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="orgType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="udb_new_userResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="udb_new_userResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="udb_new_user_field">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udbName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="personId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="fieldNum" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="fieldValue" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="udb_new_user_fieldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="udb_new_user_fieldResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="udb_change_user_field">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udbName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="personId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fieldName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fieldValue" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="udb_change_user_fieldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="udb_change_user_fieldResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_new_configuration_user">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="personID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_new_configuration_userResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cfg_new_configuration_userResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="rdb_new_resource">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rdbName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName3" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="rdb_new_resourceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="rdb_new_resourceResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="rdb_new_resource_field">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rdbName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName3" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="fieldNum" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="fieldValue" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="rdb_new_resource_fieldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="rdb_new_resource_fieldResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="rdb_change_resource_field">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rdbName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fieldName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fieldValue" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="rdb_change_resource_fieldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="rdb_change_resource_fieldResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_new_configuration_resource">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_new_configuration_resourceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cfg_new_configuration_resourceResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_new_configuration_role">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="roleName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="roleDescription" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="roleOrganization" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="roleOwner" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="roleType" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="roleCreateDate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="roleReviewer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="roleApproveCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="roleApprovedDate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="roleFilter" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="roleOrganization2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="roleOrganization3" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="roleExpirationDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_new_configuration_roleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cfg_new_configuration_roleResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_change_role_field">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="roleName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fieldName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fieldValue" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_change_role_fieldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cfg_change_role_fieldResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_new_user_resource_link">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="personId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName3" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_new_user_resource_linkResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cfg_new_user_resource_linkResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_new_user_role_link">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="personId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="roleName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_new_user_role_linkResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cfg_new_user_role_linkResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_new_resource_role_link">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="roleName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_new_resource_role_linkResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cfg_new_resource_role_linkResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_new_role_role_link">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parentRoleName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="childRoleName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_new_role_role_linkResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cfg_new_role_role_linkResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="new_udb">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udbName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="new_udbResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="new_udbResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="new_rdb">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rdbName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="new_rdbResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="new_rdbResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="new_cfg">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udbName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rdbName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="modifyDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="statusDate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="owner1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="owner2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="org1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="org2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="op1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="op2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="op3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parentCfg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="new_cfgResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="new_cfgResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="new_field_name">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dbName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dbType" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="fieldNum" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="fieldName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="new_field_nameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="new_field_nameResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_remove_user_resource_link">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="personId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_remove_user_resource_linkResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cfg_remove_user_resource_linkResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_remove_user_role_link">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="personId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="roleName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_remove_user_role_linkResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cfg_remove_user_role_linkResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_remove_resource_role_link">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="roleName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_remove_resource_role_linkResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cfg_remove_resource_role_linkResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_remove_role_role_link">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parentName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="childName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_remove_role_role_linkResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cfg_remove_role_role_linkResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_remove_configuration_role">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="roleName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_remove_configuration_roleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cfg_remove_configuration_roleResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_remove_configuration_user">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="personId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_remove_configuration_userResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cfg_remove_configuration_userResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_remove_configuration_resource">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resName3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfgName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cfg_remove_configuration_resourceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cfg_remove_configuration_resourceResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bpr_new_bpr_file">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="bprFileName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bpr_new_bpr_fileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="bpr_new_bpr_fileResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bpr_new_rule">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ruleFileName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ruleName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ruleDescription" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ruleType" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ruleBusinessArea" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ruleBusinessProcess" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bpr_new_ruleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="bpr_new_ruleResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bpr_new_rule_entity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ruleFileName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ruleName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="entityFirstName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="entitySecondName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="entityThirdName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="entityIsLeft" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bpr_new_rule_entityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="bpr_new_rule_entityResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getLoginUser">
+        <s:complexType />
+      </s:element>
+      <s:element name="getLoginUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getLoginUserResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="udb_new_userSoapIn">
+    <wsdl:part name="parameters" element="tns:udb_new_user" />
+  </wsdl:message>
+  <wsdl:message name="udb_new_userSoapOut">
+    <wsdl:part name="parameters" element="tns:udb_new_userResponse" />
+  </wsdl:message>
+  <wsdl:message name="udb_new_user_fieldSoapIn">
+    <wsdl:part name="parameters" element="tns:udb_new_user_field" />
+  </wsdl:message>
+  <wsdl:message name="udb_new_user_fieldSoapOut">
+    <wsdl:part name="parameters" element="tns:udb_new_user_fieldResponse" />
+  </wsdl:message>
+  <wsdl:message name="udb_change_user_fieldSoapIn">
+    <wsdl:part name="parameters" element="tns:udb_change_user_field" />
+  </wsdl:message>
+  <wsdl:message name="udb_change_user_fieldSoapOut">
+    <wsdl:part name="parameters" element="tns:udb_change_user_fieldResponse" />
+  </wsdl:message>
+  <wsdl:message name="cfg_new_configuration_userSoapIn">
+    <wsdl:part name="parameters" element="tns:cfg_new_configuration_user" />
+  </wsdl:message>
+  <wsdl:message name="cfg_new_configuration_userSoapOut">
+    <wsdl:part name="parameters" element="tns:cfg_new_configuration_userResponse" />
+  </wsdl:message>
+  <wsdl:message name="rdb_new_resourceSoapIn">
+    <wsdl:part name="parameters" element="tns:rdb_new_resource" />
+  </wsdl:message>
+  <wsdl:message name="rdb_new_resourceSoapOut">
+    <wsdl:part name="parameters" element="tns:rdb_new_resourceResponse" />
+  </wsdl:message>
+  <wsdl:message name="rdb_new_resource_fieldSoapIn">
+    <wsdl:part name="parameters" element="tns:rdb_new_resource_field" />
+  </wsdl:message>
+  <wsdl:message name="rdb_new_resource_fieldSoapOut">
+    <wsdl:part name="parameters" element="tns:rdb_new_resource_fieldResponse" />
+  </wsdl:message>
+  <wsdl:message name="rdb_change_resource_fieldSoapIn">
+    <wsdl:part name="parameters" element="tns:rdb_change_resource_field" />
+  </wsdl:message>
+  <wsdl:message name="rdb_change_resource_fieldSoapOut">
+    <wsdl:part name="parameters" element="tns:rdb_change_resource_fieldResponse" />
+  </wsdl:message>
+  <wsdl:message name="cfg_new_configuration_resourceSoapIn">
+    <wsdl:part name="parameters" element="tns:cfg_new_configuration_resource" />
+  </wsdl:message>
+  <wsdl:message name="cfg_new_configuration_resourceSoapOut">
+    <wsdl:part name="parameters" element="tns:cfg_new_configuration_resourceResponse" />
+  </wsdl:message>
+  <wsdl:message name="cfg_new_configuration_roleSoapIn">
+    <wsdl:part name="parameters" element="tns:cfg_new_configuration_role" />
+  </wsdl:message>
+  <wsdl:message name="cfg_new_configuration_roleSoapOut">
+    <wsdl:part name="parameters" element="tns:cfg_new_configuration_roleResponse" />
+  </wsdl:message>
+  <wsdl:message name="cfg_change_role_fieldSoapIn">
+    <wsdl:part name="parameters" element="tns:cfg_change_role_field" />
+  </wsdl:message>
+  <wsdl:message name="cfg_change_role_fieldSoapOut">
+    <wsdl:part name="parameters" element="tns:cfg_change_role_fieldResponse" />
+  </wsdl:message>
+  <wsdl:message name="cfg_new_user_resource_linkSoapIn">
+    <wsdl:part name="parameters" element="tns:cfg_new_user_resource_link" />
+  </wsdl:message>
+  <wsdl:message name="cfg_new_user_resource_linkSoapOut">
+    <wsdl:part name="parameters" element="tns:cfg_new_user_resource_linkResponse" />
+  </wsdl:message>
+  <wsdl:message name="cfg_new_user_role_linkSoapIn">
+    <wsdl:part name="parameters" element="tns:cfg_new_user_role_link" />
+  </wsdl:message>
+  <wsdl:message name="cfg_new_user_role_linkSoapOut">
+    <wsdl:part name="parameters" element="tns:cfg_new_user_role_linkResponse" />
+  </wsdl:message>
+  <wsdl:message name="cfg_new_resource_role_linkSoapIn">
+    <wsdl:part name="parameters" element="tns:cfg_new_resource_role_link" />
+  </wsdl:message>
+  <wsdl:message name="cfg_new_resource_role_linkSoapOut">
+    <wsdl:part name="parameters" element="tns:cfg_new_resource_role_linkResponse" />
+  </wsdl:message>
+  <wsdl:message name="cfg_new_role_role_linkSoapIn">
+    <wsdl:part name="parameters" element="tns:cfg_new_role_role_link" />
+  </wsdl:message>
+  <wsdl:message name="cfg_new_role_role_linkSoapOut">
+    <wsdl:part name="parameters" element="tns:cfg_new_role_role_linkResponse" />
+  </wsdl:message>
+  <wsdl:message name="new_udbSoapIn">
+    <wsdl:part name="parameters" element="tns:new_udb" />
+  </wsdl:message>
+  <wsdl:message name="new_udbSoapOut">
+    <wsdl:part name="parameters" element="tns:new_udbResponse" />
+  </wsdl:message>
+  <wsdl:message name="new_rdbSoapIn">
+    <wsdl:part name="parameters" element="tns:new_rdb" />
+  </wsdl:message>
+  <wsdl:message name="new_rdbSoapOut">
+    <wsdl:part name="parameters" element="tns:new_rdbResponse" />
+  </wsdl:message>
+  <wsdl:message name="new_cfgSoapIn">
+    <wsdl:part name="parameters" element="tns:new_cfg" />
+  </wsdl:message>
+  <wsdl:message name="new_cfgSoapOut">
+    <wsdl:part name="parameters" element="tns:new_cfgResponse" />
+  </wsdl:message>
+  <wsdl:message name="new_field_nameSoapIn">
+    <wsdl:part name="parameters" element="tns:new_field_name" />
+  </wsdl:message>
+  <wsdl:message name="new_field_nameSoapOut">
+    <wsdl:part name="parameters" element="tns:new_field_nameResponse" />
+  </wsdl:message>
+  <wsdl:message name="cfg_remove_user_resource_linkSoapIn">
+    <wsdl:part name="parameters" element="tns:cfg_remove_user_resource_link" />
+  </wsdl:message>
+  <wsdl:message name="cfg_remove_user_resource_linkSoapOut">
+    <wsdl:part name="parameters" element="tns:cfg_remove_user_resource_linkResponse" />
+  </wsdl:message>
+  <wsdl:message name="cfg_remove_user_role_linkSoapIn">
+    <wsdl:part name="parameters" element="tns:cfg_remove_user_role_link" />
+  </wsdl:message>
+  <wsdl:message name="cfg_remove_user_role_linkSoapOut">
+    <wsdl:part name="parameters" element="tns:cfg_remove_user_role_linkResponse" />
+  </wsdl:message>
+  <wsdl:message name="cfg_remove_resource_role_linkSoapIn">
+    <wsdl:part name="parameters" element="tns:cfg_remove_resource_role_link" />
+  </wsdl:message>
+  <wsdl:message name="cfg_remove_resource_role_linkSoapOut">
+    <wsdl:part name="parameters" element="tns:cfg_remove_resource_role_linkResponse" />
+  </wsdl:message>
+  <wsdl:message name="cfg_remove_role_role_linkSoapIn">
+    <wsdl:part name="parameters" element="tns:cfg_remove_role_role_link" />
+  </wsdl:message>
+  <wsdl:message name="cfg_remove_role_role_linkSoapOut">
+    <wsdl:part name="parameters" element="tns:cfg_remove_role_role_linkResponse" />
+  </wsdl:message>
+  <wsdl:message name="cfg_remove_configuration_roleSoapIn">
+    <wsdl:part name="parameters" element="tns:cfg_remove_configuration_role" />
+  </wsdl:message>
+  <wsdl:message name="cfg_remove_configuration_roleSoapOut">
+    <wsdl:part name="parameters" element="tns:cfg_remove_configuration_roleResponse" />
+  </wsdl:message>
+  <wsdl:message name="cfg_remove_configuration_userSoapIn">
+    <wsdl:part name="parameters" element="tns:cfg_remove_configuration_user" />
+  </wsdl:message>
+  <wsdl:message name="cfg_remove_configuration_userSoapOut">
+    <wsdl:part name="parameters" element="tns:cfg_remove_configuration_userResponse" />
+  </wsdl:message>
+  <wsdl:message name="cfg_remove_configuration_resourceSoapIn">
+    <wsdl:part name="parameters" element="tns:cfg_remove_configuration_resource" />
+  </wsdl:message>
+  <wsdl:message name="cfg_remove_configuration_resourceSoapOut">
+    <wsdl:part name="parameters" element="tns:cfg_remove_configuration_resourceResponse" />
+  </wsdl:message>
+  <wsdl:message name="bpr_new_bpr_fileSoapIn">
+    <wsdl:part name="parameters" element="tns:bpr_new_bpr_file" />
+  </wsdl:message>
+  <wsdl:message name="bpr_new_bpr_fileSoapOut">
+    <wsdl:part name="parameters" element="tns:bpr_new_bpr_fileResponse" />
+  </wsdl:message>
+  <wsdl:message name="bpr_new_ruleSoapIn">
+    <wsdl:part name="parameters" element="tns:bpr_new_rule" />
+  </wsdl:message>
+  <wsdl:message name="bpr_new_ruleSoapOut">
+    <wsdl:part name="parameters" element="tns:bpr_new_ruleResponse" />
+  </wsdl:message>
+  <wsdl:message name="bpr_new_rule_entitySoapIn">
+    <wsdl:part name="parameters" element="tns:bpr_new_rule_entity" />
+  </wsdl:message>
+  <wsdl:message name="bpr_new_rule_entitySoapOut">
+    <wsdl:part name="parameters" element="tns:bpr_new_rule_entityResponse" />
+  </wsdl:message>
+  <wsdl:message name="getLoginUserSoapIn">
+    <wsdl:part name="parameters" element="tns:getLoginUser" />
+  </wsdl:message>
+  <wsdl:message name="getLoginUserSoapOut">
+    <wsdl:part name="parameters" element="tns:getLoginUserResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SageBasicServiceSoap">
+    <wsdl:operation name="udb_new_user">
+      <wsdl:input message="tns:udb_new_userSoapIn" />
+      <wsdl:output message="tns:udb_new_userSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="udb_new_user_field">
+      <wsdl:input message="tns:udb_new_user_fieldSoapIn" />
+      <wsdl:output message="tns:udb_new_user_fieldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="udb_change_user_field">
+      <wsdl:input message="tns:udb_change_user_fieldSoapIn" />
+      <wsdl:output message="tns:udb_change_user_fieldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="cfg_new_configuration_user">
+      <wsdl:input message="tns:cfg_new_configuration_userSoapIn" />
+      <wsdl:output message="tns:cfg_new_configuration_userSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="rdb_new_resource">
+      <wsdl:input message="tns:rdb_new_resourceSoapIn" />
+      <wsdl:output message="tns:rdb_new_resourceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="rdb_new_resource_field">
+      <wsdl:input message="tns:rdb_new_resource_fieldSoapIn" />
+      <wsdl:output message="tns:rdb_new_resource_fieldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="rdb_change_resource_field">
+      <wsdl:input message="tns:rdb_change_resource_fieldSoapIn" />
+      <wsdl:output message="tns:rdb_change_resource_fieldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="cfg_new_configuration_resource">
+      <wsdl:input message="tns:cfg_new_configuration_resourceSoapIn" />
+      <wsdl:output message="tns:cfg_new_configuration_resourceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="cfg_new_configuration_role">
+      <wsdl:input message="tns:cfg_new_configuration_roleSoapIn" />
+      <wsdl:output message="tns:cfg_new_configuration_roleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="cfg_change_role_field">
+      <wsdl:input message="tns:cfg_change_role_fieldSoapIn" />
+      <wsdl:output message="tns:cfg_change_role_fieldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="cfg_new_user_resource_link">
+      <wsdl:input message="tns:cfg_new_user_resource_linkSoapIn" />
+      <wsdl:output message="tns:cfg_new_user_resource_linkSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="cfg_new_user_role_link">
+      <wsdl:input message="tns:cfg_new_user_role_linkSoapIn" />
+      <wsdl:output message="tns:cfg_new_user_role_linkSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="cfg_new_resource_role_link">
+      <wsdl:input message="tns:cfg_new_resource_role_linkSoapIn" />
+      <wsdl:output message="tns:cfg_new_resource_role_linkSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="cfg_new_role_role_link">
+      <wsdl:input message="tns:cfg_new_role_role_linkSoapIn" />
+      <wsdl:output message="tns:cfg_new_role_role_linkSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="new_udb">
+      <wsdl:input message="tns:new_udbSoapIn" />
+      <wsdl:output message="tns:new_udbSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="new_rdb">
+      <wsdl:input message="tns:new_rdbSoapIn" />
+      <wsdl:output message="tns:new_rdbSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="new_cfg">
+      <wsdl:input message="tns:new_cfgSoapIn" />
+      <wsdl:output message="tns:new_cfgSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="new_field_name">
+      <wsdl:input message="tns:new_field_nameSoapIn" />
+      <wsdl:output message="tns:new_field_nameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="cfg_remove_user_resource_link">
+      <wsdl:input message="tns:cfg_remove_user_resource_linkSoapIn" />
+      <wsdl:output message="tns:cfg_remove_user_resource_linkSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="cfg_remove_user_role_link">
+      <wsdl:input message="tns:cfg_remove_user_role_linkSoapIn" />
+      <wsdl:output message="tns:cfg_remove_user_role_linkSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="cfg_remove_resource_role_link">
+      <wsdl:input message="tns:cfg_remove_resource_role_linkSoapIn" />
+      <wsdl:output message="tns:cfg_remove_resource_role_linkSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="cfg_remove_role_role_link">
+      <wsdl:input message="tns:cfg_remove_role_role_linkSoapIn" />
+      <wsdl:output message="tns:cfg_remove_role_role_linkSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="cfg_remove_configuration_role">
+      <wsdl:input message="tns:cfg_remove_configuration_roleSoapIn" />
+      <wsdl:output message="tns:cfg_remove_configuration_roleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="cfg_remove_configuration_user">
+      <wsdl:input message="tns:cfg_remove_configuration_userSoapIn" />
+      <wsdl:output message="tns:cfg_remove_configuration_userSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="cfg_remove_configuration_resource">
+      <wsdl:input message="tns:cfg_remove_configuration_resourceSoapIn" />
+      <wsdl:output message="tns:cfg_remove_configuration_resourceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="bpr_new_bpr_file">
+      <wsdl:input message="tns:bpr_new_bpr_fileSoapIn" />
+      <wsdl:output message="tns:bpr_new_bpr_fileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="bpr_new_rule">
+      <wsdl:input message="tns:bpr_new_ruleSoapIn" />
+      <wsdl:output message="tns:bpr_new_ruleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="bpr_new_rule_entity">
+      <wsdl:input message="tns:bpr_new_rule_entitySoapIn" />
+      <wsdl:output message="tns:bpr_new_rule_entitySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getLoginUser">
+      <wsdl:input message="tns:getLoginUserSoapIn" />
+      <wsdl:output message="tns:getLoginUserSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SageBasicServiceSoap" type="tns:SageBasicServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="udb_new_user">
+      <soap:operation soapAction="http://eurekify.com/webservices/udb_new_user" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="udb_new_user_field">
+      <soap:operation soapAction="http://eurekify.com/webservices/udb_new_user_field" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="udb_change_user_field">
+      <soap:operation soapAction="http://eurekify.com/webservices/udb_change_user_field" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cfg_new_configuration_user">
+      <soap:operation soapAction="http://eurekify.com/webservices/cfg_new_configuration_user" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="rdb_new_resource">
+      <soap:operation soapAction="http://eurekify.com/webservices/rdb_new_resource" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="rdb_new_resource_field">
+      <soap:operation soapAction="http://eurekify.com/webservices/rdb_new_resource_field" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="rdb_change_resource_field">
+      <soap:operation soapAction="http://eurekify.com/webservices/rdb_change_resource_field" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cfg_new_configuration_resource">
+      <soap:operation soapAction="http://eurekify.com/webservices/cfg_new_configuration_resource" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cfg_new_configuration_role">
+      <soap:operation soapAction="http://eurekify.com/webservices/cfg_new_configuration_role" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cfg_change_role_field">
+      <soap:operation soapAction="http://eurekify.com/webservices/cfg_change_role_field" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cfg_new_user_resource_link">
+      <soap:operation soapAction="http://eurekify.com/webservices/cfg_new_user_resource_link" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cfg_new_user_role_link">
+      <soap:operation soapAction="http://eurekify.com/webservices/cfg_new_user_role_link" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cfg_new_resource_role_link">
+      <soap:operation soapAction="http://eurekify.com/webservices/cfg_new_resource_role_link" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cfg_new_role_role_link">
+      <soap:operation soapAction="http://eurekify.com/webservices/cfg_new_role_role_link" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="new_udb">
+      <soap:operation soapAction="http://eurekify.com/webservices/new_udb" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="new_rdb">
+      <soap:operation soapAction="http://eurekify.com/webservices/new_rdb" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="new_cfg">
+      <soap:operation soapAction="http://eurekify.com/webservices/new_cfg" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="new_field_name">
+      <soap:operation soapAction="http://eurekify.com/webservices/new_field_name" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cfg_remove_user_resource_link">
+      <soap:operation soapAction="http://eurekify.com/webservices/cfg_remove_user_resource_link" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cfg_remove_user_role_link">
+      <soap:operation soapAction="http://eurekify.com/webservices/cfg_remove_user_role_link" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cfg_remove_resource_role_link">
+      <soap:operation soapAction="http://eurekify.com/webservices/cfg_remove_resource_role_link" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cfg_remove_role_role_link">
+      <soap:operation soapAction="http://eurekify.com/webservices/cfg_remove_role_role_link" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cfg_remove_configuration_role">
+      <soap:operation soapAction="http://eurekify.com/webservices/cfg_remove_configuration_role" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cfg_remove_configuration_user">
+      <soap:operation soapAction="http://eurekify.com/webservices/cfg_remove_configuration_user" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cfg_remove_configuration_resource">
+      <soap:operation soapAction="http://eurekify.com/webservices/cfg_remove_configuration_resource" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bpr_new_bpr_file">
+      <soap:operation soapAction="http://eurekify.com/webservices/bpr_new_bpr_file" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bpr_new_rule">
+      <soap:operation soapAction="http://eurekify.com/webservices/bpr_new_rule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bpr_new_rule_entity">
+      <soap:operation soapAction="http://eurekify.com/webservices/bpr_new_rule_entity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLoginUser">
+      <soap:operation soapAction="http://eurekify.com/webservices/getLoginUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SageBasicService">
+    <wsdl:port name="SageBasicServiceSoap" binding="tns:SageBasicServiceSoap">
+      <soap:address location="http://portailsage/services/SageBasicService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

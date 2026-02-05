@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="tltGeneral.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="btnEffacerLienUserRessr.ToolTip" xml:space="preserve">
+    <value>cfg_remove_user_resource_link()
+Paramètre 1= "Nom de la configuration"
+Paramètre 2= "Identificateur de l'utilisateur"
+Paramètre 3= "Nom de la ressource 1/3"
+Paramètre 4= "Nom de la ressource 2/3"
+Paramètre 5= "Nom de la ressource 3/3"</value>
+  </data>
+  <data name="btnEffacerLienRoleRessr.ToolTip" xml:space="preserve">
+    <value>cfg_remove_resource_role_link()
+Paramètre 1= "Nom de la configuration"
+Paramètre 2= "Nom de la ressource 1/3"
+Paramètre 3= "Nom de la ressource 2/3"
+Paramètre 4= "Nom de la ressource 3/3"
+Paramètre 5= "Nom du rôle"</value>
+  </data>
+  <data name="btnAjouterLienRoleRessr.ToolTip" xml:space="preserve">
+    <value>cfg_new_resource_role_link()
+Paramètre 1= "Nom de la configuration"
+Paramètre 2= "Nom de la ressource 1/3"
+Paramètre 3= "Nom de la ressource 2/3"
+Paramètre 4= "Nom de la ressource 3/3"
+Paramètre 5= "Nom du rôle"</value>
+  </data>
+  <data name="Button19.ToolTip" xml:space="preserve">
+    <value>cfg_new_configuration_role()
+Paramètre 1= "Nom de la configuration"
+Paramètre 2= "Nom du rôle"
+Paramètre 3= "Description du rôle"
+Paramètre 4= "Organisation du rôle"
+Paramètre 5= "Propriétaire du rôle"
+Paramètre 6= "Type du rôle"
+Paramètre 7= "Date création(aaaa-mm-jj)"
+Paramètre 8= "Réviseur du rôle"
+Paramètre 9= "Code d'approbation"
+Paramètre 10= "Date d'approbation(aaaa-mm-jj)
+Paramètre 11= "Filtre"
+Paramètre 12= "Organisation2"
+Paramètre 13= "Organisation3"
+Paramètre 14="Date D'expiration (aaaa-mm-jj)"</value>
+  </data>
+  <data name="btnAjouterLienUserRessr.ToolTip" xml:space="preserve">
+    <value>cfg_new_user_resource_link()
+Paramètre 1= "Nom de la configuration"
+Paramètre 2= "Identificateur de l'utilisateur"
+Paramètre 3= "Nom de la ressource 1/3"
+Paramètre 4= "Nom de la ressource 2/3"
+Paramètre 5= "Nom de la ressource 3/3"</value>
+  </data>
+  <data name="btnNouveauChampUser.ToolTip" xml:space="preserve">
+    <value>udb_new_user_field()
+Paramètre 1= "Nom de la base de données des utilisateurs(UDB)"
+Paramètre 2= "Identificateur de l'utilisateur"
+Paramètre 3= "Le numéro du champ à créer"
+Paramètre 4= "La valeur qui se retrouvera dans le nouveau champ"</value>
+  </data>
+  <data name="btnModifierChampUser.ToolTip" xml:space="preserve">
+    <value>udb_change_user_field()
+Paramètre 1= "Nom de la base de données des utilisateurs(UDB)"
+Paramètre 2= "Identificateur de l'utilisateur"
+Paramètre 3= "Le nom du champ à changé"
+Paramètre 4= "La valeur qui sera changé"
+Paramètre 5= "le numéro du champ"(Champs de bases = -1)</value>
+  </data>
+  <data name="btnCreerUtilisateur.ToolTip" xml:space="preserve">
+    <value>udb_new_user()
+Paramètre 1= "Nom de la base de données des utilisateurs(UDB)"
+Paramètre 2= "Identificateur de l'utilisateur"
+Paramètre 3= "Le nom de l'utilisateur"
+Paramètre 4= "L'organisation de l'utilisateur"
+Paramètre 5= "Le type de l'organisation"</value>
+  </data>
+  <data name="btnModifierChampRessr.ToolTip" xml:space="preserve">
+    <value>rdb_change_resource_field()
+Paramètre 1= "Nom de la base de données des utilisateurs(UDB)"
+Paramètre 2= "Nom de la ressource 1/3"
+Paramètre 3= "Nom de la ressource 2/3"
+Paramètre 4= "Nom de la ressource 3/3"
+Paramètre 5= "Le nom du champ à changé"
+Paramètre 6= "La valeur qui sera changé"
+Paramètre 7= "le numéro du champ"(Champs de bases = -1)</value>
+  </data>
+  <data name="btnCreerRessource.ToolTip" xml:space="preserve">
+    <value>rdb_new_resource()
+Paramètre 1= "Nom de la base de données des utilisateurs(UDB)"
+Paramètre 2= "Nom de la ressource 1/3"
+Paramètre 3= "Nom de la ressource 2/3"
+Paramètre 4= "Nom de la ressource 3/3"</value>
+  </data>
+  <metadata name="LineShape5.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>783, 407, 206, 0</value>
+  </metadata>
+  <metadata name="LineShape5.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>206, 0</value>
+  </metadata>
+  <metadata name="LineShape5.Location" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>783, 407</value>
+  </metadata>
+  <metadata name="LineShape4.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>783, 291, 0, 237</value>
+  </metadata>
+  <metadata name="LineShape4.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 237</value>
+  </metadata>
+  <metadata name="LineShape4.Location" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>783, 291</value>
+  </metadata>
+  <metadata name="LineShape3.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>784, 291, 205, 0</value>
+  </metadata>
+  <metadata name="LineShape3.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>205, 0</value>
+  </metadata>
+  <metadata name="LineShape3.Location" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>784, 291</value>
+  </metadata>
+  <metadata name="LineShape2.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>577, 203, 0, 58</value>
+  </metadata>
+  <metadata name="LineShape2.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 58</value>
+  </metadata>
+  <metadata name="LineShape2.Location" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>577, 203</value>
+  </metadata>
+  <metadata name="LineShape1.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>373, 262, 203, 0</value>
+  </metadata>
+  <metadata name="LineShape1.Size" type="System.Drawing.Size, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>203, 0</value>
+  </metadata>
+  <metadata name="LineShape1.Location" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>373, 262</value>
+  </metadata>
+</root>

@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30428</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{504b811c-2282-424f-a690-b7e6f62c41b7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>RRQ.Programs</RootNamespace>
+    <AssemblyName>TSSStructuresZonesCom</AssemblyName>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <OutputPath>bin\</OutputPath>
+    <BaseAddress>1067057152</BaseAddress>
+    <Optimize>true</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DocumentationFile>TSSStructuresZonesCom.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
+    <CodeAnalysisLogFile>OBJ\Release\TSSStructuresZonesCom.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisSucceededFile>obj\Release\TSSStructuresZonesCom.lastcodeanalysissucceeded</CodeAnalysisSucceededFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>bin\Debug\</OutputPath>
+    <BaseAddress>1067057152</BaseAddress>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DocumentationFile>TSSStructuresZonesCom.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
+    <CodeAnalysisLogFile>OBJ\Debug\TSSStructuresZonesCom.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisSucceededFile>obj\Debug\TSSStructuresZonesCom.lastcodeanalysissucceeded</CodeAnalysisSucceededFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'BuildPFC|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>bin\BuildPFC\</OutputPath>
+    <BaseAddress>1067057152</BaseAddress>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DocumentationFile>TSSStructuresZonesCom.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
+    <CodeAnalysisLogFile>OBJ\BuildPFC\TSSStructuresZonesCom.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisSucceededFile>obj\BuildPFC\TSSStructuresZonesCom.lastcodeanalysissucceeded</CodeAnalysisSucceededFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'BuildPFCFxCop|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>bin\BuildPFCFxCop\</OutputPath>
+    <BaseAddress>1067057152</BaseAddress>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DocumentationFile>TSSStructuresZonesCom.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
+    <CodeAnalysisLogFile>OBJ\BuildPFCFxCop\TSSStructuresZonesCom.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisSucceededFile>obj\BuildPFCFxCop\TSSStructuresZonesCom.lastcodeanalysissucceeded</CodeAnalysisSucceededFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Application">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\RRQ\Exec\Application.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\RRQ\Exec\Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Communication">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\RRQ\Exec\Communication.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="IBM.Application">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\RRQ\Exec\IBM.Application.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="IBM.Communication">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\RRQ\Exec\IBM.Communication.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="IBM.Database">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\RRQ\Exec\IBM.Database.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RRQCommon">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\RRQ\Exec\RRQCommon.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="TSSCPLC.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Rrq\Exec\XU7N090_ReglesRoslyn.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties EffectuerCopieExec="0" DossierDestinationCopie="C:\RRQ\Exec;" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

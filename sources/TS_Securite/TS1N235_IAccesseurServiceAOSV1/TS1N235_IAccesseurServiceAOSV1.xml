@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TS1N235_IAccesseurServiceAOSV1</name>
+    </assembly>
+    <members>
+        <member name="T:Rrq.TS.AccesseurServiceAOSV1.TsIAccesseurServiceAOS">
+            <summary>
+            Service AOS pour les récupération de code usager et  mot de passe des clés symboliques
+            </summary>
+        </member>
+        <member name="M:Rrq.TS.AccesseurServiceAOSV1.TsIAccesseurServiceAOS.ObtenirCodeAccesMotDePasse(System.String@,System.String,System.String,System.String@,System.String@)">
+            <summary>
+            Permet d'obtenir le code usager et mot de passe associés à une clé symbolique
+            </summary>
+            <param name="ChaineContexte">La chaîne de contexte nécessaire pour effectuer un appel.</param>
+            <param name="strCle">Nom de la clé symbolique</param>
+            <param name="strRaison">Raison de la demande de code usager et mot de passe</param>
+            <param name="strCompte">Compte associé à la clé symbolique</param>
+            <param name="strMDP">mot de passe associé à la clé symbolique</param>
+        </member>
+    </members>
+</doc>

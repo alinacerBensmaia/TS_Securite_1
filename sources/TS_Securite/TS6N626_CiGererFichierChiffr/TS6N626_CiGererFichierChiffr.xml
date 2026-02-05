@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TS6N626_CiGererFichierChiffr</name>
+    </assembly>
+    <members>
+        <member name="T:TS6N626_CiGererFichierChiffr.TsCaGererFichierChiffr">
+            -----------------------------------------------------------------------------
+             Project		: TS6N626_CiGererFichierChiffr
+             Class		: TsCaGererFichierChiffr
+            
+            -----------------------------------------------------------------------------
+             <summary>
+             Classe d'affaire.
+             </summary>
+            -----------------------------------------------------------------------------
+        </member>
+    </members>
+</doc>
